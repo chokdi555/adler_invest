@@ -11,11 +11,11 @@ export default function ScrollToTop() {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
   }, [pathname])
 
-  // Scroll to top when the user clicks a link pointing at the current page,
-  // which Next.js otherwise treats as a no-op.
+  // Scroll to top when the user clicks a link pointing at the current page.
+  // Capture phase runs before Next.js Link calls preventDefault() for its
+  // same-URL no-op, which would otherwise hide the click from us.
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
-      if (e.defaultPrevented) return
       if (e.button !== 0) return
       if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
 
@@ -46,8 +46,8 @@ export default function ScrollToTop() {
       }
     }
 
-    document.addEventListener('click', handleClick)
-    return () => document.removeEventListener('click', handleClick)
+    document.addEventListener('click', handleClick, true)
+    return () => document.removeEventListener('click', handleClick, true)
   }, [])
 
   return null
