@@ -63,7 +63,7 @@ export async function POST(request: Request) {
   } catch (error) {
     console.error('Contact form error:', error)
     return Response.json(
-      { error: 'Interner Fehler. Bitte versuchen Sie es später erneut.' },
+      { error: 'Interner Fehler. Bitte versuche es später erneut.' },
       { status: 500 }
     )
   }

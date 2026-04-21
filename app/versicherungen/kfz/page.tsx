@@ -6,7 +6,7 @@ import EagleWatermark from '@/components/EagleWatermark'
 export const metadata: Metadata = {
   title: 'KFZ-Versicherung | Günstig & Optimal | Adler Invest',
   description:
-    'KFZ-Versicherung vergleichen und sparen. Haftpflicht, Teilkasko oder Vollkasko — Adler Invest findet den günstigsten Tarif für Sie in Frankfurt.',
+    'KFZ-Versicherung vergleichen und sparen. Haftpflicht, Teilkasko oder Vollkasko — Adler Invest findet den günstigsten Tarif für dich in Frankfurt.',
   keywords: [
     'KFZ-Versicherung Frankfurt',
     'Autoversicherung vergleichen',
@@ -44,7 +44,7 @@ export default function KFZPage() {
         name: 'Was ist die Schadenfreiheitsklasse (SF-Klasse)?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Die SF-Klasse (Schadenfreiheitsklasse) spiegelt Ihre Unfallhistorie wider. Je länger Sie unfallfrei fahren, desto höher die SF-Klasse und desto niedriger der Beitragssatz.',
+          text: 'Die SF-Klasse (Schadenfreiheitsklasse) spiegelt deine Unfallhistorie wider. Je länger du unfallfrei fahren, desto höher die SF-Klasse und desto niedriger der Beitragssatz.',
         },
       },
     ],
@@ -96,7 +96,7 @@ export default function KFZPage() {
             Alle Versicherungen
           </Link>
 
-          <div style={{ maxWidth: '680px' }}>
+          <div style={{ maxWidth: '680px', margin: '0 auto', textAlign: 'center' }}>
             <p className="eyebrow-gold" style={{ marginBottom: '20px' }}>
               KFZ-Versicherung
             </p>
@@ -123,13 +123,14 @@ export default function KFZPage() {
                 lineHeight: 1.7,
                 marginBottom: '40px',
                 maxWidth: '560px',
+                margin: '0 auto 40px',
               }}
             >
               Adler Invest vergleicht alle Anbieter und findet den günstigsten Tarif für
-              Ihr Fahrzeug — mit dem richtigen Schutzumfang. Haftpflicht, Teilkasko oder
-              Vollkasko, wir beraten Sie unabhängig.
+              dein Fahrzeug — mit dem richtigen Schutzumfang. Haftpflicht, Teilkasko oder
+              Vollkasko, wir beraten dich unabhängig.
             </p>
-            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
               <Link href="/kontakt" className="btn-primary">
                 Kostenlose Beratung sichern
               </Link>
@@ -156,11 +157,11 @@ export default function KFZPage() {
               </Link>
             </div>
 
-            <div style={{ display: 'flex', gap: '40px', marginTop: '56px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '40px', marginTop: '56px', flexWrap: 'wrap', justifyContent: 'center' }}>
               {[
                 { num: '100+', label: 'Tarife im Vergleich' },
                 { num: '30 %', label: 'typische Ersparnis beim Wechsel' },
-                { num: '0 €', label: 'Kosten für Sie' },
+                { num: '0 €', label: 'Kosten für dich' },
               ].map((item) => (
                 <div key={item.label}>
                   <p
@@ -201,7 +202,7 @@ export default function KFZPage() {
               Haftpflicht, Teilkasko oder Vollkasko?
             </h2>
             <p className="mt-4 text-lg max-w-2xl mx-auto" style={{ color: '#6B7494' }}>
-              Drei Schutzstufen — wir erklären den Unterschied und welche für Sie sinnvoll ist.
+              Drei Schutzstufen — wir erklären den Unterschied und welche für dich sinnvoll ist.
             </p>
           </div>
 
@@ -213,7 +214,7 @@ export default function KFZPage() {
                 badgeColor: '#CC2B2B',
                 price: 'ab ~200 €/Jahr',
                 description:
-                  'Pflichtversicherung für alle Fahrzeuge in Deutschland. Deckt Schäden ab, die Sie anderen mit Ihrem Fahrzeug zufügen — an Personen, Fahrzeugen und Sachen.',
+                  'Pflichtversicherung für alle Fahrzeuge in Deutschland. Deckt Schäden ab, die du anderen mit deinem Fahrzeug zufügst — an Personen, Fahrzeugen und Sachen.',
                 covers: [
                   'Personenschäden an Unfallopfern',
                   'Fahrzeugschäden beim Unfallgegner',
@@ -251,7 +252,7 @@ export default function KFZPage() {
                 badgeColor: '#0141CB',
                 price: 'ab ~500 €/Jahr',
                 description:
-                  'Der vollständige Schutz für Ihr Fahrzeug. Empfehlenswert für neue oder teure Fahrzeuge — deckt auch selbst verschuldete Schäden ab.',
+                  'Der vollständige Schutz für dein Fahrzeug. Empfehlenswert für neue oder teure Fahrzeuge — deckt auch selbst verschuldete Schäden ab.',
                 covers: [
                   'Alles aus Haftpflicht und Teilkasko',
                   'Selbst verschuldete Unfälle',
@@ -317,13 +318,13 @@ export default function KFZPage() {
                 Die Schadenfreiheitsklasse (SF-Klasse)
               </h2>
               <p className="text-lg mb-4" style={{ color: '#2D3142' }}>
-                Die SF-Klasse ist das wichtigste Kriterium für Ihren KFZ-Beitrag.
-                Sie spiegelt Ihre Unfallhistorie wider: Je länger Sie unfallfrei fahren,
-                desto höher die SF-Klasse und desto niedriger Ihr Beitragssatz.
+                Die SF-Klasse ist das wichtigste Kriterium für deinen KFZ-Beitrag.
+                du spiegelt deine Unfallhistorie wider: Je länger du unfallfrei fahren,
+                desto höher die SF-Klasse und desto niedriger dein Beitragssatz.
               </p>
               <p style={{ color: '#6B7494' }}>
-                Jedes Jahr ohne Schaden verbessert Ihre SF-Klasse. Ein Schaden
-                verschlechtert sie und erhöht Ihren Beitrag für mehrere Jahre.
+                Jedes Jahr ohne Schaden verbessert deine SF-Klasse. Ein Schaden
+                verschlechtert sie und erhöht deinen Beitrag für mehrere Jahre.
                 Deshalb lohnt es sich oft, kleinere Schäden selbst zu zahlen.
               </p>
             </div>
@@ -378,7 +379,7 @@ export default function KFZPage() {
             <span className="eyebrow">SPARTIPPS</span>
             <div className="gold-divider mx-auto mt-3 mb-5" />
             <h2 className="font-display text-4xl font-bold" style={{ color: '#012778' }}>
-              So sparen Sie bei der KFZ-Versicherung
+              So sparst du bei der KFZ-Versicherung
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -411,7 +412,7 @@ export default function KFZPage() {
               {
                 title: 'SF-Klasse übertragen',
                 description:
-                  'SF-Klassen können zwischen Familienangehörigen übertragen werden — fragen Sie uns dazu.',
+                  'SF-Klassen können zwischen Familienangehörigen übertragen werden — frage uns dazu.',
               },
             ].map((tip) => (
               <div key={tip.title} className="card">
@@ -440,7 +441,7 @@ export default function KFZPage() {
             KFZ-Versicherung jetzt vergleichen
           </h2>
           <p className="text-lg mb-8" style={{ color: 'rgba(255,255,255,0.75)' }}>
-            Wir vergleichen alle Anbieter und finden den günstigsten Tarif für Sie.
+            Wir vergleichen alle Anbieter und finden den günstigsten Tarif für dich.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/kontakt" className="btn-primary">

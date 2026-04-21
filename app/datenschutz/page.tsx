@@ -121,13 +121,13 @@ export default function DatenschutzPage() {
           {/* 4. Rechtsgrundlagen */}
           <Section title="4. Rechtsgrundlagen der Verarbeitung">
             <p className="mb-3">
-              Die Verarbeitung Ihrer personenbezogenen Daten erfolgt auf
+              Die Verarbeitung deiner personenbezogenen Daten erfolgt auf
               Grundlage folgender Rechtsgrundlagen gemäß Art. 6 DSGVO:
             </p>
             <ul className="list-disc pl-6 space-y-3">
               <li>
                 <strong>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung):</strong>{' '}
-                Sofern Sie uns eine ausdrückliche Einwilligung zur
+                Sofern du uns eine ausdrückliche Einwilligung zur
                 Verarbeitung erteilt haben, z. B. beim Absenden des
                 Kontaktformulars.
               </li>
@@ -152,7 +152,7 @@ export default function DatenschutzPage() {
                 </strong>{' '}
                 Soweit die Verarbeitung zur Wahrung unserer berechtigten
                 Interessen oder der Interessen Dritter erforderlich ist
-                und Ihre Grundrechte nicht überwiegen (z. B.
+                und deine Grundrechte nicht überwiegen (z. B.
                 Sicherstellung des IT-Betriebs, statistische Auswertung
                 der Websitenutzung).
               </li>
@@ -162,12 +162,12 @@ export default function DatenschutzPage() {
           {/* 5. Weitergabe an Dritte */}
           <Section title="5. Weitergabe von Daten an Dritte">
             <p className="mb-3">
-              Eine Weitergabe Ihrer personenbezogenen Daten an Dritte
+              Eine Weitergabe deiner personenbezogenen Daten an Dritte
               erfolgt grundsätzlich nur, wenn:
             </p>
             <ul className="list-disc pl-6 space-y-2 mb-4">
               <li>
-                Sie hierzu Ihre ausdrückliche Einwilligung erteilt haben
+                du hierzu deine ausdrückliche Einwilligung erteilt haben
                 (Art. 6 Abs. 1 lit. a DSGVO),
               </li>
               <li>
@@ -229,61 +229,61 @@ export default function DatenschutzPage() {
             </ul>
           </Section>
 
-          {/* 7. Ihre Rechte */}
-          <Section title="7. Ihre Rechte als betroffene Person">
+          {/* 7. Deine Rechte */}
+          <Section title="7. Deine Rechte als betroffene Person">
             <p className="mb-3">
-              Sie haben gegenüber uns folgende Rechte hinsichtlich der
-              Sie betreffenden personenbezogenen Daten:
+              Du hast gegenüber uns folgende Rechte hinsichtlich der
+              dich betreffenden personenbezogenen Daten:
             </p>
             <ul className="list-disc pl-6 space-y-3">
               <li>
                 <strong>Recht auf Auskunft</strong> (Art. 15 DSGVO):
-                Sie können Auskunft darüber verlangen, ob und welche
-                personenbezogenen Daten wir über Sie verarbeiten.
+                Du kannst Auskunft darüber verlangen, ob und welche
+                personenbezogenen Daten wir über dich verarbeiten.
               </li>
               <li>
                 <strong>Recht auf Berichtigung</strong> (Art. 16 DSGVO):
-                Sie können die Berichtigung unrichtiger oder die
+                Du kannst die Berichtigung unrichtiger oder die
                 Vervollständigung unvollständiger Daten verlangen.
               </li>
               <li>
                 <strong>Recht auf Löschung</strong> (Art. 17 DSGVO):
-                Sie können die Löschung Ihrer personenbezogenen Daten
+                Du kannst die Löschung deiner personenbezogenen Daten
                 verlangen, sofern keine gesetzlichen
                 Aufbewahrungspflichten entgegenstehen.
               </li>
               <li>
                 <strong>Recht auf Einschränkung der Verarbeitung</strong>{' '}
-                (Art. 18 DSGVO): Sie können die Einschränkung der
-                Verarbeitung Ihrer Daten verlangen.
+                (Art. 18 DSGVO): Du kannst die Einschränkung der
+                Verarbeitung deiner Daten verlangen.
               </li>
               <li>
                 <strong>Recht auf Datenübertragbarkeit</strong>{' '}
-                (Art. 20 DSGVO): Sie können verlangen, dass Ihre Daten
+                (Art. 20 DSGVO): Du kannst verlangen, dass deine Daten
                 in einem strukturierten, gängigen und
                 maschinenlesbaren Format übermittelt werden.
               </li>
               <li>
-                <strong>Widerspruchsrecht</strong> (Art. 21 DSGVO): Sie
-                können der Verarbeitung Ihrer Daten jederzeit
+                <strong>Widerspruchsrecht</strong> (Art. 21 DSGVO): Du
+                kannst der Verarbeitung deiner Daten jederzeit
                 widersprechen, sofern die Verarbeitung auf Art. 6 Abs. 1
                 lit. e oder f DSGVO beruht.
               </li>
               <li>
                 <strong>Widerruf der Einwilligung</strong> (Art. 7
-                Abs. 3 DSGVO): Eine erteilte Einwilligung können Sie
+                Abs. 3 DSGVO): Eine erteilte Einwilligung kannst du
                 jederzeit mit Wirkung für die Zukunft widerrufen.
               </li>
               <li>
-                <strong>Beschwerderecht</strong> (Art. 77 DSGVO): Sie
-                haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde
+                <strong>Beschwerderecht</strong> (Art. 77 DSGVO): Du
+                hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde
                 zu beschweren. Die zuständige Aufsichtsbehörde ist der
                 Hessische Beauftragte für Datenschutz und
                 Informationsfreiheit, Postfach 3163, 65021 Wiesbaden.
               </li>
             </ul>
             <p className="mt-4">
-              Zur Ausübung Ihrer Rechte wenden Sie sich bitte an:{' '}
+              Zur Ausübung deiner Rechte wende dich bitte an:{' '}
               <a
                 href="mailto:datenschutz@adlerinvest.de"
                 style={{ color: '#0141CB' }}
@@ -296,25 +296,25 @@ export default function DatenschutzPage() {
           {/* 8. Kontaktformular */}
           <Section title="8. Kontaktformular">
             <p className="mb-3">
-              Wenn Sie uns über unser Kontaktformular eine Anfrage
-              zukommen lassen, werden die von Ihnen angegebenen Daten
+              Wenn du uns über unser Kontaktformular eine Anfrage
+              zukommen lassen, werden die von dir angegebenen Daten
               (Vorname, Nachname, E-Mail-Adresse, Telefonnummer, Anliegen
               und Nachrichtentext) zur Bearbeitung der Anfrage und für
               den Fall von Anschlussfragen bei uns gespeichert.
             </p>
             <p className="mb-3">
               Die Verarbeitung dieser Daten erfolgt auf Grundlage von
-              Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), die Sie durch
+              Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), die du durch
               Aktivierung der Datenschutz-Checkbox und Absenden des
-              Formulars erteilen. Ohne Ihre Einwilligung können wir Ihre
+              Formulars erteilen. Ohne deine Einwilligung können wir deine
               Anfrage nicht bearbeiten.
             </p>
             <p className="mb-3">
               Die im Rahmen des Kontaktformulars eingegebenen Daten
-              verbleiben bei uns, bis Sie uns zur Löschung auffordern,
-              Ihre Einwilligung zur Speicherung widerrufen oder der Zweck
+              verbleiben bei uns, bis du uns zur Löschung auffordern,
+              deine Einwilligung zur Speicherung widerrufen oder der Zweck
               für die Datenspeicherung entfällt (z. B. nach abgeschlossener
-              Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen
+              Bearbeitung deiner Anfrage). Zwingende gesetzliche Bestimmungen
               — insbesondere Aufbewahrungsfristen — bleiben unberührt.
             </p>
             <p>
@@ -328,8 +328,8 @@ export default function DatenschutzPage() {
           <Section title="9. Cookies">
             <p className="mb-3">
               Unsere Website verwendet Cookies. Cookies sind kleine
-              Textdateien, die auf Ihrem Endgerät gespeichert werden und
-              die Ihr Browser speichert.
+              Textdateien, die auf deinem Endgerät gespeichert werden und
+              die dein Browser speichert.
             </p>
             <p className="mb-3">
               Wir setzen ausschließlich <strong>technisch notwendige Cookies</strong>{' '}
@@ -339,16 +339,16 @@ export default function DatenschutzPage() {
               gesonderten Einwilligung.
             </p>
             <p className="mb-3">
-              Wir setzen keine Tracking- oder Analyse-Cookies ohne Ihre
+              Wir setzen keine Tracking- oder Analyse-Cookies ohne deine
               ausdrückliche Einwilligung ein. Unsere Website verwendet
               Plausible Analytics, ein datenschutzfreundliches Analyse-Tool,
               das ohne Cookies auskommt und keine personenbezogenen Daten
               erhebt.
             </p>
             <p>
-              Sie können die Speicherung von Cookies durch eine
-              entsprechende Einstellung Ihres Browsers unterbinden.
-              Bitte beachten Sie, dass dies die Funktionalität der Website
+              Du kannst die Speicherung von Cookies durch eine
+              entsprechende Einstellung deines Browsers unterbinden.
+              Bitte beachte, dass dies die Funktionalität der Website
               einschränken kann.
             </p>
           </Section>
@@ -396,8 +396,8 @@ export default function DatenschutzPage() {
               anzupassen, um sie stets den aktuellen rechtlichen
               Anforderungen zu entsprechen oder um Änderungen unserer
               Leistungen in der Datenschutzerklärung umzusetzen, z. B.
-              bei der Einführung neuer Services. Für Ihren erneuten Besuch
-              gilt dann die neue Datenschutzerklärung. Wir empfehlen Ihnen,
+              bei der Einführung neuer Services. Für deinen erneuten Besuch
+              gilt dann die neue Datenschutzerklärung. Wir empfehlen dir,
               diese Seite regelmäßig aufzurufen, um sich über den aktuellen
               Datenschutzstand zu informieren. Der Stand der aktuellen
               Version ist oben auf dieser Seite angegeben.
@@ -407,8 +407,8 @@ export default function DatenschutzPage() {
           {/* 12. Kontakt Datenschutz */}
           <Section title="12. Kontakt zum Datenschutz">
             <p className="mb-3">
-              Bei Fragen zum Datenschutz, zur Ausübung Ihrer Rechte oder
-              bei Anliegen zur Datenverarbeitung wenden Sie sich bitte an:
+              Bei Fragen zum Datenschutz, zur Ausübung deiner Rechte oder
+              bei Anliegen zur Datenverarbeitung wende dich bitte an:
             </p>
             <p className="mb-1">
               <strong>Adler Invest GmbH — Datenschutz</strong>

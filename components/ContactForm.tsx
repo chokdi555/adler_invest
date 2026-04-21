@@ -8,16 +8,16 @@ import { CheckCircle, AlertCircle, Loader2 } from 'lucide-react'
 import Link from 'next/link'
 
 const schema = z.object({
-  vorname: z.string().min(2, 'Bitte geben Sie Ihren Vornamen ein'),
-  nachname: z.string().min(2, 'Bitte geben Sie Ihren Nachnamen ein'),
-  email: z.string().email('Bitte geben Sie eine gültige E-Mail-Adresse ein'),
+  vorname: z.string().min(2, 'Bitte gib deinen Vornamen ein'),
+  nachname: z.string().min(2, 'Bitte gib deinen Nachnamen ein'),
+  email: z.string().email('Bitte gib eine gültige E-Mail-Adresse ein'),
   telefon: z.string().optional(),
   interesse: z.enum(['Immobilien-Kapitalanlage', 'Versicherungsberatung', 'Beides', 'Sonstiges'], {
-    error: 'Bitte wählen Sie ein Thema',
+    error: 'Bitte wähle ein Thema',
   }),
   nachricht: z.string().optional(),
   datenschutz: z.literal(true, {
-    error: 'Bitte stimmen Sie der Datenschutzerklärung zu',
+    error: 'Bitte stimme der Datenschutzerklärung zu',
   }),
 })
 
@@ -91,7 +91,7 @@ export default function ContactForm() {
       setSubmitError(
         err instanceof Error
           ? err.message
-          : 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.'
+          : 'Ein Fehler ist aufgetreten. Bitte versuche es später erneut.'
       )
     }
   }
@@ -140,7 +140,7 @@ export default function ContactForm() {
             lineHeight: 1.6,
           }}
         >
-          Wir haben Ihre Anfrage erhalten und melden uns innerhalb von 24 Stunden persönlich bei Ihnen.
+          Wir haben deine Anfrage erhalten und melden uns innerhalb von 24 Stunden persönlich bei dir.
         </p>
       </div>
     )
@@ -241,7 +241,7 @@ export default function ContactForm() {
       {/* Interesse */}
       <div>
         <label htmlFor="interesse" style={labelStyle}>
-          Ihr Interesse <span style={{ color: '#CC2B2B' }}>*</span>
+          dein Interesse <span style={{ color: '#CC2B2B' }}>*</span>
         </label>
         <select
           id="interesse"
@@ -275,13 +275,13 @@ export default function ContactForm() {
       {/* Nachricht */}
       <div>
         <label htmlFor="nachricht" style={labelStyle}>
-          Ihre Nachricht{' '}
+          deine Nachricht{' '}
           <span style={{ color: '#6B7494', fontWeight: 400 }}>(optional)</span>
         </label>
         <textarea
           id="nachricht"
           rows={4}
-          placeholder="Teilen Sie uns gerne vorab mit, was Sie bewegt…"
+          placeholder="Teilen du uns gerne vorab mit, was du bewegt…"
           style={{
             ...inputStyle,
             resize: 'vertical',

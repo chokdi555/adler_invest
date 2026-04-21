@@ -6,12 +6,12 @@ import WhatsAppButton from '@/components/WhatsAppButton'
 export const metadata: Metadata = {
   title: 'Kontakt | Adler Invest Frankfurt',
   description:
-    'Nehmen Sie Kontakt mit Adler Invest auf. Kostenlose Beratung für Immobilien-Kapitalanlagen und Versicherungen in Frankfurt und dem Rhein-Main-Gebiet.',
+    'Nehmen du Kontakt mit Adler Invest auf. Kostenlose Beratung für Immobilien-Kapitalanlagen und Versicherungen in Frankfurt und dem Rhein-Main-Gebiet.',
   alternates: { canonical: 'https://adlerinvest.de/kontakt' },
   openGraph: {
     title: 'Kontakt | Adler Invest Frankfurt',
     description:
-      'Nehmen Sie Kontakt mit Adler Invest auf. Kostenlose Beratung für Immobilien-Kapitalanlagen und Versicherungen.',
+      'Nehmen du Kontakt mit Adler Invest auf. Kostenlose Beratung für Immobilien-Kapitalanlagen und Versicherungen.',
     url: 'https://adlerinvest.de/kontakt',
     siteName: 'Adler Invest',
     locale: 'de_DE',
@@ -42,7 +42,11 @@ const contactDetails = [
   {
     icon: Clock,
     label: 'Öffnungszeiten',
-    value: 'Mo–Fr 9:00–18:00 Uhr',
+    value: (
+      <>
+        Mo–Fr <span className="block sm:inline">9:00–18:00 Uhr</span>
+      </>
+    ),
     href: null,
   },
 ]
@@ -145,7 +149,7 @@ export default function KontaktPage() {
                     marginBottom: '10px',
                   }}
                 >
-                  Schreiben Sie uns
+                  Schreiben du uns
                 </h2>
                 <p
                   style={{
@@ -155,7 +159,7 @@ export default function KontaktPage() {
                     lineHeight: 1.6,
                   }}
                 >
-                  Füllen Sie das Formular aus — wir melden uns schnellstmöglich persönlich bei Ihnen.
+                  Füllen du das Formular aus — wir melden uns schnellstmöglich persönlich bei dir.
                 </p>
               </div>
               <ContactForm />
@@ -184,7 +188,7 @@ export default function KontaktPage() {
                   marginBottom: '32px',
                 }}
               >
-                Bevorzugen Sie den direkten Weg? Wir sind für Sie erreichbar.
+                Bevorzugst du den direkten Weg? Wir sind für dich erreichbar.
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginBottom: '32px' }}>

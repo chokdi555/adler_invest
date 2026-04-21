@@ -42,7 +42,7 @@ const posts = [
     slug: 'steuer-sparen-immobilien',
     title: 'Steuer sparen mit Immobilien: Die 5 wichtigsten Vorteile',
     excerpt:
-      'Als Kapitalanleger profitieren Sie von erheblichen Steuervorteilen. Wir erklären AfA, Zinsabzug und mehr.',
+      'Als Kapitalanleger profitierst du von erheblichen Steuervorteilen. Wir erklären AfA, Zinsabzug und mehr.',
     date: '10. März 2026',
     category: 'Steuern',
     readTime: '6 min',
@@ -60,7 +60,7 @@ const posts = [
     slug: 'rechtsschutz-wann-lohnt-es-sich',
     title: 'Rechtsschutzversicherung: Wann lohnt sie sich wirklich?',
     excerpt:
-      'Mietstreit, Kündigung, Verkehrsunfall — ein Rechtsstreit kostet schnell Tausende Euro. Wann die Rechtsschutzversicherung sinnvoll ist und worauf Sie achten sollten.',
+      'Mietstreit, Kündigung, Verkehrsunfall — ein Rechtsstreit kostet schnell Tausende Euro. Wann die Rechtsschutzversicherung sinnvoll ist und worauf du achten solltest.',
     date: '5. Februar 2026',
     category: 'Versicherungen',
     readTime: '6 min',
@@ -127,7 +127,7 @@ export default function BlogIndexPage() {
             className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-4"
             style={{ fontFamily: 'var(--font-playfair)', color: '#012778' }}
           >
-            Expertenwissen für Ihren Vermögensaufbau
+            Expertenwissen für deinen Vermögensaufbau
           </h1>
           <p className="text-lg max-w-[560px]" style={{ color: '#6B7494' }}>
             Praxisnahe Artikel zu Immobilien-Kapitalanlagen, Steueroptimierung und
@@ -212,10 +212,10 @@ export default function BlogIndexPage() {
             className="text-3xl lg:text-4xl font-bold text-white mb-6"
             style={{ fontFamily: 'var(--font-playfair)' }}
           >
-            Fragen? Wir beraten Sie kostenlos.
+            Fragen? Wir beraten dich kostenlos.
           </h2>
           <p className="text-lg text-white/70 mb-10 max-w-[440px] mx-auto">
-            Artikel sind ein Anfang — aber Ihre Situation ist individuell. Sprechen Sie
+            Artikel sind ein Anfang — aber deine Situation ist individuell. Sprich
             direkt mit einem Experten.
           </p>
           <Link href="/kontakt" className="btn-primary inline-flex items-center gap-2">

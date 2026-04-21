@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   title: 'Versicherungen Frankfurt | Unabhängiger Makler | Adler Invest',
   description:
-    'Als unabhängiger Versicherungsmakler vergleichen wir alle Anbieter — und finden die beste Lösung für Sie. BU, Kranken, Haftpflicht, KFZ und mehr.',
+    'Als unabhängiger Versicherungsmakler vergleichen wir alle Anbieter — und finden die beste Lösung für dich. BU, Kranken, Haftpflicht, KFZ und mehr.',
   keywords: [
     'Versicherungsmakler Frankfurt',
     'Versicherung vergleichen',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Versicherungen Frankfurt | Unabhängiger Makler | Adler Invest',
     description:
-      'Als unabhängiger Versicherungsmakler vergleichen wir alle Anbieter — und finden die beste Lösung für Sie.',
+      'Als unabhängiger Versicherungsmakler vergleichen wir alle Anbieter — und finden die beste Lösung für dich.',
     url: 'https://adlerinvest.de/versicherungen',
     siteName: 'Adler Invest',
     locale: 'de_DE',
@@ -42,7 +42,7 @@ const insuranceCategories = [
     icon: Shield,
     title: 'Berufsunfähigkeit (BU)',
     description:
-      'Die wichtigste Absicherung für Berufstätige. Schützt Ihr Einkommen bei Berufsunfähigkeit durch Krankheit oder Unfall.',
+      'Die wichtigste Absicherung für Berufstätige. Schützt dein Einkommen bei Berufsunfähigkeit durch Krankheit oder Unfall.',
     href: '/versicherungen/berufsunfaehigkeit',
     highlight: true,
   },
@@ -50,7 +50,7 @@ const insuranceCategories = [
     icon: Heart,
     title: 'Krankenversicherung',
     description:
-      'PKV oder GKV-Ergänzung: optimaler Schutz für Sie und Ihre Familie — passend zu Ihrer Lebenssituation.',
+      'PKV oder GKV-Ergänzung: optimaler Schutz für dich und deine Familie — passend zu deiner Lebenssituation.',
     href: '/versicherungen/krankenversicherung',
     highlight: false,
   },
@@ -58,7 +58,7 @@ const insuranceCategories = [
     icon: Users,
     title: 'Haftpflichtversicherung',
     description:
-      'Schützt Sie vor den finanziellen Folgen unbeabsichtigter Schäden. In Deutschland unverzichtbar.',
+      'Schützt dich vor den finanziellen Folgen unbeabsichtigter Schäden. In Deutschland unverzichtbar.',
     href: '/versicherungen/haftpflicht',
     highlight: false,
   },
@@ -66,7 +66,7 @@ const insuranceCategories = [
     icon: Heart,
     title: 'Lebensversicherung',
     description:
-      'Risikolebens- und Kapitallebensversicherung für Ihre Familie und Ihre Hinterbliebenen.',
+      'Risikolebens- und Kapitallebensversicherung für deine Familie und deine Hinterbliebenen.',
     href: '/versicherungen/lebensversicherung',
     highlight: false,
   },
@@ -74,7 +74,7 @@ const insuranceCategories = [
     icon: Home,
     title: 'Hausrat & Gebäude',
     description:
-      'Vollständiger Schutz für Ihr Zuhause und Ihr Eigentum — vor Feuer, Wasser, Einbruch und mehr.',
+      'Vollständiger Schutz für dein Zuhause und dein Eigentum — vor Feuer, Wasser, Einbruch und mehr.',
     href: '/versicherungen/hausrat',
     highlight: false,
   },
@@ -108,19 +108,19 @@ const brokerAdvantages = [
   {
     title: 'Unabhängig',
     description:
-      'Wir sind an keinen Versicherer gebunden. Unsere Empfehlungen basieren ausschließlich auf Ihrem Bedarf — nicht auf Provisionsinteressen.',
+      'Wir sind an keinen Versicherer gebunden. Unsere Empfehlungen basieren ausschließlich auf deinem Bedarf — nicht auf Provisionsinteressen.',
     icon: Shield,
   },
   {
     title: 'Marktüberblick',
     description:
-      'Wir vergleichen alle relevanten Anbieter am Markt und finden den Tarif mit dem besten Preis-Leistungs-Verhältnis für Sie.',
+      'Wir vergleichen alle relevanten Anbieter am Markt und finden den Tarif mit dem besten Preis-Leistungs-Verhältnis für dich.',
     icon: CheckCircle,
   },
   {
     title: 'Persönlich',
     description:
-      'Ein fester Ansprechpartner — kein Call Center. Wir kennen Ihre Situation und betreuen Sie langfristig.',
+      'Ein fester Ansprechpartner — kein Call Center. Wir kennen deine Situation und betreuen dich langfristig.',
     icon: Users,
   },
 ]
@@ -129,7 +129,7 @@ const processSteps = [
   {
     step: '01',
     title: 'Kostenlose Analyse',
-    description: 'Wir analysieren Ihre aktuelle Situation und Ihren Absicherungsbedarf — komplett kostenlos und unverbindlich.',
+    description: 'Wir analysieren deine aktuelle Situation und deinen Absicherungsbedarf — komplett kostenlos und unverbindlich.',
   },
   {
     step: '02',
@@ -139,12 +139,12 @@ const processSteps = [
   {
     step: '03',
     title: 'Persönliche Empfehlung',
-    description: 'Sie erhalten eine klare, verständliche Empfehlung — mit Begründung, warum dieser Tarif zu Ihnen passt.',
+    description: 'Du erhältst eine klare, verständliche Empfehlung — mit Begründung, warum dieser Tarif zu dir passt.',
   },
   {
     step: '04',
     title: 'Abschluss & Betreuung',
-    description: 'Wir begleiten Sie beim Abschluss und stehen auch danach als Ansprechpartner zur Verfügung.',
+    description: 'Wir begleiten dich beim Abschluss und stehen auch danach als Ansprechpartner zur Verfügung.',
   },
 ]
 
@@ -176,11 +176,11 @@ export default function VersicherungenPage() {
       {/* ── HERO ── */}
       <section
         className="pt-[72px]"
-        style={{ background: 'linear-gradient(135deg, #0141CB 0%, #012778 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #012778 0%, #001C59 100%)' }}
       >
         <div className="container-brand py-16 sm:py-24 lg:py-32">
-          <div className="max-w-3xl">
-            <div className="flex flex-wrap items-center gap-3 mb-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
               <span className="eyebrow-gold">ADLER INVEST VERSICHERUNGEN</span>
             </div>
             <h1
@@ -193,13 +193,13 @@ export default function VersicherungenPage() {
               </em>
             </h1>
             <p
-              className="text-base sm:text-xl lg:text-2xl mb-8 sm:mb-10 font-light"
+              className="text-base sm:text-xl lg:text-2xl mb-8 sm:mb-10 font-light mx-auto"
               style={{ color: 'rgba(255,255,255,0.82)', maxWidth: '600px' }}
             >
               Als unabhängiger Versicherungsmakler vergleichen wir alle Anbieter — und
               finden die beste Lösung für dich. Ohne Interessenkonflikt.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/kontakt"
                 style={{
@@ -225,7 +225,7 @@ export default function VersicherungenPage() {
                 +49 69 000 000 00
               </Link>
             </div>
-            <div className="mt-10 flex flex-wrap gap-6" style={{ color: 'rgba(255,255,255,0.75)' }}>
+            <div className="mt-10 flex flex-wrap justify-center gap-6" style={{ color: 'rgba(255,255,255,0.75)' }}>
               <span className="flex items-center gap-2 text-sm">
                 <CheckCircle size={16} style={{ color: '#C8A84B' }} />
                 Unabhängige Beratung
@@ -256,7 +256,7 @@ export default function VersicherungenPage() {
               Alle Versicherungen aus einer Hand
             </h2>
             <p className="mt-4 text-lg max-w-2xl mx-auto" style={{ color: '#6B7494' }}>
-              Von der Berufsunfähigkeit bis zur Reiseversicherung — wir beraten Sie
+              Von der Berufsunfähigkeit bis zur Reiseversicherung — wir beraten dich
               zu allen Versicherungsbereichen.
             </p>
           </div>
@@ -330,7 +330,7 @@ export default function VersicherungenPage() {
             </h2>
             <p className="mt-4 text-lg max-w-xl mx-auto" style={{ color: '#6B7494' }}>
               Im Unterschied zum gebundenen Vertreter arbeiten wir ausschließlich in
-              Ihrem Interesse.
+              deinem Interesse.
             </p>
           </div>
 
@@ -451,8 +451,8 @@ export default function VersicherungenPage() {
             sichern
           </h2>
           <p className="text-lg mb-10 max-w-xl mx-auto" style={{ color: 'rgba(255,255,255,0.75)' }}>
-            Unverbindlich. Ohne Verpflichtung. Wir analysieren Ihre aktuelle Situation
-            und zeigen Ihnen, wo Sie sparen können.
+            Unverbindlich. Ohne Verpflichtung. Wir analysieren deine aktuelle Situation
+            und zeigen dir, wo du sparst können.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

@@ -25,7 +25,7 @@ const posts = [
     slug: 'steuer-sparen-immobilien',
     title: 'Steuer sparen mit Immobilien: Die 5 wichtigsten Vorteile',
     excerpt:
-      'Als Kapitalanleger profitieren Sie von erheblichen Steuervorteilen. Wir erklären AfA, Zinsabzug und mehr.',
+      'Als Kapitalanleger profitierst du von erheblichen Steuervorteilen. Wir erklären AfA, Zinsabzug und mehr.',
     date: '10. März 2026',
     category: 'Steuern',
     readTime: '6 min',
@@ -43,7 +43,7 @@ const posts = [
     slug: 'rechtsschutz-wann-lohnt-es-sich',
     title: 'Rechtsschutzversicherung: Wann lohnt sie sich wirklich?',
     excerpt:
-      'Mietstreit, Kündigung, Verkehrsunfall — ein Rechtsstreit kostet schnell Tausende Euro. Wann die Rechtsschutzversicherung sinnvoll ist und worauf Sie achten sollten.',
+      'Mietstreit, Kündigung, Verkehrsunfall — ein Rechtsstreit kostet schnell Tausende Euro. Wann die Rechtsschutzversicherung sinnvoll ist und worauf du achten solltest.',
     date: '5. Februar 2026',
     category: 'Versicherungen',
     readTime: '6 min',
@@ -80,54 +80,54 @@ const posts = [
 const postContent: Record<string, string[]> = {
   'kapitalanlage-immobilie-erklaert': [
     'Eine Kapitalanlage Immobilie — auch Renditeobjekt genannt — ist eine Immobilie, die nicht selbst bewohnt wird, sondern vermietet. Das Besondere: Die Mieteinnahmen decken die monatliche Finanzierungsrate, sodass der Eigentümer Vermögen aufbaut, ohne eigenes Geld einzusetzen.',
-    'Das Modell funktioniert so: Sie nehmen eine Immobilienfinanzierung auf und kaufen eine Wohnung oder ein Haus. Ein Mieter zieht ein und zahlt monatlich Miete. Diese Miete fließt direkt auf Ihr Konto — und Sie verwenden sie, um die Kreditrate zu bedienen.',
-    'Bei einem typischen Objekt (Kaufpreis: 200.000 €, Finanzierungsrate: ~800 €/Monat, Miete: ~780 €/Monat) liegt Ihr tatsächlicher Eigenaufwand bei nur 20–50 € im Monat. Nach 25 Jahren ist die Immobilie schuldenfrei — und die Miete fließt vollständig als passives Einkommen.',
-    'Zusätzlich profitieren Sie von steuerlichen Vorteilen: Die jährliche Abschreibung (AfA) beträgt 2 % des Gebäudewerts, hinzu kommen alle Finanzierungszinsen und Instandhaltungskosten. Das reduziert Ihre Steuerlast erheblich.',
-    'Adler Invest begleitet Sie von der ersten Beratung bis zum Notartermin — kostenlos und unverbindlich.',
+    'Das Modell funktioniert so: Du nimmst eine Immobilienfinanzierung auf und kaufst eine Wohnung oder ein Haus. Ein Mieter zieht ein und zahlt monatlich Miete. Diese Miete fließt direkt auf dein Konto — und du verwendest sie, um die Kreditrate zu bedienen.',
+    'Bei einem typischen Objekt (Kaufpreis: 200.000 €, Finanzierungsrate: ~800 €/Monat, Miete: ~780 €/Monat) liegt dein tatsächlicher Eigenaufwand bei nur 20–50 € im Monat. Nach 25 Jahren ist die Immobilie schuldenfrei — und die Miete fließt vollständig als passives Einkommen.',
+    'Zusätzlich profitierst du von steuerlichen Vorteilen: Die jährliche Abschreibung (AfA) beträgt 2 % des Gebäudewerts, hinzu kommen alle Finanzierungszinsen und Instandhaltungskosten. Das reduziert deine Steuerlast erheblich.',
+    'Adler Invest begleitet dich von der ersten Beratung bis zum Notartermin — kostenlos und unverbindlich.',
   ],
   'steuer-sparen-immobilien': [
-    'Als Eigentümer einer vermieteten Immobilie haben Sie Zugang zu einem der attraktivsten Steuerprivilegien in Deutschland. Wir erklären die fünf wichtigsten Hebel.',
+    'Als Eigentümer einer vermieteten Immobilie hast du Zugang zu einem der attraktivsten Steuerprivilegien in Deutschland. Wir erklären die fünf wichtigsten Hebel.',
     '1. Abschreibung (AfA): 2 % des Gebäudewerts jährlich über 50 Jahre. Bei einem Gebäudewert von 150.000 € sind das 3.000 € Steuerabzug pro Jahr.',
-    '2. Finanzierungszinsen: Alle Zinsen für Ihren Immobilienkredit sind vollständig als Werbungskosten absetzbar. In den ersten Jahren des Kredits können das 4.000–8.000 € pro Jahr sein.',
+    '2. Finanzierungszinsen: Alle Zinsen für deinen Immobilienkredit sind vollständig als Werbungskosten absetzbar. In den ersten Jahren des Kredits können das 4.000–8.000 € pro Jahr sein.',
     '3. Instandhaltungskosten: Reparaturen, Renovierungen und Modernisierungen (unter bestimmten Bedingungen) sind steuerlich absetzbar.',
     '4. Verwaltungskosten: Hausverwaltung, Steuerberater, Kontoführungsgebühren — alles absetzbar.',
     '5. Werbungskosten: Fahrten zum Objekt, Fachliteratur, anteilige Telefonkosten.',
-    'Gut berechnete Kapitalanleger sparen so 1.500–4.000 € Steuern pro Jahr. Adler Invest erklärt Ihnen in der Erstberatung, welche Steuervorteile konkret für Sie gelten.',
+    'Gut berechnete Kapitalanleger sparen so 1.500–4.000 € Steuern pro Jahr. Adler Invest erklärt dir in der Erstberatung, welche Steuervorteile konkret für dich gelten.',
   ],
   'immobilien-frankfurt-kaufen': [
     'Frankfurt am Main ist einer der attraktivsten Immobilienmärkte Deutschlands. Als Sitz der Europäischen Zentralbank, zahlreicher Großbanken und internationaler Unternehmen verzeichnet die Stadt ein konstantes Bevölkerungswachstum und eine stabile Nachfrage nach Wohnraum.',
     'Aktuelle Preise (2025): Im Frankfurter Stadtgebiet liegen die durchschnittlichen Kaufpreise für Eigentumswohnungen bei 5.000–7.500 €/m². Beliebte Investmentlagen wie Sachsenhausen (6.200–7.500 €/m²) oder das Westend (7.000–9.000 €/m²) bieten trotz hoher Preise solide Renditen durch hohe Mietnachfrage.',
     'Günstigere Einstiegslagen: Stadtteile wie Gallus (4.800–5.800 €/m²), Rödelheim (4.500–5.500 €/m²) oder Niederrad (5.000–6.000 €/m²) eignen sich besonders als Erstinvestment mit überschaubarem Kapitalbedarf.',
     'Mietrenditen: Die Bruttomietrendite liegt in Frankfurt typischerweise bei 3,5–4,5 %. Durch Steuervorteile (AfA, Zinsabzug) verbessert sich die Nettoperformance erheblich.',
-    'Adler Invest verfügt über ein Netzwerk von Verkäufern und Entwicklern, das Zugang zu Objekten unter Marktwert ermöglicht — bevor sie auf dem freien Markt erscheinen. Sprechen Sie uns an.',
+    'Adler Invest verfügt über ein Netzwerk von Verkäufern und Entwicklern, das Zugang zu Objekten unter Marktwert ermöglicht — bevor sie auf dem freien Markt erscheinen. Sprich uns an.',
   ],
   'immobilien-unter-marktwert': [
     'Immobilien unter Marktwert zu kaufen bedeutet, eine Immobilie für weniger als ihren tatsächlichen Marktwert zu erwerben. Das klingt nach einem Glücksfall — ist aber das Ergebnis systematischer Arbeit.',
     'Wie findet Adler Invest solche Objekte? Erstens durch ein aktives Netzwerk von Eigentümern, Hausverwaltungen und Nachlassverwaltern, die diskret verkaufen möchten — ohne den öffentlichen Markt. Zweitens durch Kontakte zu Projektentwicklern mit Resteinheiten oder Paketverkäufen.',
     'Typische Szenarien: Ein Erbe möchte eine geerbte Wohnung schnell verwerten. Ein Vermieter mit mehreren Objekten verkauft eines im Paket. Ein Investor löst sein Portfolio auf. In diesen Situationen sind Abschläge von 10–20 % auf den Marktwert realistisch.',
-    'Das Beispiel: Eine Wohnung mit Marktwert 220.000 € wird für 180.000 € verkauft. Sie haben sofort 40.000 € an steuerpflichtigem Gewinnpotenzial eingebaut — noch bevor der erste Mieter einzieht.',
-    'Adler Invest prüft alle Objekte vor der Empfehlung sorgfältig: Zustand, Lage, Mietpotenzial, rechtliche Situation. Sie erhalten nur geprüfte Empfehlungen.',
+    'Das Beispiel: Eine Wohnung mit Marktwert 220.000 € wird für 180.000 € verkauft. Du hast sofort 40.000 € an steuerpflichtigem Gewinnpotenzial eingebaut — noch bevor der erste Mieter einzieht.',
+    'Adler Invest prüft alle Objekte vor der Empfehlung sorgfältig: Zustand, Lage, Mietpotenzial, rechtliche Situation. Du erhältst nur geprüfte Empfehlungen.',
   ],
   'berufsunfaehigkeit-versicherung': [
     'Statistisch gesehen wird jeder vierte Arbeitnehmer in Deutschland vor dem Rentenalter berufsunfähig. Die häufigsten Ursachen sind psychische Erkrankungen (rund 30 %), Erkrankungen des Bewegungsapparates (20 %) sowie Krebs und Herzerkrankungen. Die gesetzliche Erwerbsminderungsrente ist in den meisten Fällen nicht ausreichend — sie beträgt im Durchschnitt nur 800–1.000 € pro Monat.',
-    'Die Berufsunfähigkeitsversicherung (BU) zahlt eine monatliche Rente, wenn Sie Ihren zuletzt ausgeübten Beruf aus gesundheitlichen Gründen zu mindestens 50 % nicht mehr ausüben können. Diese Definition ist entscheidend: Sie müssen nicht vollständig arbeitsunfähig sein — es genügt, wenn Sie Ihren spezifischen Beruf nicht mehr ausüben können.',
-    'Worauf kommt es beim Tarif an? Erstens auf die BU-Definition: Gute Tarife verzichten auf die sogenannte "abstrakte Verweisung" — das bedeutet, dass der Versicherer Sie nicht auf einen anderen, theoretisch möglichen Beruf verweisen darf. Zweitens auf die Nachversicherungsgarantie: Diese erlaubt Ihnen, die Rente bei Lebensereignissen (Heirat, Kinder, Gehaltserhöhung) ohne erneute Gesundheitsprüfung zu erhöhen.',
-    'Wann sollte man eine BU abschließen? So früh wie möglich. Je jünger und gesünder Sie sind, desto günstiger ist der Beitrag — und desto geringer das Risiko, aufgrund von Vorerkrankungen abgelehnt zu werden. Eine 30-jährige Bürokraft zahlt für eine monatliche Rente von 2.000 € typischerweise 60–120 € im Monat.',
-    'Adler Invest vergleicht alle führenden BU-Anbieter — von Allianz über Swiss Life bis Nürnberger — und findet den Tarif, der zu Ihrem Beruf, Ihrer Gesundheit und Ihrem Budget passt. Die Beratung ist kostenlos und unverbindlich.',
+    'Die Berufsunfähigkeitsversicherung (BU) zahlt eine monatliche Rente, wenn du deinen zuletzt ausgeübten Beruf aus gesundheitlichen Gründen zu mindestens 50 % nicht mehr ausüben kannst. Diese Definition ist entscheidend: Du musst nicht vollständig arbeitsunfähig sein — es genügt, wenn du deinen spezifischen Beruf nicht mehr ausüben kannst.',
+    'Worauf kommt es beim Tarif an? Erstens auf die BU-Definition: Gute Tarife verzichten auf die sogenannte "abstrakte Verweisung" — das bedeutet, dass der Versicherer dich nicht auf einen anderen, theoretisch möglichen Beruf verweisen darf. Zweitens auf die Nachversicherungsgarantie: Diese erlaubt dir, die Rente bei Lebensereignissen (Heirat, Kinder, Gehaltserhöhung) ohne erneute Gesundheitsprüfung zu erhöhen.',
+    'Wann sollte man eine BU abschließen? So früh wie möglich. Je jünger und gesünder du bist, desto günstiger ist der Beitrag — und desto geringer das Risiko, aufgrund von Vorerkrankungen abgelehnt zu werden. Eine 30-jährige Bürokraft zahlt für eine monatliche Rente von 2.000 € typischerweise 60–120 € im Monat.',
+    'Adler Invest vergleicht alle führenden BU-Anbieter — von Allianz über Swiss Life bis Nürnberger — und findet den Tarif, der zu deinem Beruf, deiner Gesundheit und deinem Budget passt. Die Beratung ist kostenlos und unverbindlich.',
   ],
   'rechtsschutz-wann-lohnt-es-sich': [
-    'Ein Rechtsstreit kann schnell teuer werden: Die Anwaltskosten für ein arbeitsrechtliches Verfahren in der ersten Instanz beginnen bei 1.500 €, ein Mietrechtsstreit kostet je nach Streitwert 1.000–8.000 €, und ein Unfallverfahren vor dem Landgericht kann 10.000 € oder mehr kosten. Die Rechtsschutzversicherung übernimmt diese Kosten — und ermöglicht es Ihnen, Ihr Recht auch dann durchzusetzen, wenn die Gegenseite finanziell stärker ist.',
+    'Ein Rechtsstreit kann schnell teuer werden: Die Anwaltskosten für ein arbeitsrechtliches Verfahren in der ersten Instanz beginnen bei 1.500 €, ein Mietrechtsstreit kostet je nach Streitwert 1.000–8.000 €, und ein Unfallverfahren vor dem Landgericht kann 10.000 € oder mehr kosten. Die Rechtsschutzversicherung übernimmt diese Kosten — und ermöglicht es dir, dein Recht auch dann durchzusetzen, wenn die Gegenseite finanziell stärker ist.',
     'Für wen lohnt sich eine Rechtsschutzversicherung besonders? Erstens für Mieter und Vermieter: Streitigkeiten über Betriebskosten, Mieterhöhungen, Mängel oder Kautionen sind häufig und kostspielig. Zweitens für Arbeitnehmer: Kündigung, Abmahnung, Mobbing oder Diskriminierung — arbeitsrechtliche Konflikte treffen viele. Drittens für Autofahrer: Ein Unfall, ein Bußgeldbescheid oder ein Führerscheinentzug können rechtliche Folgen haben, die sich mit Rechtsschutz deutlich leichter bekämpfen lassen.',
     'Die vier Kernmodule: Privat-Rechtsschutz (Alltags- und Vertragsstreitigkeiten), Berufs-Rechtsschutz (arbeitsrechtliche Konflikte), Verkehrs-Rechtsschutz (alles rund ums Fahrzeug) und Wohnungs-Rechtsschutz (Miet- und Eigentumsrecht). Wer alle vier Module kombiniert, ist umfassend abgesichert — für oft nur 20–40 € pro Monat.',
     'Wichtig zu wissen: Die meisten Tarife haben eine Wartezeit von 3 Monaten. Das bedeutet: Nur der Verkehrs-Rechtsschutz greift in vielen Tarifen sofort. Außerdem sind bereits bestehende oder absehbare Streitigkeiten grundsätzlich nicht versichert — der Abschluss sollte also vorsorglich erfolgen, nicht erst wenn ein Konflikt droht.',
-    'Adler Invest vergleicht alle relevanten Rechtsschutztarife und berät Sie, welches Modul-Paket zu Ihrer Lebenssituation passt. Die Beratung ist kostenlos — sprechen Sie uns einfach an.',
+    'Adler Invest vergleicht alle relevanten Rechtsschutztarife und berät dich, welches Modul-Paket zu deiner Lebenssituation passt. Die Beratung ist kostenlos — sprich uns einfach an.',
   ],
   'immobilien-ohne-eigenkapital': [
     'Der weit verbreitete Rat lautet: "Ohne 20 % Eigenkapital kaufst du keine Immobilie." Diese Faustregel gilt für Eigenheime — bei Kapitalanlagen ist die Realität differenzierter.',
     'Warum der Unterschied? Banken bewerten eine Kapitalanlage anders als ein Eigenheim. Bei einer vermieteten Immobilie zählen die Mieteinnahmen als zusätzliches Einkommen und verbessern die Bonität. In der Praxis finanzieren viele Banken 90–100 % des Kaufpreises für gut situierte Angestellte mit stabilen Mieteinnahmen.',
     'Voraussetzungen: Wichtig sind ein solides Nettoeinkommen (typischerweise ab 2.500 €/Monat netto), eine saubere Schufa, und ein Objekt mit hoher Vermietbarkeit und stabilem Mietumfeld.',
     'KfW-Programme: Zusätzlich gibt es staatliche Förderprogramme der KfW (z.B. KfW 261 für energieeffiziente Gebäude), die zinsgünstige Darlehen bereitstellen und den Eigenkapitalbedarf weiter senken.',
-    'Adler Invest klärt in der kostenlosen Erstberatung, welche Finanzierungsmodelle für Ihre persönliche Situation in Frage kommen — ohne Verpflichtung.',
+    'Adler Invest klärt in der kostenlosen Erstberatung, welche Finanzierungsmodelle für deine persönliche Situation in Frage kommen — ohne Verpflichtung.',
   ],
 }
 
@@ -274,8 +274,8 @@ export default async function BlogPost({
               Kostenlose Beratung sichern
             </h3>
             <p className="text-white/75 text-sm mb-6 max-w-[400px]">
-              Lassen Sie sich persönlich beraten — unverbindlich und kostenlos. Wir
-              prüfen, was für Ihre individuelle Situation möglich ist.
+              Lass dich persönlich beraten — unverbindlich und kostenlos. Wir
+              prüfen, was für deine individuelle Situation möglich ist.
             </p>
             <Link
               href="/kontakt"

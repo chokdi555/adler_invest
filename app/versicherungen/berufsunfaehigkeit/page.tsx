@@ -6,7 +6,7 @@ import EagleWatermark from '@/components/EagleWatermark'
 export const metadata: Metadata = {
   title: 'Berufsunfähigkeitsversicherung (BU) | Adler Invest Frankfurt',
   description:
-    'Berufsunfähigkeitsversicherung — der wichtigste Schutz für Berufstätige. Adler Invest vergleicht alle BU-Anbieter und findet die beste Lösung für Sie in Frankfurt.',
+    'Berufsunfähigkeitsversicherung — der wichtigste Schutz für Berufstätige. Adler Invest vergleicht alle BU-Anbieter und findet die beste Lösung für dich in Frankfurt.',
   keywords: [
     'Berufsunfähigkeitsversicherung',
     'BU Versicherung Frankfurt',
@@ -35,7 +35,7 @@ const checkCriteria = [
   {
     title: 'Keine abstrakte Verweisung',
     description:
-      'Der Versicherer darf Sie nicht auf andere Berufe verweisen. Sie sind abgesichert, wenn Sie Ihren zuletzt ausgeübten Beruf nicht mehr ausüben können.',
+      'Der Versicherer darf dich nicht auf andere Berufe verweisen. Du bist abgesichert, wenn du deinen zuletzt ausgeübten Beruf nicht mehr ausüben kannst.',
   },
   {
     title: 'Rückwirkende Anerkennung',
@@ -45,7 +45,7 @@ const checkCriteria = [
   {
     title: 'Nachversicherungsgarantie',
     description:
-      'Sie können die versicherte Rente erhöhen (z.B. bei Gehaltserhöhung oder Familiengründung) ohne erneute Gesundheitsprüfung.',
+      'Du kannst die versicherte Rente erhöhen (z.B. bei Gehaltserhöhung oder Familiengründung) ohne erneute Gesundheitsprüfung.',
   },
   {
     title: 'Weltweiter Schutz',
@@ -63,12 +63,12 @@ const faqItems = [
   {
     question: 'Reicht die staatliche Erwerbsminderungsrente nicht aus?',
     answer:
-      'Nein. Die durchschnittliche Erwerbsminderungsrente beträgt in Deutschland ca. 800–1.000 € pro Monat — meist deutlich weniger als das gewohnte Einkommen. Außerdem bekommen Sie die volle Rente nur, wenn Sie weniger als 3 Stunden täglich arbeiten können.',
+      'Nein. Die durchschnittliche Erwerbsminderungsrente beträgt in Deutschland ca. 800–1.000 € pro Monat — meist deutlich weniger als das gewohnte Einkommen. Außerdem bekommst du die volle Rente nur, wenn du weniger als 3 Stunden täglich arbeiten kannst.',
   },
   {
     question: 'Wann sollte ich eine BU abschließen?',
     answer:
-      'So früh wie möglich — idealerweise in den Zwanzigern. Je jünger und gesünder Sie sind, desto günstiger sind die Beiträge und desto einfacher ist die Gesundheitsprüfung.',
+      'So früh wie möglich — idealerweise in den Zwanzigern. Je jünger und gesünder du bist, desto günstiger sind die Beiträge und desto einfacher ist die Gesundheitsprüfung.',
   },
   {
     question: 'Was kostet eine BU?',
@@ -139,7 +139,7 @@ export default function BerufsunfaehigkeitPage() {
             Alle Versicherungen
           </Link>
 
-          <div style={{ maxWidth: '680px' }}>
+          <div style={{ maxWidth: '680px', margin: '0 auto', textAlign: 'center' }}>
             <p className="eyebrow-gold" style={{ marginBottom: '20px' }}>
               Berufsunfähigkeitsversicherung
             </p>
@@ -157,7 +157,7 @@ export default function BerufsunfaehigkeitPage() {
             >
               Berufsunfähigkeitsversicherung —{' '}
               <em style={{ fontStyle: 'italic', color: '#457FFC' }}>
-                Ihr wichtigster Schutz
+                dein wichtigster Schutz
               </em>
             </h1>
             <p
@@ -168,13 +168,14 @@ export default function BerufsunfaehigkeitPage() {
                 lineHeight: 1.7,
                 marginBottom: '40px',
                 maxWidth: '560px',
+                margin: '0 auto 40px',
               }}
             >
               Jeder vierte Arbeitnehmer wird vor der Rente berufsunfähig. Die staatliche
               Absicherung reicht nicht aus. Als unabhängiger Makler vergleichen wir alle
-              BU-Anbieter und finden die beste Lösung für Sie.
+              BU-Anbieter und finden die beste Lösung für dich.
             </p>
-            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
               <Link href="/kontakt" className="btn-primary">
                 Kostenlose Beratung sichern
               </Link>
@@ -201,11 +202,11 @@ export default function BerufsunfaehigkeitPage() {
               </Link>
             </div>
 
-            <div style={{ display: 'flex', gap: '40px', marginTop: '56px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '40px', marginTop: '56px', flexWrap: 'wrap', justifyContent: 'center' }}>
               {[
                 { num: '25%', label: 'werden vor der Rente berufsunfähig' },
                 { num: '50+', label: 'Anbieter im Vergleich' },
-                { num: '0 €', label: 'Kosten für Sie' },
+                { num: '0 €', label: 'Kosten für dich' },
               ].map((item) => (
                 <div key={item.label}>
                   <p
@@ -251,13 +252,13 @@ export default function BerufsunfaehigkeitPage() {
               </h2>
               <p className="text-lg mb-4" style={{ color: '#2D3142' }}>
                 Eine <strong>Berufsunfähigkeitsversicherung (BU)</strong> zahlt eine
-                monatliche Rente, wenn Sie aufgrund von Krankheit, Unfall oder
-                psychischer Erkrankung Ihren zuletzt ausgeübten Beruf nicht mehr
-                ausüben können — und zwar unabhängig davon, ob Sie theoretisch einen
-                anderen Job annehmen könnten.
+                monatliche Rente, wenn du aufgrund von Krankheit, Unfall oder
+                psychischer Erkrankung deinen zuletzt ausgeübten Beruf nicht mehr
+                ausüben kannst — und zwar unabhängig davon, ob du theoretisch einen
+                anderen Job annehmen könntest.
               </p>
               <p style={{ color: '#6B7494' }}>
-                Die BU ersetzt damit das wegfallende Einkommen und sichert Ihren
+                Die BU ersetzt damit das wegfallende Einkommen und sichert deinen
                 Lebensstandard ab. Sie ist besonders wichtig für alle, die von ihrem
                 Arbeitseinkommen abhängig sind — also für die überwiegende Mehrheit aller
                 Berufstätigen in Deutschland.
@@ -363,16 +364,16 @@ export default function BerufsunfaehigkeitPage() {
                 className="font-display text-3xl lg:text-4xl font-bold mb-6"
                 style={{ color: '#012778' }}
               >
-                Adler Invest findet die beste BU für Sie
+                Adler Invest findet die beste BU für dich
               </h2>
               <p className="text-lg mb-6" style={{ color: '#2D3142' }}>
                 Der BU-Markt ist komplex — Tarife, Bedingungen und Gesundheitsfragen
                 unterscheiden sich erheblich. Wir navigieren durch den Markt und finden
-                den Tarif, der zu Ihrem Beruf, Ihrer Gesundheit und Ihrem Budget passt.
+                den Tarif, der zu deinem Beruf, deiner Gesundheit und deinem Budget passt.
               </p>
               <ul className="space-y-4">
                 {[
-                  'Kostenlose Analyse Ihres Absicherungsbedarfs',
+                  'Kostenlose Analyse deines Absicherungsbedarfs',
                   'Vergleich aller relevanten BU-Anbieter',
                   'Begleitung bei der Gesundheitsprüfung',
                   'Unterstützung im Leistungsfall',
@@ -467,7 +468,7 @@ export default function BerufsunfaehigkeitPage() {
             Jetzt BU-Schutz sichern
           </h2>
           <p className="text-lg mb-8" style={{ color: 'rgba(255,255,255,0.75)' }}>
-            Kostenlose Beratung — wir vergleichen alle Anbieter für Sie.
+            Kostenlose Beratung — wir vergleichen alle Anbieter für dich.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/kontakt" className="btn-primary">

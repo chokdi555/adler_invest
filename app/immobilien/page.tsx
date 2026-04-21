@@ -85,12 +85,12 @@ const processSteps = [
   {
     number: '1',
     title: 'Erstgespräch',
-    description: 'Kostenlose Analyse Ihrer persönlichen Situation',
+    description: 'Kostenlose Analyse deiner persönlichen Situation',
   },
   {
     number: '2',
     title: 'Finanzierungsprüfung',
-    description: 'Wir klären Ihre Finanzierungsmöglichkeiten',
+    description: 'Wir klären deine Finanzierungsmöglichkeiten',
   },
   {
     number: '3',
@@ -105,12 +105,12 @@ const processSteps = [
   {
     number: '5',
     title: 'Notartermin',
-    description: 'Wir begleiten Sie durch den gesamten Kaufprozess',
+    description: 'Wir begleiten dich durch den gesamten Kaufprozess',
   },
   {
     number: '6',
     title: 'Schlüsselübergabe',
-    description: 'Ihr Mieter zieht ein — Ihr Vermögen beginnt zu wachsen',
+    description: 'Dein Mieter zieht ein — dein Vermögen beginnt zu wachsen',
   },
 ]
 
@@ -119,32 +119,32 @@ const faqItems: FaqItem[] = [
   {
     question: 'Kann ich eine Immobilie ohne Eigenkapital kaufen?',
     answer:
-      'Ja, in vielen Fällen ist eine 100%-Finanzierung möglich — vorausgesetzt, Sie haben ein gutes Einkommen und eine solide Bonität. Bei Kapitalanlage-Immobilien akzeptieren viele Banken die zukünftigen Mieteinnahmen als Teil der Tragbarkeitsrechnung. Wir analysieren Ihre individuelle Situation und zeigen Ihnen, welche Finanzierungsmodelle für Sie in Frage kommen.',
+      'Ja, in vielen Fällen ist eine 100%-Finanzierung möglich — vorausgesetzt, du hast ein gutes Einkommen und eine solide Bonität. Bei Kapitalanlage-Immobilien akzeptieren viele Banken die zukünftigen Mieteinnahmen als Teil der Tragbarkeitsrechnung. Wir analysieren deine individuelle Situation und zeigen dir, welche Finanzierungsmodelle für dich in Frage kommen.',
   },
   {
     question: 'Wie viel muss ich monatlich zuzahlen?',
     answer:
-      'Bei einer gut gewählten Kapitalanlage liegt Ihr tatsächlicher monatlicher Eigenaufwand häufig zwischen 20 und 50 Euro — manchmal sogar bei null. Die Mieteinnahmen decken die Finanzierungsrate. Der genaue Betrag hängt vom Objekt, dem Zinsniveau und dem Mietmarkt ab. Wir zeigen Ihnen konkrete Beispielrechnungen in der Erstberatung.',
+      'Bei einer gut gewählten Kapitalanlage liegt dein tatsächlicher monatlicher Eigenaufwand häufig zwischen 20 und 50 Euro — manchmal sogar bei null. Die Mieteinnahmen decken die Finanzierungsrate. Der genaue Betrag hängt vom Objekt, dem Zinsniveau und dem Mietmarkt ab. Wir zeigen dir konkrete Beispielrechnungen in der Erstberatung.',
   },
   {
     question: 'Was ist eine Kapitalanlage Immobilie?',
     answer:
-      'Eine Kapitalanlage-Immobilie ist eine Wohnung oder ein Haus, die Sie nicht selbst bewohnen, sondern vermieten. Ein Mieter zahlt monatlich Miete, die Ihre Finanzierungsrate (anteilig oder vollständig) deckt. Über die Laufzeit des Darlehens zahlt der Mieter effektiv Ihre Immobilie ab — am Ende gehört Ihnen ein schuldenfreies Objekt mit gestiegenem Wert.',
+      'Eine Kapitalanlage-Immobilie ist eine Wohnung oder ein Haus, die du nicht selbst bewohnst, sondern vermietest. Ein Mieter zahlt monatlich Miete, die deine Finanzierungsrate (anteilig oder vollständig) deckt. Über die Laufzeit des Darlehens zahlt der Mieter effektiv deine Immobilie ab — am Ende gehört dir ein schuldenfreies Objekt mit gestiegenem Wert.',
   },
   {
     question: 'Welche Steuervorteile habe ich?',
     answer:
-      'Als Eigentümer einer vermieteten Immobilie können Sie die jährliche Abschreibung (AfA) von 2–3% des Gebäudewertes steuerlich geltend machen. Dazu kommen Darlehenszinsen, Verwaltungskosten, Instandhaltungskosten und weitere Werbungskosten. In vielen Fällen entsteht steuerlich ein Verlust, der mit anderen Einkünften verrechnet werden kann — das reduziert Ihre Steuerlast erheblich.',
+      'Als Eigentümer einer vermieteten Immobilie kannst du die jährliche Abschreibung (AfA) von 2–3% des Gebäudewertes steuerlich geltend machen. Dazu kommen Darlehenszinsen, Verwaltungskosten, Instandhaltungskosten und weitere Werbungskosten. In vielen Fällen entsteht steuerlich ein Verlust, der mit anderen Einkünften verrechnet werden kann — das reduziert deine Steuerlast erheblich.',
   },
   {
     question: 'Wie lange dauert der gesamte Prozess?',
     answer:
-      'Von der ersten kostenlosen Beratung bis zur Schlüsselübergabe dauert es in der Regel 8 bis 12 Wochen. Die Finanzierungsprüfung dauert etwa 1–2 Wochen, die Objektauswahl und Prüfung weitere 2–3 Wochen, und der Notartermin mit Kaufabwicklung ca. 4–6 Wochen. Wir begleiten Sie durch jeden Schritt und halten alle Fristen für Sie im Blick.',
+      'Von der ersten kostenlosen Beratung bis zur Schlüsselübergabe dauert es in der Regel 8 bis 12 Wochen. Die Finanzierungsprüfung dauert etwa 1–2 Wochen, die Objektauswahl und Prüfung weitere 2–3 Wochen, und der Notartermin mit Kaufabwicklung ca. 4–6 Wochen. Wir begleiten dich durch jeden Schritt und halten alle Fristen für dich im Blick.',
   },
   {
     question: 'Ist die Beratung wirklich kostenlos?',
     answer:
-      'Ja, unsere Beratung ist zu 100% kostenlos und unverbindlich. Wir finanzieren uns durch Provisionen der Finanzierungs- und Objektpartner — für Sie entstehen keinerlei Beratungskosten. Sie gehen keinerlei Verpflichtung ein und können jederzeit ohne Konsequenzen entscheiden, nicht weiterzumachen.',
+      'Ja, unsere Beratung ist zu 100% kostenlos und unverbindlich. Wir finanzieren uns durch Provisionen der Finanzierungs- und Objektpartner — für dich entstehen keinerlei Beratungskosten. Du gehst keinerlei Verpflichtung ein und kannst jederzeit ohne Konsequenzen entscheiden, nicht weiterzumachen.',
   },
 ]
 
@@ -338,7 +338,7 @@ export default function ImmobilienPage() {
                 lineHeight: 1.2,
               }}
             >
-              Was Sie von einer Kapitalanlage haben
+              Was du von einer Kapitalanlage hast
             </h2>
           </div>
 
@@ -510,7 +510,7 @@ export default function ImmobilienPage() {
                 Häufig gestellte Fragen
               </h2>
               <p style={{ fontSize: 15, color: '#6B7494', lineHeight: 1.75, marginBottom: 32 }}>
-                Haben Sie weitere Fragen? In einem kostenlosen Erstgespräch beantworten wir alles
+                Hast du weitere Fragen? In einem kostenlosen Erstgespräch beantworten wir alles
                 persönlich.
               </p>
               <Link href="/kontakt" className="btn-primary" style={{ fontSize: 15, padding: '12px 24px' }}>

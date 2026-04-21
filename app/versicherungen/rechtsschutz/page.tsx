@@ -5,7 +5,7 @@ import EagleWatermark from '@/components/EagleWatermark'
 
 export const metadata: Metadata = {
   title: 'Rechtsschutzversicherung | Adler Invest Frankfurt',
-  description: 'Rechtsschutzversicherung — umfassender Rechtsschutz für Privat, Beruf, Verkehr und Wohnen. Als unabhängiger Makler finden wir den besten Schutz für Sie.',
+  description: 'Rechtsschutzversicherung — umfassender Rechtsschutz für Privat, Beruf, Verkehr und Wohnen. Als unabhängiger Makler finden wir den besten Schutz für dich.',
   keywords: [
     'Rechtsschutzversicherung',
     'Rechtsschutz Frankfurt',
@@ -42,7 +42,7 @@ const faqSchema = {
       name: 'Was ist eine Rechtsschutzversicherung?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Eine Rechtsschutzversicherung übernimmt die Kosten eines Rechtsstreits — Anwalts- und Gerichtskosten sowie Sachverständigengebühren. Sie schützt Sie vor den hohen finanziellen Risiken eines Prozesses und ermöglicht es Ihnen, Ihr Recht auch dann durchzusetzen, wenn die Gegenseite finanziell stärker ist.',
+        text: 'Eine Rechtsschutzversicherung übernimmt die Kosten eines Rechtsstreits — Anwalts- und Gerichtskosten sowie Sachverständigengebühren. Sie schützt dich vor den hohen finanziellen Risiken eines Prozesses und ermöglicht es dir, dein Recht auch dann durchzusetzen, wenn die Gegenseite finanziell stärker ist.',
       },
     },
     {
@@ -140,7 +140,7 @@ export default function RechtsschutzPage() {
             Alle Versicherungen
           </Link>
 
-          <div style={{ maxWidth: '680px' }}>
+          <div style={{ maxWidth: '680px', margin: '0 auto', textAlign: 'center' }}>
             <p className="eyebrow-gold" style={{ marginBottom: '20px' }}>
               Rechtsschutzversicherung
             </p>
@@ -158,7 +158,7 @@ export default function RechtsschutzPage() {
             >
               Rechtsschutzversicherung —{' '}
               <em style={{ fontStyle: 'italic', color: '#457FFC' }}>
-                Ihr Recht. Unsere Expertise.
+                dein Recht. Unsere Expertise.
               </em>
             </h1>
             <p
@@ -169,13 +169,14 @@ export default function RechtsschutzPage() {
                 lineHeight: 1.7,
                 marginBottom: '40px',
                 maxWidth: '560px',
+                margin: '0 auto 40px',
               }}
             >
               Recht zu haben und Recht zu bekommen sind zwei verschiedene Dinge. Mit der
-              richtigen Rechtsschutzversicherung kämpfen Sie auf Augenhöhe — ohne Angst
+              richtigen Rechtsschutzversicherung kämpfst du auf Augenhöhe — ohne Angst
               vor den Kosten.
             </p>
-            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
               <Link href="/kontakt" className="btn-primary">
                 Kostenlose Beratung sichern
               </Link>
@@ -202,11 +203,11 @@ export default function RechtsschutzPage() {
               </Link>
             </div>
 
-            <div style={{ display: 'flex', gap: '40px', marginTop: '56px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '40px', marginTop: '56px', flexWrap: 'wrap', justifyContent: 'center' }}>
               {[
                 { num: '200+', label: 'Tarife im Vergleich' },
                 { num: '4', label: 'Kernbereiche — Privat, Beruf, Verkehr, Wohnen' },
-                { num: '0 €', label: 'Kosten für Sie' },
+                { num: '0 €', label: 'Kosten für dich' },
               ].map((item) => (
                 <div key={item.label}>
                   <p
@@ -246,10 +247,10 @@ export default function RechtsschutzPage() {
               Was ist eine Rechtsschutzversicherung?
             </h2>
             <p className="text-lg leading-relaxed mb-4" style={{ color: '#2D3142' }}>
-              Eine <strong>Rechtsschutzversicherung</strong> übernimmt die Kosten, die bei der Durchsetzung Ihrer rechtlichen Interessen entstehen: Anwaltskosten, Gerichtsgebühren, Sachverständigenhonorare und — falls nötig — auch die Kosten der Gegenseite.
+              Eine <strong>Rechtsschutzversicherung</strong> übernimmt die Kosten, die bei der Durchsetzung deiner rechtlichen Interessen entstehen: Anwaltskosten, Gerichtsgebühren, Sachverständigenhonorare und — falls nötig — auch die Kosten der Gegenseite.
             </p>
             <p className="text-base leading-relaxed" style={{ color: '#6B7494' }}>
-              Ohne Rechtsschutz schrecken viele Menschen davor zurück, ihr Recht einzufordern — weil ein Prozess schnell 5.000 bis 30.000 € kosten kann. Die Rechtsschutzversicherung macht den Zugang zur Justiz erschwinglich und gibt Ihnen die Freiheit, konsequent vorzugehen.
+              Ohne Rechtsschutz schrecken viele Menschen davor zurück, ihr Recht einzufordern — weil ein Prozess schnell 5.000 bis 30.000 € kosten kann. Die Rechtsschutzversicherung macht den Zugang zur Justiz erschwinglich und gibt dir die Freiheit, konsequent vorzugehen.
             </p>
           </div>
         </div>
@@ -325,7 +326,7 @@ export default function RechtsschutzPage() {
                 ].map((row, i) => (
                   <div
                     key={i}
-                    className="flex justify-between py-3 text-sm"
+                    className="flex flex-col sm:flex-row sm:justify-between gap-1 py-3 text-sm"
                     style={{ borderBottom: i < 3 ? '1px solid #DDE3EF' : 'none' }}
                   >
                     <span style={{ color: '#6B7494' }}>{row.fall}</span>
@@ -349,15 +350,15 @@ export default function RechtsschutzPage() {
             {[
               {
                 title: 'Unabhängig',
-                body: 'Wir sind an keinen Versicherer gebunden. Wir vergleichen über 200 Tarife und empfehlen nur, was zu Ihrer Situation passt.',
+                body: 'Wir sind an keinen Versicherer gebunden. Wir vergleichen über 200 Tarife und empfehlen nur, was zu deiner Situation passt.',
               },
               {
                 title: 'Marktüberblick',
-                body: 'Rechtsschutztarife unterscheiden sich erheblich in Deckungssummen, Modulen und Selbstbehalt. Wir navigieren für Sie.',
+                body: 'Rechtsschutztarife unterscheiden sich erheblich in Deckungssummen, Modulen und Selbstbehalt. Wir navigieren für dich.',
               },
               {
                 title: 'Persönlich',
-                body: 'Kein Call Center. Ein Ansprechpartner, der Ihre Situation kennt und Sie im Schadenfall aktiv begleitet.',
+                body: 'Kein Call Center. Ein Ansprechpartner, der deine Situation kennt und du im Schadenfall aktiv begleitet.',
               },
             ].map((item) => (
               <div key={item.title} className="card" style={{ padding: '32px' }}>
@@ -404,7 +405,7 @@ export default function RechtsschutzPage() {
             Den richtigen Rechtsschutz finden — kostenlos
           </h2>
           <p className="text-lg text-white/70 mb-10 max-w-[480px] mx-auto">
-            Wir vergleichen alle relevanten Tarife und empfehlen den Schutz, der zu Ihrer Lebenssituation passt.
+            Wir vergleichen alle relevanten Tarife und empfehlen den Schutz, der zu deiner Lebenssituation passt.
           </p>
           <Link href="/kontakt" className="btn-primary inline-flex items-center gap-2">
             Jetzt Beratung sichern <ChevronRight size={18} />

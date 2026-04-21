@@ -62,7 +62,7 @@ export default function ImmobilienCTASection() {
             margin: '0 auto 44px',
           }}
         >
-          Vereinbaren Sie noch heute Ihr kostenloses Erstgespräch. Wir zeigen Ihnen konkrete
+          Vereinbare noch heute dein kostenloses Erstgespräch. Wir zeigen dir konkrete
           Objekte und Finanzierungsmöglichkeiten.
         </p>
         <Link

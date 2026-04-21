@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     template: '%s | Adler Invest',
   },
   description:
-    'Adler Invest ist Ihr unabhängiger Finanzdienstleister in Frankfurt am Main — für Immobilien-Kapitalanlagen im Rhein-Main-Gebiet und professionelle Versicherungsberatung.',
+    'Adler Invest ist dein unabhängiger Finanzdienstleister in Frankfurt am Main — für Immobilien-Kapitalanlagen im Rhein-Main-Gebiet und professionelle Versicherungsberatung.',
   keywords: [
     'Adler Invest',
     'Immobilien Frankfurt',

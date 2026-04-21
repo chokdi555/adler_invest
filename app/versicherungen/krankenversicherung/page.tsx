@@ -6,7 +6,7 @@ import EagleWatermark from '@/components/EagleWatermark'
 export const metadata: Metadata = {
   title: 'Krankenversicherung | PKV & GKV Beratung | Adler Invest',
   description:
-    'GKV oder PKV? Adler Invest berät Sie unabhängig zur optimalen Krankenversicherung — inklusive GKV-Zusatzversicherung und PKV-Wechsel in Frankfurt.',
+    'GKV oder PKV? Adler Invest berät dich unabhängig zur optimalen Krankenversicherung — inklusive GKV-Zusatzversicherung und PKV-Wechsel in Frankfurt.',
   keywords: [
     'Krankenversicherung',
     'PKV Frankfurt',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://adlerinvest.de/versicherungen/krankenversicherung' },
   openGraph: {
     title: 'Krankenversicherung | PKV & GKV Beratung | Adler Invest',
-    description: 'GKV oder PKV? Wir beraten Sie unabhängig zur optimalen Krankenversicherung.',
+    description: 'GKV oder PKV? Wir beraten dich unabhängig zur optimalen Krankenversicherung.',
     url: 'https://adlerinvest.de/versicherungen/krankenversicherung',
     siteName: 'Adler Invest',
     locale: 'de_DE',
@@ -96,7 +96,7 @@ export default function KrankenversicherungPage() {
             Alle Versicherungen
           </Link>
 
-          <div style={{ maxWidth: '680px' }}>
+          <div style={{ maxWidth: '680px', margin: '0 auto', textAlign: 'center' }}>
             <p className="eyebrow-gold" style={{ marginBottom: '20px' }}>
               Krankenversicherung
             </p>
@@ -125,13 +125,14 @@ export default function KrankenversicherungPage() {
                 lineHeight: 1.7,
                 marginBottom: '40px',
                 maxWidth: '560px',
+                margin: '0 auto 40px',
               }}
             >
               Die Wahl der Krankenversicherung ist eine der wichtigsten Finanz­entscheidungen —
               besonders beim Wechsel in die Selbstständigkeit oder bei steigendem Einkommen.
-              Wir beraten Sie unabhängig und finden die beste Lösung.
+              Wir beraten dich unabhängig und finden die beste Lösung.
             </p>
-            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
               <Link href="/kontakt" className="btn-primary">
                 Kostenlose Beratung sichern
               </Link>
@@ -158,11 +159,11 @@ export default function KrankenversicherungPage() {
               </Link>
             </div>
 
-            <div style={{ display: 'flex', gap: '40px', marginTop: '56px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '40px', marginTop: '56px', flexWrap: 'wrap', justifyContent: 'center' }}>
               {[
                 { num: 'PKV', label: 'oder GKV — wir prüfen beides' },
                 { num: '30+', label: 'Anbieter im Vergleich' },
-                { num: '0 €', label: 'Kosten für Sie' },
+                { num: '0 €', label: 'Kosten für dich' },
               ].map((item) => (
                 <div key={item.label}>
                   <p
@@ -212,9 +213,9 @@ export default function KrankenversicherungPage() {
               entscheidet, spart langfristig erheblich und erhält bessere Leistungen.
             </p>
             <p style={{ color: '#6B7494' }}>
-              Adler Invest berät Sie unabhängig — wir haben keinen Anreiz, Ihnen eine
+              Adler Invest berät dich unabhängig — wir haben keinen Anreiz, dir eine
               bestimmte Versicherungsform zu empfehlen. Unsere Empfehlung basiert
-              ausschließlich auf Ihrer persönlichen Situation.
+              ausschließlich auf deiner persönlichen Situation.
             </p>
           </div>
         </div>
@@ -446,17 +447,17 @@ export default function KrankenversicherungPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                title: 'Zahn-Zusatz',
+                title: 'Zahn-Zusatzversicherung',
                 description:
                   'Höhere Erstattung für Zahnersatz, Inlays und professionelle Zahnreinigung. Oft schon ab 10 €/Monat.',
               },
               {
-                title: 'Krankenhaus-Zusatz',
+                title: 'Krankenhaus-Zusatzversicherung',
                 description:
                   'Chefarztbehandlung und Einbettzimmer im Krankenhaus — ohne die volle PKV abzuschließen.',
               },
               {
-                title: 'Auslandskranken',
+                title: 'Auslandskrankenversicherung',
                 description:
                   'Weltweiter Schutz auf Reisen inklusive Rücktransport — für Privat- und Dienstreisen unverzichtbar.',
               },
@@ -490,7 +491,7 @@ export default function KrankenversicherungPage() {
             Jetzt Krankenversicherung optimieren
           </h2>
           <p className="text-lg mb-8" style={{ color: 'rgba(255,255,255,0.75)' }}>
-            Unabhängige Beratung — wir empfehlen, was zu Ihrer Situation passt.
+            Unabhängige Beratung — wir empfehlen, was zu deiner Situation passt.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/kontakt" className="btn-primary">

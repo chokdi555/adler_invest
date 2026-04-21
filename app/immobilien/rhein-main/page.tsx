@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { MapPin, TrendingUp, Building2, CheckCircle, ChevronRight, Train } from 'lucide-react'
+import { MapPin, TrendingUp, Building2, CheckCircle, ChevronRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Immobilien im Rhein-Main Gebiet | Haus & Wohnung | Adler Invest',
@@ -94,24 +94,24 @@ export default function RheinMainPage() {
       {/* Hero */}
       <section
         className="pt-[72px] min-h-[60vh] flex items-center relative overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, #001C59 0%, #0141CB 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #012778 0%, #001C59 100%)' }}
       >
         <div className="container-brand relative z-10 py-20 lg:py-28">
-          <div className="max-w-[640px]">
+          <div className="max-w-[720px] mx-auto text-center">
             <p className="eyebrow-gold mb-6">Immobilien · Rhein-Main-Gebiet</p>
             <h1
               className="text-2xl sm:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight"
               style={{ fontFamily: 'var(--font-playfair)' }}
             >
               Immobilien im Rhein-Main-Gebiet —{' '}
-              <em className="not-italic" style={{ color: '#457FFC' }}>
+              <em style={{ fontStyle: 'italic', color: '#C8A84B' }}>
                 Haus oder Wohnung in der stärksten Region Deutschlands
               </em>
             </h1>
-            <p className="text-lg text-white/80 mb-10 max-w-[520px] leading-relaxed">
+            <p className="text-lg text-white/80 mb-10 max-w-[560px] mx-auto leading-relaxed">
               Von Frankfurt bis Wiesbaden, von Darmstadt bis Mainz — Adler Invest kennt die gesamte Region und findet Renditeobjekte mit echter Perspektive.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/kontakt" className="btn-primary text-center">
                 Kostenlose Beratung sichern
               </Link>
@@ -120,9 +120,6 @@ export default function RheinMainPage() {
               </Link>
             </div>
           </div>
-        </div>
-        <div className="absolute right-0 top-0 w-1/3 h-full opacity-[0.04] pointer-events-none hidden lg:flex items-center justify-center">
-          <Train size={380} color="white" />
         </div>
       </section>
 
@@ -255,7 +252,7 @@ export default function RheinMainPage() {
                 ))}
               </div>
               <p className="text-xs mt-6" style={{ color: '#6B7494' }}>
-                Je weiter von Frankfurt entfernt, desto günstiger die Kaufpreise — und desto höher die Mietrendite. Adler Invest berät Sie je nach Ziel und Budget.
+                Je weiter von Frankfurt entfernt, desto günstiger die Kaufpreise — und desto höher die Mietrendite. Adler Invest berät dich je nach Ziel und Budget.
               </p>
             </div>
           </div>
@@ -320,10 +317,10 @@ export default function RheinMainPage() {
         <div className="container-brand text-center">
           <p className="eyebrow-gold mb-4">Rhein-Main · Kapitalanlage</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'var(--font-playfair)' }}>
-            Finden Sie Ihr Renditeobjekt in der Region
+            Finde dein Renditeobjekt in der Region
           </h2>
           <p className="text-lg text-white/70 mb-10 max-w-[480px] mx-auto">
-            Unser Team in Frankfurt kennt alle Märkte der Region. Wir finden das Objekt, das zu Ihrem Budget und Ihren Zielen passt.
+            Unser Team in Frankfurt kennt alle Märkte der Region. Wir finden das Objekt, das zu deinem Budget und deinen Zielen passt.
           </p>
           <Link href="/kontakt" className="btn-primary inline-flex items-center gap-2">
             Jetzt Beratung vereinbaren <ChevronRight size={18} />

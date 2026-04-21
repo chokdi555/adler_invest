@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Lebensversicherung | Risikolebensversicherung | Adler Invest',
   description:
-    'Lebensversicherung in Frankfurt — Risikoleben oder Kapitallebensversicherung? Adler Invest berät unabhängig und findet die beste Lösung für Sie.',
+    'Lebensversicherung in Frankfurt — Risikoleben oder Kapitallebensversicherung? Adler Invest berät unabhängig und findet die beste Lösung für dich.',
   keywords: [
     'Lebensversicherung Frankfurt',
     'Risikolebensversicherung',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Lebensversicherung | Risikolebensversicherung | Adler Invest',
     description:
-      'Lebensversicherung in Frankfurt — Risikoleben oder Kapitallebensversicherung? Adler Invest berät unabhängig und findet die beste Lösung für Sie.',
+      'Lebensversicherung in Frankfurt — Risikoleben oder Kapitallebensversicherung? Adler Invest berät unabhängig und findet die beste Lösung für dich.',
     url: 'https://adlerinvest.de/versicherungen/lebensversicherung',
     siteName: 'Adler Invest',
     locale: 'de_DE',
@@ -66,7 +66,7 @@ const faqSchema = {
       name: 'Kann ich eine Lebensversicherung abschließen, wenn ich Vorerkrankungen habe?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja, in vielen Fällen ist das möglich. Verschiedene Versicherer bewerten Vorerkrankungen unterschiedlich. Als erfahrener Makler prüfen wir vorab anonym, welche Gesellschaft Ihren Antrag zu welchen Konditionen annehmen würde.',
+        text: 'Ja, in vielen Fällen ist das möglich. Verschiedene Versicherer bewerten Vorerkrankungen unterschiedlich. Als erfahrener Makler prüfen wir vorab anonym, welche Gesellschaft deinen Antrag zu welchen Konditionen annehmen würde.',
       },
     },
     {
@@ -166,7 +166,7 @@ export default function LebensversicherungPage() {
             Alle Versicherungen
           </Link>
 
-          <div style={{ maxWidth: '680px' }}>
+          <div style={{ maxWidth: '680px', margin: '0 auto', textAlign: 'center' }}>
             <p className="eyebrow-gold" style={{ marginBottom: '20px' }}>
               Lebensversicherung
             </p>
@@ -193,13 +193,14 @@ export default function LebensversicherungPage() {
                 lineHeight: 1.7,
                 marginBottom: '40px',
                 maxWidth: '560px',
+                margin: '0 auto 40px',
               }}
             >
-              Wer für andere sorgt, trägt Verantwortung. Eine Lebensversicherung sichert Ihre Familie
+              Wer für andere sorgt, trägt Verantwortung. Eine Lebensversicherung sichert deine Familie
               finanziell ab — falls das Schlimmste eintreten sollte. Als unabhängiger Makler
-              vergleichen wir alle Anbieter und finden die beste Lösung für Sie.
+              vergleichen wir alle Anbieter und finden die beste Lösung für dich.
             </p>
-            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
               <Link href="/kontakt" className="btn-primary">
                 Kostenlose Beratung sichern
               </Link>
@@ -226,11 +227,11 @@ export default function LebensversicherungPage() {
               </Link>
             </div>
 
-            <div style={{ display: 'flex', gap: '40px', marginTop: '56px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '40px', marginTop: '56px', flexWrap: 'wrap', justifyContent: 'center' }}>
               {[
                 { num: '50+', label: 'Anbieter im Vergleich' },
                 { num: '100%', label: 'Unabhängige Beratung' },
-                { num: '0 €', label: 'Kosten für Sie' },
+                { num: '0 €', label: 'Kosten für dich' },
               ].map((item) => (
                 <div key={item.label}>
                   <p
@@ -405,8 +406,8 @@ export default function LebensversicherungPage() {
               lineHeight: 1.7,
             }}
           >
-            Beide Produkte haben ihren Platz — die Wahl hängt von Ihren Zielen ab.
-            Wir beraten Sie ehrlich und unabhängig.
+            Beide Produkte haben ihren Platz — die Wahl hängt von deinen Zielen ab.
+            Wir beraten dich ehrlich und unabhängig.
           </p>
 
           <div
@@ -709,7 +710,7 @@ export default function LebensversicherungPage() {
                   lineHeight: 1.25,
                 }}
               >
-                Ihr unabhängiger Makler — kein Verkäufer
+                dein unabhängiger Makler — kein Verkäufer
               </h2>
               <p
                 style={{
@@ -722,7 +723,7 @@ export default function LebensversicherungPage() {
               >
                 Anders als Vertreter einer einzelnen Versicherungsgesellschaft sind wir an keinen
                 Anbieter gebunden. Wir vergleichen alle relevanten Gesellschaften auf dem deutschen
-                Markt und finden die Police, die zu Ihrem Gesundheitsprofil und Ihren Zielen passt.
+                Markt und finden die Police, die zu deinem Gesundheitsprofil und deinen Zielen passt.
               </p>
               <p
                 style={{
@@ -746,19 +747,19 @@ export default function LebensversicherungPage() {
               {[
                 {
                   title: 'Alle Anbieter im Blick',
-                  text: 'Wir vergleichen über 50 Versicherer und finden den besten Beitrag für Ihr individuelles Risikoprofil.',
+                  text: 'Wir vergleichen über 50 Versicherer und finden den besten Beitrag für dein individuelles Risikoprofil.',
                 },
                 {
                   title: 'Anonyme Risikovoranfrage',
-                  text: 'Wir prüfen vorab anonym, welche Versicherer Ihren Gesundheitszustand akzeptieren — ohne Auswirkungen auf Ihre Versicherbarkeit.',
+                  text: 'Wir prüfen vorab anonym, welche Versicherer deinen Gesundheitszustand akzeptieren — ohne Auswirkungen auf deine Versicherbarkeit.',
                 },
                 {
                   title: 'Persönliche Betreuung',
-                  text: 'Kein Call Center. Ihr fester Ansprechpartner begleitet Sie vom Antrag bis zum Leistungsfall.',
+                  text: 'Kein Call Center. Dein fester Ansprechpartner begleitet dich vom Antrag bis zum Leistungsfall.',
                 },
                 {
-                  title: 'Kostenlos für Sie',
-                  text: 'Unsere Beratung ist für Sie vollständig kostenlos. Wir werden vom Versicherer vergütet — ohne Aufpreis für Sie.',
+                  title: 'Kostenlos für dich',
+                  text: 'Unsere Beratung ist für dich vollständig kostenlos. Wir werden vom Versicherer vergütet — ohne Aufpreis für dich.',
                 },
               ].map((item) => (
                 <div
@@ -847,7 +848,7 @@ export default function LebensversicherungPage() {
               },
               {
                 q: 'Kann ich eine Lebensversicherung abschließen, wenn ich Vorerkrankungen habe?',
-                a: 'Ja, in vielen Fällen ist das möglich. Verschiedene Versicherer bewerten Vorerkrankungen unterschiedlich. Als erfahrener Makler prüfen wir vorab anonym, welche Gesellschaft Ihren Antrag zu welchen Konditionen annehmen würde — ohne Auswirkungen auf Ihre Versicherbarkeit.',
+                a: 'Ja, in vielen Fällen ist das möglich. Verschiedene Versicherer bewerten Vorerkrankungen unterschiedlich. Als erfahrener Makler prüfen wir vorab anonym, welche Gesellschaft deinen Antrag zu welchen Konditionen annehmen würde — ohne Auswirkungen auf deine Versicherbarkeit.',
               },
               {
                 q: 'Wie hoch sollte die Versicherungssumme sein?',
@@ -937,7 +938,7 @@ export default function LebensversicherungPage() {
             }}
           >
             Wir vergleichen alle Anbieter und finden die beste Lebensversicherung für
-            Ihre Situation. Kostenlos, unverbindlich, persönlich.
+            deine Situation. Kostenlos, unverbindlich, persönlich.
           </p>
           <Link href="/kontakt" className="btn-primary">
             Kostenlose Beratung sichern

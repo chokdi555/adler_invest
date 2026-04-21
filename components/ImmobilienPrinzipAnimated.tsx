@@ -163,7 +163,7 @@ export default function ImmobilienPrinzipAnimated() {
           {[
             { label: 'Monatliche Rate', value: '~800 €' },
             { label: 'Monatliche Miete', value: '~780 €' },
-            { label: 'Ihr Eigenaufwand', value: '~20–50 €/Monat', highlight: true },
+            { label: 'Dein Eigenaufwand', value: '~20–50 €/Monat', highlight: true },
             { label: 'Wert nach 25 Jahren', value: '280.000–350.000 €', highlight: true },
           ].map((row) => (
             <div

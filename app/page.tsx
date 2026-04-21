@@ -19,7 +19,7 @@ import FaqSection from '@/components/FaqSection'
 export const metadata: Metadata = {
   title: 'Adler Invest — Versicherungen & Immobilien Frankfurt | Kostenlose Beratung',
   description:
-    'Adler Invest: Ihr unabhängiger Versicherungsmakler in Frankfurt am Main. Wir vergleichen alle Anbieter und finden den besten Schutz für Sie — plus Immobilien als Kapitalanlage.',
+    'Adler Invest: dein unabhängiger Versicherungsmakler in Frankfurt am Main. Wir vergleichen alle Anbieter und finden den besten Schutz für dich — plus Immobilien als Kapitalanlage.',
   openGraph: {
     title: 'Adler Invest — Versicherungen & Immobilien Frankfurt',
     description:
@@ -237,21 +237,6 @@ export default function HomePage() {
             >
               Was unsere Kunden sagen
             </h2>
-            <div
-              style={{
-                marginTop: 16,
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: 10,
-                flexWrap: 'wrap',
-                justifyContent: 'center',
-              }}
-            >
-              <span style={{ color: '#C8A84B', fontSize: 18, letterSpacing: 2 }}>★★★★★</span>
-              <span style={{ fontSize: 14, color: '#6B7494', fontWeight: 500 }}>
-                4.9 / 5 · Google Bewertung · 200+ Kunden
-              </span>
-            </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -467,10 +452,11 @@ export default function HomePage() {
                 lineHeight: 1.15,
               }}
             >
-              Menschen, die für dich{' '}
+              Menschen, die{' '}
               <em className="italic" style={{ color: '#0141CB' }}>
-                da sind
-              </em>
+                für dich
+              </em>{' '}
+              da sind
             </h2>
             <p
               style={{

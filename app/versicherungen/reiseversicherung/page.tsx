@@ -5,7 +5,7 @@ import EagleWatermark from '@/components/EagleWatermark'
 
 export const metadata: Metadata = {
   title: 'Reiseversicherung | Adler Invest Frankfurt',
-  description: 'Reiseversicherung — Reiserücktritt, Auslandskrankenversicherung, Reisegepäck und Reisehaftpflicht. Als unabhängiger Makler finden wir den optimalen Schutz für Ihre Reise.',
+  description: 'Reiseversicherung — Reiserücktritt, Auslandskrankenversicherung, Reisegepäck und Reisehaftpflicht. Als unabhängiger Makler finden wir den optimalen Schutz für deine Reise.',
   keywords: [
     'Reiseversicherung',
     'Reiserücktrittsversicherung',
@@ -42,7 +42,7 @@ const faqSchema = {
       name: 'Was ist eine Reiseversicherung?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Eine Reiseversicherung ist ein Sammelbegriff für verschiedene Versicherungen, die Sie vor finanziellen Risiken auf Reisen schützen. Dazu zählen Reiserücktrittsversicherung, Auslandskrankenversicherung, Reisegepäckversicherung und Reisehaftpflichtversicherung.',
+        text: 'Eine Reiseversicherung ist ein Sammelbegriff für verschiedene Versicherungen, die du vor finanziellen Risiken auf Reisen schützen. Dazu zählen Reiserücktrittsversicherung, Auslandskrankenversicherung, Reisegepäckversicherung und Reisehaftpflichtversicherung.',
       },
     },
     {
@@ -58,7 +58,7 @@ const faqSchema = {
       name: 'Was deckt eine Reiserücktrittsversicherung ab?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Sie übernimmt die Stornokosten, wenn Sie eine Reise wegen schwerer Erkrankung, Unfall, Todesfall in der Familie, Jobverlust oder ähnlichen unvorhergesehenen Ereignissen nicht antreten können. Ohne Versicherung können Stornogebühren 100 % des Reisepreises betragen.',
+        text: 'Sie übernimmt die Stornokosten, wenn du eine Reise wegen schwerer Erkrankung, Unfall, Todesfall in der Familie, Jobverlust oder ähnlichen unvorhergesehenen Ereignissen nicht antreten kannst. Ohne Versicherung können Stornogebühren 100 % des Reisepreises betragen.',
       },
     },
     {
@@ -76,7 +76,7 @@ const modules = [
   {
     icon: <Plane size={28} style={{ color: '#0141CB' }} />,
     title: 'Reiserücktrittsversicherung',
-    body: 'Übernimmt Stornogebühren, wenn Sie die Reise nicht antreten können — wegen Krankheit, Unfall, Todesfall oder anderen versicherten Ereignissen. Bis zu 100 % des Reisepreises.',
+    body: 'Übernimmt Stornogebühren, wenn du die Reise nicht antreten kannst — wegen Krankheit, Unfall, Todesfall oder anderen versicherten Ereignissen. Bis zu 100 % des Reisepreises.',
   },
   {
     icon: <Heart size={28} style={{ color: '#0141CB' }} />,
@@ -86,12 +86,12 @@ const modules = [
   {
     icon: <Luggage size={28} style={{ color: '#0141CB' }} />,
     title: 'Reisegepäckversicherung',
-    body: 'Schützt Ihr Gepäck bei Diebstahl, Verlust oder Beschädigung während der Reise. Zahlt den Zeitwert oder Wiederbeschaffungswert der versicherten Gegenstände.',
+    body: 'Schützt dein Gepäck bei Diebstahl, Verlust oder Beschädigung während der Reise. Zahlt den Zeitwert oder Wiederbeschaffungswert der versicherten Gegenstände.',
   },
   {
     icon: <Globe size={28} style={{ color: '#0141CB' }} />,
     title: 'Reisehaftpflicht & Reiseunfall',
-    body: 'Reisehaftpflicht schützt Sie, wenn Sie im Urlaub Dritten Schäden zufügen. Reiseunfallversicherung zahlt bei bleibenden Schäden durch einen Unfall auf Reisen.',
+    body: 'Reisehaftpflicht schützt dich, wenn du im Urlaub Dritten Schäden zufügen. Reiseunfallversicherung zahlt bei bleibenden Schäden durch einen Unfall auf Reisen.',
   },
 ]
 
@@ -140,7 +140,7 @@ export default function ReiseversicherungPage() {
             Alle Versicherungen
           </Link>
 
-          <div style={{ maxWidth: '680px' }}>
+          <div style={{ maxWidth: '680px', margin: '0 auto', textAlign: 'center' }}>
             <p className="eyebrow-gold" style={{ marginBottom: '20px' }}>
               Reiseversicherung
             </p>
@@ -167,13 +167,14 @@ export default function ReiseversicherungPage() {
                 lineHeight: 1.7,
                 marginBottom: '40px',
                 maxWidth: '560px',
+                margin: '0 auto 40px',
               }}
             >
               Reisekrankheit, Stornierung, verlorenes Gepäck — das richtige
               Reiseschutzpaket deckt alle Risiken ab. Adler Invest findet den besten
-              Tarif für Ihre nächste Reise.
+              Tarif für deine nächste Reise.
             </p>
-            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
               <Link href="/kontakt" className="btn-primary">
                 Kostenlose Beratung sichern
               </Link>
@@ -200,7 +201,7 @@ export default function ReiseversicherungPage() {
               </Link>
             </div>
 
-            <div style={{ display: 'flex', gap: '40px', marginTop: '56px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '40px', marginTop: '56px', flexWrap: 'wrap', justifyContent: 'center' }}>
               {[
                 { num: '4', label: 'Module in einem Paket' },
                 { num: 'weltweit', label: 'Schutz auf allen Reisen' },
@@ -244,7 +245,7 @@ export default function ReiseversicherungPage() {
               Was ist eine Reiseversicherung?
             </h2>
             <p className="text-lg leading-relaxed mb-4" style={{ color: '#2D3142' }}>
-              Eine <strong>Reiseversicherung</strong> schützt Sie vor den finanziellen Folgen unvorhergesehener Ereignisse auf Reisen: von der kurzfristigen Stornierung über einen Krankenhausaufenthalt im Ausland bis hin zum gestohlenen Gepäck. Je nach Bedarf können einzelne Module oder ein umfassendes Reiseschutzpaket abgeschlossen werden.
+              Eine <strong>Reiseversicherung</strong> schützt dich vor den finanziellen Folgen unvorhergesehener Ereignisse auf Reisen: von der kurzfristigen Stornierung über einen Krankenhausaufenthalt im Ausland bis hin zum gestohlenen Gepäck. Je nach Bedarf können einzelne Module oder ein umfassendes Reiseschutzpaket abgeschlossen werden.
             </p>
             <p className="text-base leading-relaxed" style={{ color: '#6B7494' }}>
               Besonders die <strong>Auslandskrankenversicherung</strong> wird von Experten als unverzichtbar eingestuft: Ein Hubschrauber-Rücktransport aus den USA kostet ohne Versicherung schnell 80.000 € und wird von der gesetzlichen Krankenkasse nicht erstattet.
@@ -277,7 +278,7 @@ export default function ReiseversicherungPage() {
         <div className="container-brand">
           <p className="eyebrow mb-4">Tarif-Entscheidung</p>
           <h2 className="text-3xl lg:text-4xl font-semibold mb-12" style={{ fontFamily: 'var(--font-playfair)', color: '#012778' }}>
-            Einzelreise oder Jahrespolice — was passt zu Ihnen?
+            Einzelreise oder Jahrespolice — was passt zu dir?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
@@ -371,7 +372,7 @@ export default function ReiseversicherungPage() {
             Den richtigen Reiseschutz finden — kostenlos
           </h2>
           <p className="text-lg text-white/70 mb-10 max-w-[480px] mx-auto">
-            Wir vergleichen alle relevanten Tarife und finden das Paket, das zu Ihren Reisegewohnheiten passt — ob Einzelreise oder Jahrespolice.
+            Wir vergleichen alle relevanten Tarife und finden das Paket, das zu deinen Reisegewohnheiten passt — ob Einzelreise oder Jahrespolice.
           </p>
           <Link href="/kontakt" className="btn-primary inline-flex items-center gap-2">
             Jetzt Beratung sichern <ChevronRight size={18} />

@@ -64,16 +64,6 @@ export default function HomeHeroAnimated() {
         >
           {/* LEFT — text column */}
           <div>
-            <motion.p
-              className="eyebrow"
-              style={{ marginBottom: 20 }}
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              Frankfurt am Main · Rhein-Main
-            </motion.p>
-
             <h1
               className="font-display"
               style={{

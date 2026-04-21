@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { MapPin, TrendingUp, Building2, CheckCircle, ChevronRight, Landmark, Users } from 'lucide-react'
+import { MapPin, TrendingUp, Building2, CheckCircle, ChevronRight, Users } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Immobilien in Frankfurt kaufen | Haus & Wohnung | Adler Invest',
@@ -74,24 +74,24 @@ export default function FrankfurtPage() {
       {/* Hero */}
       <section
         className="pt-[72px] min-h-[60vh] flex items-center relative overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, #012778 0%, #0141CB 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #012778 0%, #001C59 100%)' }}
       >
         <div className="container-brand relative z-10 py-20 lg:py-28">
-          <div className="max-w-[640px]">
+          <div className="max-w-[720px] mx-auto text-center">
             <p className="eyebrow-gold mb-6">Immobilien · Frankfurt am Main</p>
             <h1
               className="text-2xl sm:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight"
               style={{ fontFamily: 'var(--font-playfair)' }}
             >
               Immobilien in Frankfurt —{' '}
-              <em className="not-italic" style={{ color: '#457FFC' }}>
+              <em style={{ fontStyle: 'italic', color: '#C8A84B' }}>
                 Haus oder Wohnung kaufen mit System
               </em>
             </h1>
-            <p className="text-lg text-white/80 mb-10 max-w-[520px] leading-relaxed">
-              Frankfurts Immobilienmarkt gehört zu den stabilsten Deutschlands. Adler Invest findet Renditeobjekte unter Marktwert — und begleitet Sie von der Finanzierung bis zum Schlüssel.
+            <p className="text-lg text-white/80 mb-10 max-w-[560px] mx-auto leading-relaxed">
+              Frankfurts Immobilienmarkt gehört zu den stabilsten Deutschlands. Adler Invest findet Renditeobjekte unter Marktwert — und begleitet dich von der Finanzierung bis zum Schlüssel.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/kontakt" className="btn-primary text-center">
                 Kostenlose Beratung sichern
               </Link>
@@ -99,18 +99,15 @@ export default function FrankfurtPage() {
                 Alle Angebote ansehen
               </Link>
             </div>
-            <div className="mt-10 flex flex-wrap gap-6">
+            <div className="mt-10 flex flex-wrap justify-center gap-6">
               {['Ohne Eigenkapital', 'Haus & Wohnung Frankfurt', 'Persönliche Beratung'].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
-                  <CheckCircle size={16} style={{ color: '#457FFC' }} />
+                  <CheckCircle size={16} style={{ color: '#C8A84B' }} />
                   <span>{t}</span>
                 </div>
               ))}
             </div>
           </div>
-        </div>
-        <div className="absolute right-0 top-0 w-1/3 h-full opacity-[0.04] pointer-events-none hidden lg:flex items-center justify-center">
-          <Landmark size={380} color="white" />
         </div>
       </section>
 
@@ -234,7 +231,7 @@ export default function FrankfurtPage() {
         <div className="container-brand">
           <p className="eyebrow mb-4">Haus oder Wohnung</p>
           <h2 className="text-3xl lg:text-4xl font-semibold mb-4" style={{ fontFamily: 'var(--font-playfair)', color: '#012778' }}>
-            Was passt besser zu Ihnen — Haus oder Wohnung?
+            Was passt besser zu dir — Haus oder Wohnung?
           </h2>
           <p className="text-base mb-12 max-w-[560px]" style={{ color: '#6B7494' }}>
             In Frankfurt sind beide Objektarten als Kapitalanlage attraktiv. Die richtige Wahl hängt von Budget, Risikobereitschaft und Verwaltungsaufwand ab.
@@ -322,10 +319,10 @@ export default function FrankfurtPage() {
         <div className="container-brand text-center">
           <p className="eyebrow-gold mb-4">Frankfurt · Rhein-Main</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'var(--font-playfair)' }}>
-            Ihr Renditeobjekt in Frankfurt wartet
+            dein Renditeobjekt in Frankfurt wartet
           </h2>
           <p className="text-lg text-white/70 mb-10 max-w-[480px] mx-auto">
-            In einem kostenlosen Gespräch zeigen wir Ihnen, welche Objekte aktuell verfügbar sind — und was sie für Sie bedeuten könnten.
+            In einem kostenlosen Gespräch zeigen wir dir, welche Objekte aktuell verfügbar sind — und was sie für dich bedeuten könnten.
           </p>
           <Link href="/kontakt" className="btn-primary inline-flex items-center gap-2">
             Jetzt Erstgespräch vereinbaren <ChevronRight size={18} />

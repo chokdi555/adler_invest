@@ -6,7 +6,7 @@ import EagleWatermark from '@/components/EagleWatermark'
 export const metadata: Metadata = {
   title: 'Haftpflichtversicherung | Adler Invest Frankfurt',
   description:
-    'Haftpflichtversicherung — Schutz vor dem finanziellen Ruin. In Deutschland haften Sie mit Ihrem gesamten Vermögen. Adler Invest findet den besten Tarif.',
+    'Haftpflichtversicherung — Schutz vor dem finanziellen Ruin. In Deutschland haftest du mit deinem gesamten Vermögen. Adler Invest findet den besten Tarif.',
   keywords: [
     'Haftpflichtversicherung',
     'Privathaftpflicht Frankfurt',
@@ -35,7 +35,7 @@ export default function HaftpflichtPage() {
         name: 'Warum ist die Privathaftpflicht so wichtig?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Nach §823 BGB haften Sie in Deutschland unbegrenzt für Schäden, die Sie anderen zufügen — mit Ihrem gesamten gegenwärtigen und zukünftigen Vermögen, auch mit Pfändung von Gehalt und Rente. Eine Privathaftpflicht übernimmt diese Kosten.',
+          text: 'Nach §823 BGB haftest du in Deutschland unbegrenzt für Schäden, die du anderen zufügst — mit deinem gesamten gegenwärtigen und zukünftigen Vermögen, auch mit Pfändung von Gehalt und Rente. Eine Privathaftpflicht übernimmt diese Kosten.',
         },
       },
       {
@@ -95,7 +95,7 @@ export default function HaftpflichtPage() {
             Alle Versicherungen
           </Link>
 
-          <div style={{ maxWidth: '680px' }}>
+          <div style={{ maxWidth: '680px', margin: '0 auto', textAlign: 'center' }}>
             <p className="eyebrow-gold" style={{ marginBottom: '20px' }}>
               Haftpflichtversicherung
             </p>
@@ -124,13 +124,14 @@ export default function HaftpflichtPage() {
                 lineHeight: 1.7,
                 marginBottom: '40px',
                 maxWidth: '560px',
+                margin: '0 auto 40px',
               }}
             >
-              In Deutschland haften Sie für Schäden, die Sie anderen zufügen, mit Ihrem
+              In Deutschland haftest du für Schäden, die du anderen zufügst, mit deinem
               gesamten Vermögen — unbegrenzt. Die Privathaftpflicht ist die wichtigste
-              Versicherung überhaupt. Wir finden den besten Tarif für Sie.
+              Versicherung überhaupt. Wir finden den besten Tarif für dich.
             </p>
-            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
               <Link href="/kontakt" className="btn-primary">
                 Kostenlose Beratung sichern
               </Link>
@@ -157,7 +158,7 @@ export default function HaftpflichtPage() {
               </Link>
             </div>
 
-            <div style={{ display: 'flex', gap: '40px', marginTop: '56px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '40px', marginTop: '56px', flexWrap: 'wrap', justifyContent: 'center' }}>
               {[
                 { num: '§823', label: 'unbegrenzte Haftung nach BGB' },
                 { num: '50 Mio', label: 'Deckungssumme in Top-Tarifen' },
@@ -211,9 +212,9 @@ export default function HaftpflichtPage() {
                 zu ersetzen — und zwar vollständig, ohne Obergrenze.
               </p>
               <p className="mb-6" style={{ color: '#6B7494' }}>
-                Das bedeutet: Eine Sekunde Unachtsamkeit kann Sie Ihre finanzielle
+                Das bedeutet: Eine Sekunde Unachtsamkeit kann dich deine finanzielle
                 Existenz kosten. Ein Kind läuft auf die Straße, jemand stolpert über
-                Ihren Koffer, ein Missgeschick im Büro — schnell entstehen
+                deinen Koffer, ein Missgeschick im Büro — schnell entstehen
                 Schadensforderungen in fünf- oder sechsstelliger Höhe.
               </p>
               <div
@@ -223,10 +224,10 @@ export default function HaftpflichtPage() {
                 <div className="flex gap-3 items-start">
                   <AlertTriangle size={20} style={{ color: '#D4840A', flexShrink: 0 }} />
                   <p className="text-sm" style={{ color: '#2D3142' }}>
-                    <strong>Beispiel:</strong> Sie fahren versehentlich jemanden mit dem
+                    <strong>Beispiel:</strong> Du fährst versehentlich jemanden mit dem
                     Fahrrad an. Die Person bricht sich das Bein, kann 6 Monate nicht
                     arbeiten. Schadenersatzanspruch: 30.000–50.000 €. Ohne Haftpflicht
-                    zahlen Sie das aus eigener Tasche.
+                    zahlst du das aus eigener Tasche.
                   </p>
                 </div>
               </div>
@@ -266,7 +267,7 @@ export default function HaftpflichtPage() {
             <span className="eyebrow">VERSICHERUNGSARTEN</span>
             <div className="gold-divider mx-auto mt-3 mb-5" />
             <h2 className="font-display text-4xl font-bold" style={{ color: '#012778' }}>
-              Welche Haftpflicht brauchen Sie?
+              Welche Haftpflicht brauchst du?
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -276,7 +277,7 @@ export default function HaftpflichtPage() {
                 badge: 'Wichtigste',
                 badgeColor: '#0141CB',
                 description:
-                  'Für alle Privatpersonen unverzichtbar. Deckt Personen-, Sach- und Vermögensschäden ab, die Sie im Alltag verursachen. Günstig — ab ca. 40–80 €/Jahr.',
+                  'Für alle Privatpersonen unverzichtbar. Deckt Personen-, Sach- und Vermögensschäden ab, die du im Alltag verursachen. Günstig — ab ca. 40–80 €/Jahr.',
                 includes: [
                   'Schäden im Alltag und Haushalt',
                   'Schäden durch Kinder',
@@ -289,7 +290,7 @@ export default function HaftpflichtPage() {
                 badge: 'Für Tierhalter',
                 badgeColor: '#C8A84B',
                 description:
-                  'Pflicht für Hundehalter in vielen Bundesländern (inkl. Hessen). Deckung für Schäden durch Ihr Tier — egal ob zu Hause oder unterwegs.',
+                  'Pflicht für Hundehalter in vielen Bundesländern (inkl. Hessen). Deckung für Schäden durch dein Tier — egal ob zu Hause oder unterwegs.',
                 includes: [
                   'Personenschäden durch Tier',
                   'Sachschäden durch Tier',
@@ -306,7 +307,7 @@ export default function HaftpflichtPage() {
                 includes: [
                   'Unfälle auf der Baustelle',
                   'Schäden an Nachbargebäuden',
-                  'Schäden durch Handwerker auf Ihrem Grundstück',
+                  'Schäden durch Handwerker auf deinem Grundstück',
                   'Temporär bis zur Fertigstellung',
                 ],
               },
@@ -418,7 +419,7 @@ export default function HaftpflichtPage() {
             Haftpflicht vergleichen lassen
           </h2>
           <p className="text-lg mb-8" style={{ color: 'rgba(255,255,255,0.75)' }}>
-            Ab ca. 40 €/Jahr — wir finden den besten Tarif für Sie.
+            Ab ca. 40 €/Jahr — wir finden den besten Tarif für dich.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/kontakt" className="btn-primary">

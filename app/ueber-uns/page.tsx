@@ -46,17 +46,17 @@ const values = [
   {
     icon: Shield,
     title: 'Unabhängigkeit',
-    body: 'Wir sind an keine Bank, keinen Versicherer und keinen Projektentwickler gebunden. Unsere Empfehlungen orientieren sich ausschließlich an Ihren Interessen — nicht an Provisionszielen.',
+    body: 'Wir sind an keine Bank, keinen Versicherer und keinen Projektentwickler gebunden. Unsere Empfehlungen orientieren sich ausschließlich an deinen Interessen — nicht an Provisionszielen.',
   },
   {
     icon: Eye,
     title: 'Transparenz',
-    body: 'Wir erklären jeden Schritt, nennen alle Kosten und zeigen Risiken offen auf. Vor dem Notartermin wissen Sie genau, worauf Sie sich einlassen — ohne Überraschungen.',
+    body: 'Wir erklären jeden Schritt, nennen alle Kosten und zeigen Risiken offen auf. Vor dem Notartermin weißt du genau, worauf du dich einlässt — ohne Überraschungen.',
   },
   {
     icon: Users,
     title: 'Partnerschaft',
-    body: 'Für uns endet die Beziehung nicht beim Abschluss. Wir begleiten Sie langfristig — bei Mieterwechseln, Anschlussfinanzierungen und neuen Investmentchancen.',
+    body: 'Für uns endet die Beziehung nicht beim Abschluss. Wir begleiten dich langfristig — bei Mieterwechseln, Anschlussfinanzierungen und neuen Investmentchancen.',
   },
 ]
 
@@ -135,7 +135,7 @@ export default function UeberUnsPage() {
                 Als unabhängiger Makler vergleichen wir alle relevanten Anbieter am
                 deutschen Markt — von der Berufsunfähigkeit über Kranken-, Lebens- und
                 Haftpflichtversicherung bis hin zu KFZ, Rechtsschutz und Reiseschutz. Unser
-                Anspruch: die beste Police für Ihre Situation, nicht für unser Bilanzkonto.
+                Anspruch: die beste Police für deine Situation, nicht für unser Bilanzkonto.
               </p>
               <p className="text-base leading-relaxed mb-5" style={{ color: '#6B7494' }}>
                 Mit der Zeit haben wir unser Angebot erweitert: Viele unserer Kunden
@@ -355,15 +355,15 @@ export default function UeberUnsPage() {
       {/* CTA */}
       <section className="py-20" style={{ background: '#F4F6FA' }}>
         <div className="container-brand text-center">
-          <p className="eyebrow mb-4">Lernen Sie uns kennen</p>
+          <p className="eyebrow mb-4">Lernen du uns kennen</p>
           <h2
             className="text-3xl lg:text-4xl font-semibold mb-6"
             style={{ fontFamily: 'var(--font-playfair)', color: '#012778' }}
           >
-            Wir freuen uns auf Ihre Anfrage
+            Wir freuen uns auf deine Anfrage
           </h2>
           <p className="text-lg mb-10 max-w-[440px] mx-auto" style={{ color: '#6B7494' }}>
-            Alle Erstgespräche sind kostenlos und unverbindlich. Sprechen Sie uns an —
+            Alle Erstgespräche sind kostenlos und unverbindlich. Sprich uns an —
             persönlich, per Telefon oder über das Kontaktformular.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

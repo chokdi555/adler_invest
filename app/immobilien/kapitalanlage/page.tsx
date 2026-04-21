@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Building2, TrendingUp, Shield, Calculator, CheckCircle, ChevronRight, Percent, PiggyBank, BarChart2 } from 'lucide-react'
+import { TrendingUp, Shield, Calculator, CheckCircle, ChevronRight, Percent, PiggyBank, BarChart2 } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Kapitalanlage Immobilie Frankfurt | Adler Invest',
@@ -75,25 +75,25 @@ export default function KapitalanlagePage() {
       {/* Hero */}
       <section
         className="pt-[72px] min-h-[60vh] flex items-center relative overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, #012778 0%, #0141CB 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #012778 0%, #001C59 100%)' }}
       >
         <div className="container-brand relative z-10 py-20 lg:py-28">
-          <div className="max-w-[640px]">
+          <div className="max-w-[720px] mx-auto text-center">
             <p className="eyebrow-gold mb-6">Immobilien · Kapitalanlage</p>
             <h1
               className="text-2xl sm:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight"
               style={{ fontFamily: 'var(--font-playfair)' }}
             >
               Kapitalanlage Immobilie —{' '}
-              <em className="not-italic" style={{ color: '#457FFC' }}>
-                Ihr Mieter finanziert
+              <em style={{ fontStyle: 'italic', color: '#C8A84B' }}>
+                dein Mieter finanziert
               </em>{' '}
-              Ihr Vermögen
+              dein Vermögen
             </h1>
-            <p className="text-lg text-white/80 mb-10 max-w-[520px] leading-relaxed" style={{ fontFamily: 'var(--font-dm-sans)' }}>
-              Eine Immobilie. Ein Mieter. Kein monatlicher Eigenaufwand. Adler Invest begleitet Sie von der Finanzierungsprüfung bis zum Notartermin.
+            <p className="text-lg text-white/80 mb-10 max-w-[560px] mx-auto leading-relaxed" style={{ fontFamily: 'var(--font-dm-sans)' }}>
+              Eine Immobilie. Ein Mieter. Kein monatlicher Eigenaufwand. Adler Invest begleitet dich von der Finanzierungsprüfung bis zum Notartermin.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/kontakt" className="btn-primary text-center">
                 Kostenlose Beratung sichern
               </Link>
@@ -101,25 +101,21 @@ export default function KapitalanlagePage() {
                 Alle Immobilien-Angebote
               </Link>
             </div>
-            <div className="mt-10 flex flex-wrap items-center gap-4">
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <div className="flex items-center gap-2 text-white/70 text-sm">
-                <CheckCircle size={16} style={{ color: '#457FFC' }} />
+                <CheckCircle size={16} style={{ color: '#C8A84B' }} />
                 <span>Ohne Eigenkapital</span>
               </div>
               <div className="flex items-center gap-2 text-white/70 text-sm">
-                <CheckCircle size={16} style={{ color: '#457FFC' }} />
+                <CheckCircle size={16} style={{ color: '#C8A84B' }} />
                 <span>Vollservice Frankfurt</span>
               </div>
               <div className="flex items-center gap-2 text-white/70 text-sm">
-                <CheckCircle size={16} style={{ color: '#457FFC' }} />
+                <CheckCircle size={16} style={{ color: '#C8A84B' }} />
                 <span>Kostenlos &amp; unverbindlich</span>
               </div>
             </div>
           </div>
-        </div>
-        {/* Watermark */}
-        <div className="absolute right-[-40px] top-1/2 -translate-y-1/2 opacity-[0.04] pointer-events-none select-none hidden lg:block">
-          <Building2 size={420} color="white" />
         </div>
       </section>
 
@@ -153,17 +149,17 @@ export default function KapitalanlagePage() {
               {
                 icon: <PiggyBank size={32} style={{ color: '#0141CB' }} />,
                 title: 'Steuerlicher Hebel (AfA)',
-                body: '2 % des Gebäudewertes können Sie jährlich als Abschreibung steuerlich geltend machen — 50 Jahre lang. Bei einem Gebäudewert von 160.000 € sind das 3.200 € jährliche Steuerersparnis.',
+                body: '2 % des Gebäudewertes kannst du jährlich als Abschreibung steuerlich geltend machen — 50 Jahre lang. Bei einem Gebäudewert von 160.000 € sind das 3.200 € jährliche Steuerersparnis.',
               },
               {
                 icon: <TrendingUp size={32} style={{ color: '#0141CB' }} />,
                 title: 'Hebelwirkung (Leverage)',
-                body: 'Sie investieren minimales Eigenkapital und kontrollieren einen Sachwert im sechsstelligen Bereich. Steigt der Wert um 10 %, ist das Ihre Rendite — nicht die der Bank.',
+                body: 'Du investierst minimales Eigenkapital und kontrollieren einen Sachwert im sechsstelligen Bereich. Steigt der Wert um 10 %, ist das deine Rendite — nicht die der Bank.',
               },
               {
                 icon: <Shield size={32} style={{ color: '#0141CB' }} />,
                 title: 'Inflationsschutz',
-                body: 'Sachwerte wie Immobilien steigen langfristig mit der Inflation. Ihre Finanzierungsrate bleibt konstant — die Mieteinnahmen steigen mit der Zeit an.',
+                body: 'Sachwerte wie Immobilien steigen langfristig mit der Inflation. Deine Finanzierungsrate bleibt konstant — die Mieteinnahmen steigen mit der Zeit an.',
               },
             ].map((b) => (
               <div key={b.title} className="card">
@@ -190,7 +186,7 @@ export default function KapitalanlagePage() {
               </p>
               <div className="flex items-center gap-3 text-sm" style={{ color: '#6B7494' }}>
                 <CheckCircle size={16} style={{ color: '#1A8A5A' }} />
-                <span>Alle Zahlen sind Näherungswerte — Ihre kostenlose Beratung zeigt Ihren konkreten Fall.</span>
+                <span>Alle Zahlen sind Näherungswerte — deine kostenlose Beratung zeigt deinen konkreten Fall.</span>
               </div>
             </div>
             <div className="card" style={{ padding: '40px' }}>
@@ -198,7 +194,7 @@ export default function KapitalanlagePage() {
                 { label: 'Kaufpreis (inkl. Nebenkosten)', value: '200.000 €', mono: true },
                 { label: 'Monatliche Finanzierungsrate', value: '~ 750 €', mono: true },
                 { label: 'Monatliche Mieteinnahme', value: '~ 720 €', mono: true },
-                { label: 'Ihr monatlicher Eigenaufwand', value: '~ 30 €', mono: true, highlight: true },
+                { label: 'Dein monatlicher Eigenaufwand', value: '~ 30 €', mono: true, highlight: true },
                 { label: 'Jährliche Steuerersparnis (AfA + Zinsen)', value: '1.800 – 3.000 €', mono: true },
                 { label: 'Immobilienwert nach 25 Jahren (est.)', value: '280.000 – 350.000 €', mono: true },
               ].map((row, i) => (
@@ -344,10 +340,10 @@ export default function KapitalanlagePage() {
         <div className="container-brand text-center">
           <p className="eyebrow-gold mb-4">Jetzt starten</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'var(--font-playfair)' }}>
-            Bereit für Ihre erste Kapitalanlage?
+            Bereit für deine erste Kapitalanlage?
           </h2>
           <p className="text-lg text-white/70 mb-10 max-w-[480px] mx-auto">
-            Kostenlos, unverbindlich, persönlich. Unser Berater in Frankfurt prüft Ihre individuelle Situation.
+            Kostenlos, unverbindlich, persönlich. Unser Berater in Frankfurt prüft deine individuelle Situation.
           </p>
           <Link href="/kontakt" className="btn-primary inline-flex items-center gap-2">
             Kostenlose Beratung buchen <ChevronRight size={18} />

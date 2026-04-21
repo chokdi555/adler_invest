@@ -72,7 +72,7 @@ const taxBenefits = [
     number: '02',
     title: 'Finanzierungszinsen absetzen',
     detail: '100 % der Zinsen als Werbungskosten',
-    body: 'Alle Zinsen, die Sie an die Bank zahlen, können vollständig als Werbungskosten bei den Einkünften aus Vermietung und Verpachtung (§ 21 EStG) abgesetzt werden. Besonders in den ersten Jahren mit hohem Zinsanteil ist dieser Posten enorm.',
+    body: 'Alle Zinsen, die du an die Bank zahlst, können vollständig als Werbungskosten bei den Einkünften aus Vermietung und Verpachtung (§ 21 EStG) abgesetzt werden. Besonders in den ersten Jahren mit hohem Zinsanteil ist dieser Posten enorm.',
     example: 'Beispiel: 5.000 € Zinsen/Jahr × 42 % = 2.100 €/Jahr gespart',
   },
   {
@@ -80,7 +80,7 @@ const taxBenefits = [
     number: '03',
     title: 'Instandhaltungskosten',
     detail: 'Reparaturen sofort abziehbar',
-    body: 'Kosten für Reparaturen, Wartungen und Modernisierungen können als Werbungskosten geltend gemacht werden — entweder sofort (Erhaltungsaufwand) oder über die Nutzungsdauer verteilt (Herstellungsaufwand). Ihre Steuerberatung entscheidet die optimale Einstufung.',
+    body: 'Kosten für Reparaturen, Wartungen und Modernisierungen können als Werbungskosten geltend gemacht werden — entweder sofort (Erhaltungsaufwand) oder über die Nutzungsdauer verteilt (Herstellungsaufwand). Deine Steuerberatung entscheidet die optimale Einstufung.',
     example: 'Beispiel: 2.000 € Reparaturen × 42 % = 840 € gespart',
   },
   {
@@ -110,24 +110,24 @@ export default function SteueroptimierungPage() {
       {/* Hero */}
       <section
         className="pt-[72px] min-h-[60vh] flex items-center relative overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, #012778 0%, #0141CB 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #012778 0%, #001C59 100%)' }}
       >
         <div className="container-brand relative z-10 py-20 lg:py-28">
-          <div className="max-w-[640px]">
+          <div className="max-w-[720px] mx-auto text-center">
             <p className="eyebrow-gold mb-6">Immobilien · Steueroptimierung</p>
             <h1
               className="text-2xl sm:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight"
               style={{ fontFamily: 'var(--font-playfair)' }}
             >
               Steueroptimierung mit Immobilien —{' '}
-              <em className="not-italic" style={{ color: '#457FFC' }}>
+              <em style={{ fontStyle: 'italic', color: '#C8A84B' }}>
                 Die 5 wichtigsten Vorteile
               </em>
             </h1>
-            <p className="text-lg text-white/80 mb-10 max-w-[520px] leading-relaxed">
+            <p className="text-lg text-white/80 mb-10 max-w-[560px] mx-auto leading-relaxed">
               Der Staat fördert Immobilien-Kapitalanlagen durch ein umfangreiches System steuerlicher Abzüge. Wer es kennt, zahlt deutlich weniger.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/kontakt" className="btn-primary text-center">
                 Kostenlose Beratung sichern
               </Link>
@@ -135,7 +135,7 @@ export default function SteueroptimierungPage() {
                 Angebote entdecken
               </Link>
             </div>
-            <div className="mt-10 flex flex-wrap gap-6">
+            <div className="mt-10 flex flex-wrap justify-center gap-6">
               {['AfA absetzbar', 'Zinsen absetzbar', '1.500 – 3.000 € Ersparnis/Jahr'].map((t) => (
                 <div key={t} className="flex items-center gap-2 text-white/70 text-sm">
                   <CheckCircle size={16} style={{ color: '#C8A84B' }} />
@@ -144,9 +144,6 @@ export default function SteueroptimierungPage() {
               ))}
             </div>
           </div>
-        </div>
-        <div className="absolute right-0 top-0 w-1/3 h-full opacity-[0.04] pointer-events-none hidden lg:flex items-center justify-center">
-          <FileText size={380} color="white" />
         </div>
       </section>
 
@@ -162,7 +159,7 @@ export default function SteueroptimierungPage() {
               Vermietete Immobilien werden in Deutschland steuerrechtlich als <strong>Einkunftsquelle</strong> behandelt. Das bedeutet: Alle Kosten, die mit der Immobilie zusammenhängen, mindern die steuerpflichtigen Einkünfte aus Vermietung und Verpachtung (§ 21 EStG).
             </p>
             <p className="text-base leading-relaxed" style={{ color: '#6B7494' }}>
-              In den ersten Jahren übersteigen die abzugsfähigen Kosten (AfA + Zinsen) häufig die Mieteinnahmen. Dieses steuerliche Minus (Verlust aus V&V) kann mit anderen positiven Einkünften — z. B. dem Gehalt — verrechnet werden. Das Finanzamt erstattet de facto einen Teil Ihrer Lohnsteuer.
+              In den ersten Jahren übersteigen die abzugsfähigen Kosten (AfA + Zinsen) häufig die Mieteinnahmen. Dieses steuerliche Minus (Verlust aus V&V) kann mit anderen positiven Einkünften — z. B. dem Gehalt — verrechnet werden. Das Finanzamt erstattet de facto einen Teil deiner Lohnsteuer.
             </p>
           </div>
         </div>
@@ -173,7 +170,7 @@ export default function SteueroptimierungPage() {
         <div className="container-brand">
           <p className="eyebrow mb-4">Die 5 Steuervorteile</p>
           <h2 className="text-3xl lg:text-4xl font-semibold mb-12" style={{ fontFamily: 'var(--font-playfair)', color: '#012778' }}>
-            Was Sie von der Steuer absetzen können
+            Was du von der Steuer absetzen kannst
           </h2>
           <div className="space-y-6">
             {taxBenefits.map((b) => (
@@ -228,7 +225,7 @@ export default function SteueroptimierungPage() {
               <div className="flex items-start gap-3">
                 <AlertCircle size={16} style={{ color: '#D4840A', flexShrink: 0, marginTop: '2px' }} />
                 <p className="text-sm" style={{ color: '#6B7494' }}>
-                  Dies ist keine Steuerberatung. Für Ihre individuelle Steueroptimierung empfehlen wir einen Steuerberater — wir vermitteln gerne einen spezialisierten Partner.
+                  Dies ist keine Steuerberatung. Für deine individuelle Steueroptimierung empfehlen wir einen Steuerberater — wir vermitteln gerne einen spezialisierten Partner.
                 </p>
               </div>
             </div>
@@ -288,10 +285,10 @@ export default function SteueroptimierungPage() {
         <div className="container-brand text-center">
           <p className="eyebrow-gold mb-4">Steueroptimiert investieren</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'var(--font-playfair)' }}>
-            Nutzen Sie alle Steuervorteile — mit dem richtigen Objekt
+            Nutze alle Steuervorteile — mit dem richtigen Objekt
           </h2>
           <p className="text-lg text-white/70 mb-10 max-w-[480px] mx-auto">
-            Wir finden das Objekt. Sie nutzen die Steuervorteile. Kostenlose, unverbindliche Erstberatung in Frankfurt.
+            Wir finden das Objekt. Du nutzt die Steuervorteile. Kostenlose, unverbindliche Erstberatung in Frankfurt.
           </p>
           <Link href="/kontakt" className="btn-primary inline-flex items-center gap-2">
             Jetzt Beratung sichern <ChevronRight size={18} />

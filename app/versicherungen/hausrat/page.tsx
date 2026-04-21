@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Hausrat & Gebäudeversicherung | Adler Invest Frankfurt',
   description:
-    'Hausratversicherung und Gebäudeversicherung — umfassender Schutz für Ihr Zuhause. Als Kapitalanleger ist die Gebäudeversicherung Pflicht.',
+    'Hausratversicherung und Gebäudeversicherung — umfassender Schutz für dein Zuhause. Als Kapitalanleger ist die Gebäudeversicherung Pflicht.',
   keywords: [
     'Hausratversicherung Frankfurt',
     'Gebäudeversicherung',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Hausrat & Gebäudeversicherung | Adler Invest Frankfurt',
     description:
-      'Hausratversicherung und Gebäudeversicherung — umfassender Schutz für Ihr Zuhause. Als Kapitalanleger ist die Gebäudeversicherung Pflicht.',
+      'Hausratversicherung und Gebäudeversicherung — umfassender Schutz für dein Zuhause. Als Kapitalanleger ist die Gebäudeversicherung Pflicht.',
     url: 'https://adlerinvest.de/versicherungen/hausrat',
     siteName: 'Adler Invest',
     locale: 'de_DE',
@@ -150,7 +150,7 @@ export default function HausratPage() {
             Alle Versicherungen
           </Link>
 
-          <div style={{ maxWidth: '680px' }}>
+          <div style={{ maxWidth: '680px', margin: '0 auto', textAlign: 'center' }}>
             <p className="eyebrow-gold" style={{ marginBottom: '20px' }}>
               Hausrat &amp; Gebäude
             </p>
@@ -168,7 +168,7 @@ export default function HausratPage() {
             >
               Hausrat &amp; Gebäudeversicherung —{' '}
               <em style={{ fontStyle: 'italic', color: '#457FFC' }}>
-                Ihr Zuhause rundum geschützt
+                dein Zuhause rundum geschützt
               </em>
             </h1>
             <p
@@ -179,13 +179,14 @@ export default function HausratPage() {
                 lineHeight: 1.7,
                 marginBottom: '40px',
                 maxWidth: '560px',
+                margin: '0 auto 40px',
               }}
             >
-              Ob Mieter oder Eigentümer — wir sichern Ihr Inventar und Ihre Immobilie
+              Ob Mieter oder Eigentümer — wir sichern dein Inventar und deine Immobilie
               gegen die häufigsten Schadensursachen ab. Für Kapitalanleger ist die
               Gebäudeversicherung unverzichtbar.
             </p>
-            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
               <Link href="/kontakt" className="btn-primary">
                 Kostenlos vergleichen lassen
               </Link>
@@ -212,7 +213,7 @@ export default function HausratPage() {
               </Link>
             </div>
 
-            <div style={{ display: 'flex', gap: '40px', marginTop: '56px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '40px', marginTop: '56px', flexWrap: 'wrap', justifyContent: 'center' }}>
               {[
                 { num: '1 von 3', label: 'Haushalte ohne Hausrat' },
                 { num: '100%', label: 'Unabhängige Beratung' },
@@ -273,7 +274,7 @@ export default function HausratPage() {
                 marginBottom: '20px',
               }}
             >
-              Hausrat- und Gebäudeversicherung schützen zwei verschiedene Bereiche Ihres Zuhauses:
+              Hausrat- und Gebäudeversicherung schützen zwei verschiedene Bereiche deines Zuhauses:
               die <strong>Hausratversicherung</strong> sichert den Inhalt einer Wohnung —
               alles, was beim Umzug mitgenommen werden würde. Die{' '}
               <strong>Gebäudeversicherung</strong> schützt das Gebäude selbst.
@@ -288,7 +289,7 @@ export default function HausratPage() {
             >
               Mieter benötigen die Hausratversicherung, Eigentümer beide. Als Vermieter einer
               Kapitalanlage-Immobilie ist die Wohngebäudeversicherung gesetzlich nicht vorgeschrieben,
-              aber de facto unverzichtbar — ohne sie tragen Sie bei Feuer, Wasserschaden oder
+              aber de facto unverzichtbar — ohne sie trägst du bei Feuer, Wasserschaden oder
               Sturm den gesamten Schaden selbst.
             </p>
           </div>
@@ -526,7 +527,7 @@ export default function HausratPage() {
                     color: '#2D3142',
                   }}
                 >
-                  <strong>Tipp:</strong> Achten Sie auf den Unterversicherungsverzicht — so wird
+                  <strong>Tipp:</strong> Achten du auf den Unterversicherungsverzicht — so wird
                   auch dann vollständig geleistet, wenn die Versicherungssumme zu niedrig war.
                 </div>
               </div>
@@ -750,7 +751,7 @@ export default function HausratPage() {
               lineHeight: 1.7,
             }}
           >
-            Als unabhängiger Makler sind wir keinem Anbieter verpflichtet — nur Ihnen.
+            Als unabhängiger Makler sind wir keinem Anbieter verpflichtet — nur dir.
           </p>
 
           <div
@@ -767,7 +768,7 @@ export default function HausratPage() {
               },
               {
                 title: 'Richtige Versicherungssumme',
-                text: 'Wir berechnen die korrekte Versicherungssumme mit Unterversicherungsverzicht, damit Sie im Schadensfall vollständig entschädigt werden.',
+                text: 'Wir berechnen die korrekte Versicherungssumme mit Unterversicherungsverzicht, damit du im Schadensfall vollständig entschädigt wirst.',
               },
               {
                 title: 'Kapitalanlager-Expertise',
@@ -775,7 +776,7 @@ export default function HausratPage() {
               },
               {
                 title: 'Persönliche Betreuung',
-                text: 'Ihr fester Ansprechpartner begleitet Sie von der Auswahl bis zur Schadensregulierung. Kein anonymes Call Center.',
+                text: 'Dein fester Ansprechpartner begleitet dich von der Auswahl bis zur Schadensregulierung. Kein anonymes Call Center.',
               },
             ].map((item) => (
               <div

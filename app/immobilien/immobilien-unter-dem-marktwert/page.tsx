@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { TrendingDown, CheckCircle, ChevronRight, Search, Handshake, AlertCircle, Percent, Building2 } from 'lucide-react'
+import { CheckCircle, ChevronRight, Search, Handshake, AlertCircle, Percent, Building2 } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Immobilien unter dem Marktwert kaufen | Adler Invest Frankfurt',
@@ -67,25 +67,25 @@ export default function ImmobilienUnterDemMarktwertPage() {
       {/* Hero */}
       <section
         className="pt-[72px] min-h-[60vh] flex items-center relative overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, #012778 0%, #0539A9 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #012778 0%, #001C59 100%)' }}
       >
         <div className="container-brand relative z-10 py-20 lg:py-28">
-          <div className="max-w-[640px]">
+          <div className="max-w-[720px] mx-auto text-center">
             <p className="eyebrow-gold mb-6">Immobilien · Unter dem Marktwert</p>
             <h1
               className="text-2xl sm:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight"
               style={{ fontFamily: 'var(--font-playfair)' }}
             >
               Immobilien unter dem Marktwert —{' '}
-              <em className="not-italic" style={{ color: '#457FFC' }}>
+              <em style={{ fontStyle: 'italic', color: '#C8A84B' }}>
                 Sofortiges Eigenkapital
               </em>{' '}
               ab Tag eins
             </h1>
-            <p className="text-lg text-white/80 mb-10 max-w-[520px] leading-relaxed">
+            <p className="text-lg text-white/80 mb-10 max-w-[560px] mx-auto leading-relaxed">
               Wer unter dem Marktwert kauft, baut Vermögen schneller auf. Adler Invest hat Zugang zu Objekten, die nie öffentlich inseriert werden.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/kontakt" className="btn-primary text-center">
                 Kostenlose Beratung sichern
               </Link>
@@ -94,9 +94,6 @@ export default function ImmobilienUnterDemMarktwertPage() {
               </Link>
             </div>
           </div>
-        </div>
-        <div className="absolute right-0 top-0 w-1/3 h-full opacity-[0.04] pointer-events-none hidden lg:flex items-center justify-center">
-          <TrendingDown size={380} color="white" />
         </div>
       </section>
 
@@ -132,7 +129,7 @@ export default function ImmobilienUnterDemMarktwertPage() {
                 { label: 'Sofortiges Eigenkapital', value: '40.000 €', highlight: true },
                 { label: 'Monatliche Rate (2,5 %, 25 J.)', value: '~ 808 €', highlight: false },
                 { label: 'Monatliche Miete (est.)', value: '~ 780 €', highlight: false },
-                { label: 'Ihr Eigenaufwand / Monat', value: '~ 28 €', highlight: true },
+                { label: 'Dein Eigenaufwand / Monat', value: '~ 28 €', highlight: true },
               ].map((row, i) => (
                 <div
                   key={i}
@@ -161,10 +158,10 @@ export default function ImmobilienUnterDemMarktwertPage() {
             <div>
               <p className="eyebrow mb-4">Der Vorteil</p>
               <h2 className="text-3xl lg:text-4xl font-semibold mb-6" style={{ fontFamily: 'var(--font-playfair)', color: '#012778' }}>
-                Doppelter Hebel für Ihren Vermögensaufbau
+                Doppelter Hebel für deinen Vermögensaufbau
               </h2>
               <p className="text-base leading-relaxed mb-6" style={{ color: '#6B7494' }}>
-                Wer unter dem Marktwert kauft, profitiert von zwei Hebeln gleichzeitig: sofortigem Buchgewinn und besserer Finanzierungsstruktur. Denn Zinsen zahlen Sie nur auf den Kaufpreis — nicht auf den höheren Marktwert.
+                Wer unter dem Marktwert kauft, profitiert von zwei Hebeln gleichzeitig: sofortigem Buchgewinn und besserer Finanzierungsstruktur. Denn Zinsen zahlst du nur auf den Kaufpreis — nicht auf den höheren Marktwert.
               </p>
               <ul className="space-y-4">
                 {[
@@ -253,10 +250,10 @@ export default function ImmobilienUnterDemMarktwertPage() {
         <div className="container-brand text-center">
           <p className="eyebrow-gold mb-4">Zugang zu Sonderangeboten</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'var(--font-playfair)' }}>
-            Erhalten Sie Zugang zu Off-Market-Objekten
+            Erhalten du Zugang zu Off-Market-Objekten
           </h2>
           <p className="text-lg text-white/70 mb-10 max-w-[480px] mx-auto">
-            Unser Netzwerk arbeitet für Sie. Im kostenlosen Erstgespräch erfahren Sie, welche Objekte aktuell verfügbar sind.
+            Unser Netzwerk arbeitet für dich. Im kostenlosen Erstgespräch erfährst du, welche Objekte aktuell verfügbar sind.
           </p>
           <Link href="/kontakt" className="btn-primary inline-flex items-center gap-2">
             Jetzt Zugang anfragen <ChevronRight size={18} />

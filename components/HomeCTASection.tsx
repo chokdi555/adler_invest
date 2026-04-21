@@ -56,7 +56,7 @@ export default function HomeCTASection() {
             margin: '0 auto 20px',
           }}
         >
-          Bereit, Ihr Vermögen aufzubauen?
+          Bereit, dein Vermögen aufzubauen?
         </h2>
         <p
           style={{
@@ -67,8 +67,8 @@ export default function HomeCTASection() {
             margin: '0 auto 44px',
           }}
         >
-          Vereinbaren Sie ein kostenloses und unverbindliches Erstgespräch. Wir analysieren Ihre
-          Situation und zeigen Ihnen konkrete Möglichkeiten auf.
+          Vereinbare ein kostenloses und unverbindliches Erstgespräch. Wir analysieren deine
+          Situation und zeigen dir konkrete Möglichkeiten auf.
         </p>
         <div
           style={{

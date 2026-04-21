@@ -163,7 +163,7 @@ export default function ImpressumPage() {
               >
                 https://ec.europa.eu/consumers/odr/
               </a>
-              . Unsere E-Mail-Adresse finden Sie oben im Impressum.
+              . Unsere E-Mail-Adresse findest du oben im Impressum.
             </p>
             <p>
               Wir sind nicht bereit oder verpflichtet, an
@@ -242,7 +242,7 @@ export default function ImpressumPage() {
               die Inhalte auf dieser Seite nicht vom Betreiber erstellt
               wurden, werden die Urheberrechte Dritter beachtet.
               Insbesondere werden Inhalte Dritter als solche
-              gekennzeichnet. Sollten Sie trotzdem auf eine
+              gekennzeichnet. Solltest du trotzdem auf eine
               Urheberrechtsverletzung aufmerksam werden, bitten wir um
               einen entsprechenden Hinweis. Bei Bekanntwerden von
               Rechtsverletzungen werden wir derartige Inhalte umgehend

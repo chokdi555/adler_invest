@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 
 const immobilienLinks = [
@@ -32,6 +33,13 @@ const companyLinks = [
 ]
 
 export default function Footer() {
+  const pathname = usePathname()
+  const isActive = (href: string) => pathname === href
+  const linkColor = (href: string) =>
+    isActive(href) ? '#C8A84B' : 'rgba(255,255,255,0.55)'
+  const linkWeight = (href: string) => (isActive(href) ? 600 : 400)
+  const headingColor = (href: string) => (isActive(href) ? '#C8A84B' : '#457FFC')
+
   return (
     <footer style={{ background: '#0D0E12', color: 'white' }}>
       {/* Main footer */}
@@ -105,26 +113,30 @@ export default function Footer() {
             <Link
               href="/versicherungen"
               className="block text-xs font-semibold mb-5 tracking-widest uppercase transition-colors"
-              style={{ color: '#457FFC', fontFamily: 'var(--font-dm-sans)', textDecoration: 'none' }}
+              style={{ color: headingColor('/versicherungen'), fontFamily: 'var(--font-dm-sans)', textDecoration: 'none' }}
               onMouseEnter={(e) => (e.currentTarget.style.color = 'white')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = '#457FFC')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = headingColor('/versicherungen'))}
             >
               Versicherungen
             </Link>
             <ul className="flex flex-col gap-2.5">
-              {versicherungenLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm transition-colors"
-                    style={{ color: 'rgba(255,255,255,0.55)', fontFamily: 'var(--font-dm-sans)', textDecoration: 'none' }}
-                    onMouseEnter={(e) => (e.currentTarget.style.color = 'white')}
-                    onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.55)')}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              {versicherungenLinks.map((link) => {
+                const active = isActive(link.href)
+                return (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      aria-current={active ? 'page' : undefined}
+                      className="text-sm transition-colors"
+                      style={{ color: linkColor(link.href), fontWeight: linkWeight(link.href), fontFamily: 'var(--font-dm-sans)', textDecoration: 'none' }}
+                      onMouseEnter={(e) => (e.currentTarget.style.color = 'white')}
+                      onMouseLeave={(e) => (e.currentTarget.style.color = linkColor(link.href))}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                )
+              })}
             </ul>
           </div>
 
@@ -133,26 +145,30 @@ export default function Footer() {
             <Link
               href="/immobilien"
               className="block text-xs font-semibold mb-5 tracking-widest uppercase transition-colors"
-              style={{ color: '#457FFC', fontFamily: 'var(--font-dm-sans)', textDecoration: 'none' }}
+              style={{ color: headingColor('/immobilien'), fontFamily: 'var(--font-dm-sans)', textDecoration: 'none' }}
               onMouseEnter={(e) => (e.currentTarget.style.color = 'white')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = '#457FFC')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = headingColor('/immobilien'))}
             >
               Immobilien
             </Link>
             <ul className="flex flex-col gap-2.5">
-              {immobilienLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm transition-colors"
-                    style={{ color: 'rgba(255,255,255,0.55)', fontFamily: 'var(--font-dm-sans)', textDecoration: 'none' }}
-                    onMouseEnter={(e) => (e.currentTarget.style.color = 'white')}
-                    onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.55)')}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              {immobilienLinks.map((link) => {
+                const active = isActive(link.href)
+                return (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      aria-current={active ? 'page' : undefined}
+                      className="text-sm transition-colors"
+                      style={{ color: linkColor(link.href), fontWeight: linkWeight(link.href), fontFamily: 'var(--font-dm-sans)', textDecoration: 'none' }}
+                      onMouseEnter={(e) => (e.currentTarget.style.color = 'white')}
+                      onMouseLeave={(e) => (e.currentTarget.style.color = linkColor(link.href))}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                )
+              })}
             </ul>
           </div>
 
@@ -165,19 +181,23 @@ export default function Footer() {
               Unternehmen
             </h3>
             <ul className="flex flex-col gap-2.5">
-              {companyLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm transition-colors"
-                    style={{ color: 'rgba(255,255,255,0.55)', fontFamily: 'var(--font-dm-sans)', textDecoration: 'none' }}
-                    onMouseEnter={(e) => (e.currentTarget.style.color = 'white')}
-                    onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.55)')}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              {companyLinks.map((link) => {
+                const active = isActive(link.href)
+                return (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      aria-current={active ? 'page' : undefined}
+                      className="text-sm transition-colors"
+                      style={{ color: linkColor(link.href), fontWeight: linkWeight(link.href), fontFamily: 'var(--font-dm-sans)', textDecoration: 'none' }}
+                      onMouseEnter={(e) => (e.currentTarget.style.color = 'white')}
+                      onMouseLeave={(e) => (e.currentTarget.style.color = linkColor(link.href))}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                )
+              })}
             </ul>
           </div>
         </div>
@@ -193,24 +213,26 @@ export default function Footer() {
             © {new Date().getFullYear()} Adler Invest. Alle Rechte vorbehalten.
           </p>
           <div className="flex items-center gap-6">
-            <Link
-              href="/impressum"
-              className="text-xs transition-colors"
-              style={{ color: 'rgba(255,255,255,0.35)', textDecoration: 'none', fontFamily: 'var(--font-dm-sans)' }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.7)')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.35)')}
-            >
-              Impressum
-            </Link>
-            <Link
-              href="/datenschutz"
-              className="text-xs transition-colors"
-              style={{ color: 'rgba(255,255,255,0.35)', textDecoration: 'none', fontFamily: 'var(--font-dm-sans)' }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.7)')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.35)')}
-            >
-              Datenschutz
-            </Link>
+            {[
+              { label: 'Impressum', href: '/impressum' },
+              { label: 'Datenschutz', href: '/datenschutz' },
+            ].map((link) => {
+              const active = isActive(link.href)
+              const baseColor = active ? '#C8A84B' : 'rgba(255,255,255,0.35)'
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  aria-current={active ? 'page' : undefined}
+                  className="text-xs transition-colors"
+                  style={{ color: baseColor, fontWeight: active ? 600 : 400, textDecoration: 'none', fontFamily: 'var(--font-dm-sans)' }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = active ? '#C8A84B' : 'rgba(255,255,255,0.7)')}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = baseColor)}
+                >
+                  {link.label}
+                </Link>
+              )
+            })}
           </div>
         </div>
       </div>
