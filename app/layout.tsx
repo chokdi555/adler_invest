@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ScrollToTop from '@/components/ScrollToTop'
+import LenisProvider from '@/components/LenisProvider'
 
 const playfair = Playfair_Display({
   variable: '--font-playfair',
@@ -66,10 +67,12 @@ export default function RootLayout({
       className={`${playfair.variable} ${dmSans.variable} ${dmMono.variable}`}
     >
       <body className="flex min-h-screen flex-col">
-        <ScrollToTop />
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <LenisProvider>
+          <ScrollToTop />
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </LenisProvider>
       </body>
     </html>
   )
