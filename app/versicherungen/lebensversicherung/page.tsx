@@ -377,12 +377,19 @@ export default function LebensversicherungPage() {
           <h2
             style={{
               fontFamily: 'var(--font-playfair)',
-              fontSize: 'clamp(1.875rem, 3.5vw, 2.25rem)',
+              fontSize: 'clamp(1.375rem, 3.5vw, 2.25rem)',
               fontWeight: 700,
               color: '#012778',
               marginBottom: '16px',
-              lineHeight: 1.25,
+              lineHeight: 1.3,
               textAlign: 'center',
+              overflowWrap: 'break-word',
+              hyphens: 'auto',
+              maxWidth: '640px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              paddingLeft: '8px',
+              paddingRight: '8px',
             }}
           >
             Risikolebens- vs. Kapitallebensversicherung

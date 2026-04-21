@@ -820,17 +820,19 @@ export default function HausratPage() {
 
       {/* ── FAQ ── */}
       <section style={{ background: '#FFFFFF', padding: 'clamp(56px, 8vw, 96px) 0' }}>
-        <div style={{ maxWidth: '720px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '720px', margin: '0 auto', paddingLeft: '24px', paddingRight: '24px' }}>
           <p className="eyebrow" style={{ marginBottom: '16px', textAlign: 'center' }}>FAQ</p>
           <h2
             style={{
               fontFamily: 'var(--font-playfair)',
-              fontSize: 'clamp(1.875rem, 3.5vw, 2.25rem)',
+              fontSize: 'clamp(1.5rem, 3.5vw, 2.25rem)',
               fontWeight: 700,
               color: '#012778',
               marginBottom: '48px',
-              lineHeight: 1.25,
+              lineHeight: 1.3,
               textAlign: 'center',
+              overflowWrap: 'break-word',
+              hyphens: 'auto',
             }}
           >
             Häufige Fragen zu Hausrat &amp; Gebäude
