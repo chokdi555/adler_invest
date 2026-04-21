@@ -103,11 +103,13 @@ export default function KrankenversicherungPage() {
             <h1
               style={{
                 fontFamily: 'var(--font-playfair)',
-                fontSize: 'clamp(2.25rem, 5vw, 3.75rem)',
+                fontSize: 'clamp(1.875rem, 5vw, 3.75rem)',
                 fontWeight: 700,
                 color: '#FFFFFF',
                 lineHeight: 1.12,
                 marginBottom: '24px',
+                overflowWrap: 'break-word',
+                hyphens: 'auto',
               }}
             >
               Krankenversicherung —{' '}
@@ -431,7 +433,10 @@ export default function KrankenversicherungPage() {
           <div className="text-center mb-12">
             <span className="eyebrow">GKV ERGÄNZUNG</span>
             <div className="gold-divider mx-auto mt-3 mb-5" />
-            <h2 className="font-display text-4xl font-bold" style={{ color: '#012778' }}>
+            <h2
+              className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold"
+              style={{ color: '#012778', overflowWrap: 'break-word', hyphens: 'auto' }}
+            >
               GKV-Zusatzversicherungen
             </h2>
             <p className="mt-4 text-lg max-w-2xl mx-auto" style={{ color: '#6B7494' }}>
@@ -478,7 +483,10 @@ export default function KrankenversicherungPage() {
       {/* ── CTA ── */}
       <section className="py-20" style={{ background: '#012778' }}>
         <div className="container-brand text-center">
-          <h2 className="font-display text-4xl font-bold text-white mb-4">
+          <h2
+            className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4"
+            style={{ overflowWrap: 'break-word', hyphens: 'auto' }}
+          >
             Jetzt Krankenversicherung optimieren
           </h2>
           <p className="text-lg mb-8" style={{ color: 'rgba(255,255,255,0.75)' }}>

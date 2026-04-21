@@ -102,11 +102,13 @@ export default function HaftpflichtPage() {
             <h1
               style={{
                 fontFamily: 'var(--font-playfair)',
-                fontSize: 'clamp(2.25rem, 5vw, 3.75rem)',
+                fontSize: 'clamp(1.875rem, 5vw, 3.75rem)',
                 fontWeight: 700,
                 color: '#FFFFFF',
                 lineHeight: 1.12,
                 marginBottom: '24px',
+                overflowWrap: 'break-word',
+                hyphens: 'auto',
               }}
             >
               Haftpflichtversicherung —{' '}

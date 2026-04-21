@@ -147,11 +147,13 @@ export default function RechtsschutzPage() {
             <h1
               style={{
                 fontFamily: 'var(--font-playfair)',
-                fontSize: 'clamp(2.25rem, 5vw, 3.75rem)',
+                fontSize: 'clamp(1.875rem, 5vw, 3.75rem)',
                 fontWeight: 700,
                 color: '#FFFFFF',
                 lineHeight: 1.12,
                 marginBottom: '24px',
+                overflowWrap: 'break-word',
+                hyphens: 'auto',
               }}
             >
               Rechtsschutzversicherung —{' '}
@@ -377,7 +379,10 @@ export default function RechtsschutzPage() {
       <section className="py-20" style={{ background: '#F4F6FA' }}>
         <div className="container-brand max-w-[720px]">
           <p className="eyebrow mb-4">FAQ</p>
-          <h2 className="text-3xl font-semibold mb-10" style={{ fontFamily: 'var(--font-playfair)', color: '#012778' }}>
+          <h2
+            className="text-2xl sm:text-3xl font-semibold mb-10"
+            style={{ fontFamily: 'var(--font-playfair)', color: '#012778', overflowWrap: 'break-word', hyphens: 'auto' }}
+          >
             Häufige Fragen zur Rechtsschutzversicherung
           </h2>
           <div className="space-y-6">
