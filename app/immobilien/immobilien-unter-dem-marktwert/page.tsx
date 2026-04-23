@@ -250,7 +250,7 @@ export default function ImmobilienUnterDemMarktwertPage() {
         <div className="container-brand text-center">
           <p className="eyebrow-gold mb-4">Zugang zu Sonderangeboten</p>
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6" style={{ fontFamily: 'var(--font-playfair)' }}>
-            Erhalten du Zugang zu Off-Market-Objekten
+            Erhalte Zugang zu Off-Market-Objekten
           </h2>
           <p className="text-lg text-white/70 mb-10 max-w-[480px] mx-auto">
             Unser Netzwerk arbeitet für dich. Im kostenlosen Erstgespräch erfährst du, welche Objekte aktuell verfügbar sind.

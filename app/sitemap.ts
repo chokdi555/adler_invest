@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/versicherungen/berufsunfaehigkeit', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/versicherungen/krankenversicherung', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/versicherungen/haftpflicht', priority: 0.7, changeFrequency: 'monthly' as const },
-    { url: '/versicherungen/lebensversicherung', priority: 0.7, changeFrequency: 'monthly' as const },
+    { url: '/versicherungen/altersvorsorge', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/versicherungen/hausrat', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/versicherungen/kfz', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/versicherungen/rechtsschutz', priority: 0.7, changeFrequency: 'monthly' as const },

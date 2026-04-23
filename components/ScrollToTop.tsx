@@ -8,7 +8,12 @@ export default function ScrollToTop() {
 
   // Scroll to top on route change.
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+    const lenis = window.__lenis
+    if (lenis) {
+      lenis.scrollTo(0, { immediate: true, force: true })
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+    }
   }, [pathname])
 
   // Scroll to top when the user clicks a link pointing at the current page.
@@ -42,7 +47,12 @@ export default function ScrollToTop() {
       const noHash = !url.hash
 
       if (samePath && noHash) {
-        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+        const lenis = window.__lenis
+        if (lenis) {
+          lenis.scrollTo(0)
+        } else {
+          window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+        }
       }
     }
 

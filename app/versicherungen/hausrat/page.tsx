@@ -527,7 +527,7 @@ export default function HausratPage() {
                     color: '#2D3142',
                   }}
                 >
-                  <strong>Tipp:</strong> Achten du auf den Unterversicherungsverzicht — so wird
+                  <strong>Tipp:</strong> Achte auf den Unterversicherungsverzicht — so wird
                   auch dann vollständig geleistet, wenn die Versicherungssumme zu niedrig war.
                 </div>
               </div>

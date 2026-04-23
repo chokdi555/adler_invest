@@ -358,7 +358,7 @@ export default function RechtsschutzPage() {
               },
               {
                 title: 'Persönlich',
-                body: 'Kein Call Center. Ein Ansprechpartner, der deine Situation kennt und du im Schadenfall aktiv begleitet.',
+                body: 'Kein Call Center. Ein Ansprechpartner, der deine Situation kennt und dich im Schadenfall aktiv begleitet.',
               },
             ].map((item) => (
               <div key={item.title} className="card" style={{ padding: '32px' }}>

@@ -80,10 +80,10 @@ const insuranceCategories = [
   },
   {
     icon: Heart,
-    title: 'Lebensversicherung',
+    title: 'Altersvorsorgeversicherung',
     description:
-      'Risikolebens- und Kapitallebensversicherung für deine Familie und Hinterbliebenen.',
-    href: '/versicherungen/lebensversicherung',
+      'Private Rentenversicherung und fondsgebundene Altersvorsorge — bauen dir steuerbegünstigt eine zusätzliche Rente auf.',
+    href: '/versicherungen/altersvorsorge',
   },
   {
     icon: Home,
@@ -185,7 +185,7 @@ export default function HomePage() {
       addressRegion: 'Hessen',
       addressCountry: 'DE',
     },
-    telephone: '+496900000000',
+    telephone: '+4917663790950',
     email: 'info@adlerinvest.de',
     areaServed: ['Frankfurt am Main', 'Rhein-Main-Gebiet', 'Hessen'],
     serviceType: ['Versicherungsmakler', 'Versicherungsberatung', 'Immobilienvermittlung', 'Kapitalanlageberatung'],
@@ -440,7 +440,7 @@ export default function HomePage() {
       >
         <div className="container-brand">
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
-            <p className="eyebrow" style={{ marginBottom: 12 }}>DAS TEAM</p>
+            <p className="eyebrow" style={{ marginBottom: 12 }}>DEIN ANSPRECHPARTNER</p>
             <div className="gold-divider mx-auto mb-5" />
             <h2
               id="team-heading"
@@ -452,11 +452,11 @@ export default function HomePage() {
                 lineHeight: 1.15,
               }}
             >
-              Menschen, die{' '}
+              Ein Mensch, der{' '}
               <em className="italic" style={{ color: '#0141CB' }}>
                 für dich
               </em>{' '}
-              da sind
+              da ist
             </h2>
             <p
               style={{
@@ -468,8 +468,8 @@ export default function HomePage() {
                 lineHeight: 1.6,
               }}
             >
-              Kein Call Center. Keine wechselnden Ansprechpartner. Ein Team, das dich
-              persönlich kennt und langfristig begleitet.
+              Kein Call Center. Kein wechselnder Ansprechpartner. Cihan Özkan kennt dich
+              persönlich und begleitet dich langfristig.
             </p>
           </div>
 
@@ -490,7 +490,7 @@ export default function HomePage() {
               alignItems: 'center',
               justifyContent: 'center',
             }}
-            aria-label="Teamfoto folgt bald"
+            aria-label="Foto folgt bald"
           >
             {/* Diagonal pattern overlay */}
             <div
@@ -538,10 +538,10 @@ export default function HomePage() {
                     marginBottom: 6,
                   }}
                 >
-                  Teamfoto folgt in Kürze
+                  Foto folgt in Kürze
                 </div>
                 <div style={{ fontSize: 14, color: '#6B7494' }}>
-                  Wir arbeiten gerade an unserem neuen Shooting.
+                  Cihan Özkan freut sich auf das nächste Shooting.
                 </div>
               </div>
             </div>

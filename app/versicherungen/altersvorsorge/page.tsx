@@ -2,22 +2,23 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Lebensversicherung | Risikolebensversicherung | Adler Invest',
+  title: 'Altersvorsorgeversicherung | Private Rente | Adler Invest',
   description:
-    'Lebensversicherung in Frankfurt — Risikoleben oder Kapitallebensversicherung? Adler Invest berät unabhängig und findet die beste Lösung für dich.',
+    'Altersvorsorgeversicherung in Frankfurt — private Rentenversicherung, fondsgebundene Altersvorsorge, Rürup und Riester. Adler Invest berät unabhängig und findet die beste Lösung für dich.',
   keywords: [
-    'Lebensversicherung Frankfurt',
-    'Risikolebensversicherung',
-    'Kapitallebensversicherung',
-    'Familie absichern',
-    'Lebensversicherung vergleichen',
+    'Altersvorsorgeversicherung Frankfurt',
+    'Private Rentenversicherung',
+    'Fondsgebundene Rentenversicherung',
+    'Rürup-Rente',
+    'Riester-Rente',
+    'Altersvorsorge vergleichen',
   ],
-  alternates: { canonical: 'https://adlerinvest.de/versicherungen/lebensversicherung' },
+  alternates: { canonical: 'https://adlerinvest.de/versicherungen/altersvorsorge' },
   openGraph: {
-    title: 'Lebensversicherung | Risikolebensversicherung | Adler Invest',
+    title: 'Altersvorsorgeversicherung | Private Rente | Adler Invest',
     description:
-      'Lebensversicherung in Frankfurt — Risikoleben oder Kapitallebensversicherung? Adler Invest berät unabhängig und findet die beste Lösung für dich.',
-    url: 'https://adlerinvest.de/versicherungen/lebensversicherung',
+      'Altersvorsorgeversicherung in Frankfurt — private Rente, fondsgebunden, Rürup und Riester. Adler Invest berät unabhängig und findet die beste Lösung für dich.',
+    url: 'https://adlerinvest.de/versicherungen/altersvorsorge',
     siteName: 'Adler Invest',
     locale: 'de_DE',
     type: 'website',
@@ -39,42 +40,42 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Was ist der Unterschied zwischen Risikolebens- und Kapitallebensversicherung?',
+      name: 'Was ist eine Altersvorsorgeversicherung?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Die Risikolebensversicherung bietet reinen Todesfallschutz zu günstigen Prämien und zahlt im Todesfall eine vereinbarte Summe an die Hinterbliebenen. Die Kapitallebensversicherung kombiniert Schutz mit einem Sparplan, ist aber deutlich teurer.',
+        text: 'Eine Altersvorsorgeversicherung ist ein Versicherungsvertrag, der dir im Ruhestand eine lebenslange Rente oder eine einmalige Kapitalauszahlung garantiert. Sie schließt die Versorgungslücke zwischen der gesetzlichen Rente und deinem tatsächlichen Bedarf im Alter.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Wer braucht eine Lebensversicherung?',
+      name: 'Welche Formen der Altersvorsorgeversicherung gibt es?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Eine Lebensversicherung ist besonders wichtig für Familien mit Allein- oder Hauptverdiener, Immobilieneigentümer mit laufender Finanzierung sowie Alleinerziehende.',
+        text: 'Zu den wichtigsten Formen zählen die private Rentenversicherung (klassisch oder fondsgebunden), die Rürup-Rente (Basisrente) mit steuerlicher Absetzbarkeit sowie die Riester-Rente mit staatlichen Zulagen. Jede Variante hat unterschiedliche Vor- und Nachteile.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Wie viel kostet eine Risikolebensversicherung?',
+      name: 'Wie viel sollte ich für meine Altersvorsorge sparen?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Eine Risikolebensversicherung kostet je nach Alter, Gesundheitszustand und gewünschter Absicherungssumme zwischen 15 und 40 Euro pro Monat. Für einen 30-jährigen Nichtraucher mit 300.000 Euro Versicherungssumme sind bereits unter 20 Euro möglich.',
+        text: 'Als Faustregel gelten 10–15 % des Bruttoeinkommens für die private Altersvorsorge. Die konkrete Höhe hängt jedoch von deiner Versorgungslücke ab — also der Differenz zwischen erwarteter gesetzlicher Rente und gewünschtem Lebensstandard im Ruhestand.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Kann ich eine Lebensversicherung abschließen, wenn ich Vorerkrankungen habe?',
+      name: 'Ab wann lohnt sich eine Altersvorsorgeversicherung?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Ja, in vielen Fällen ist das möglich. Verschiedene Versicherer bewerten Vorerkrankungen unterschiedlich. Als erfahrener Makler prüfen wir vorab anonym, welche Gesellschaft deinen Antrag zu welchen Konditionen annehmen würde.',
+        text: 'Je früher, desto besser. Durch den Zinseszinseffekt wirken sich auch kleine Beiträge über lange Laufzeiten stark aus. Ideal ist ein Beginn zwischen dem 25. und 35. Lebensjahr, aber auch ein späterer Einstieg kann sinnvoll sein.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Wie hoch sollte die Versicherungssumme sein?',
+      name: 'Welche steuerlichen Vorteile habe ich?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Als Richtwert gilt das 3- bis 5-fache des Jahresnettoeinkommens. Bei einer Immobilienfinanzierung sollte die Versicherungssumme mindestens der offenen Darlehenssumme entsprechen.',
+        text: 'Rürup-Beiträge sind bis zu einem Höchstbetrag als Sonderausgaben absetzbar. Riester-Beiträge werden mit staatlichen Zulagen und Steuervorteilen gefördert. Bei der privaten Rentenversicherung ist nur der Ertragsanteil der Rente steuerpflichtig.',
       },
     },
   ],
@@ -113,7 +114,7 @@ const CheckIcon = ({ color = '#0141CB' }: { color?: string }) => (
   </span>
 )
 
-export default function LebensversicherungPage() {
+export default function AltersvorsorgePage() {
   return (
     <>
       <script
@@ -168,7 +169,7 @@ export default function LebensversicherungPage() {
 
           <div style={{ maxWidth: '680px', margin: '0 auto', textAlign: 'center' }}>
             <p className="eyebrow-gold" style={{ marginBottom: '20px' }}>
-              Lebensversicherung
+              Altersvorsorgeversicherung
             </p>
             <h1
               style={{
@@ -180,9 +181,9 @@ export default function LebensversicherungPage() {
                 marginBottom: '24px',
               }}
             >
-              Lebensversicherung —{' '}
+              Altersvorsorgeversicherung —{' '}
               <em style={{ fontStyle: 'italic', color: '#457FFC' }}>
-                Familie und Vermögen absichern
+                deine Rente selbst gestalten
               </em>
             </h1>
             <p
@@ -196,9 +197,9 @@ export default function LebensversicherungPage() {
                 margin: '0 auto 40px',
               }}
             >
-              Wer für andere sorgt, trägt Verantwortung. Eine Lebensversicherung sichert deine Familie
-              finanziell ab — falls das Schlimmste eintreten sollte. Als unabhängiger Makler
-              vergleichen wir alle Anbieter und finden die beste Lösung für dich.
+              Die gesetzliche Rente reicht längst nicht mehr aus. Mit einer Altersvorsorgeversicherung
+              baust du gezielt eine zusätzliche Rente auf — steuerbegünstigt, flexibel und sicher.
+              Als unabhängiger Makler vergleichen wir alle Anbieter und finden die beste Lösung für dich.
             </p>
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
               <Link href="/kontakt" className="btn-primary">
@@ -268,16 +269,20 @@ export default function LebensversicherungPage() {
           <div style={{ maxWidth: '720px' }}>
             <p className="eyebrow" style={{ marginBottom: '16px' }}>Definition</p>
             <h2
+              lang="de"
               style={{
                 fontFamily: 'var(--font-playfair)',
-                fontSize: 'clamp(1.875rem, 3.5vw, 2.25rem)',
+                fontSize: 'clamp(1.625rem, 3.5vw, 2.25rem)',
                 fontWeight: 700,
                 color: '#012778',
                 marginBottom: '24px',
                 lineHeight: 1.25,
+                overflowWrap: 'break-word',
+                wordBreak: 'break-word',
+                hyphens: 'auto',
               }}
             >
-              Was ist eine Lebensversicherung?
+              Was ist eine Altersvorsorgeversicherung?
             </h2>
             <p
               style={{
@@ -288,10 +293,9 @@ export default function LebensversicherungPage() {
                 marginBottom: '20px',
               }}
             >
-              Eine Lebensversicherung ist ein Vertrag, bei dem der Versicherer im Todesfall der
-              versicherten Person eine vereinbarte Summe an die Hinterbliebenen auszahlt. Sie
-              dient der finanziellen Absicherung von Familien, Partnern und Kreditnehmern gegen
-              das Risiko des vorzeitigen Todes.
+              Eine Altersvorsorgeversicherung ist ein Versicherungsvertrag, der dir im Ruhestand eine
+              lebenslange Rente oder eine einmalige Kapitalauszahlung garantiert. Sie schließt die
+              Versorgungslücke zwischen der gesetzlichen Rente und deinem tatsächlichen Bedarf im Alter.
             </p>
             <p
               style={{
@@ -301,12 +305,12 @@ export default function LebensversicherungPage() {
                 lineHeight: 1.8,
               }}
             >
-              In Deutschland werden zwei grundlegende Formen unterschieden: die{' '}
-              <strong style={{ color: '#2D3142' }}>Risikolebensversicherung</strong>, die reinen
-              Todesfallschutz bietet, und die{' '}
-              <strong style={{ color: '#2D3142' }}>Kapitallebensversicherung</strong>, die Schutz
-              mit einem Sparvertrag kombiniert. Verbraucherschützer empfehlen in den meisten Fällen
-              die Risikolebensversicherung, da sie günstiger und transparenter ist.
+              In Deutschland gibt es drei Säulen der Altersvorsorge: die gesetzliche Rente, die
+              betriebliche Altersvorsorge und die private Vorsorge. Zur privaten Vorsorge zählen
+              insbesondere die{' '}
+              <strong style={{ color: '#2D3142' }}>private Rentenversicherung</strong>, die{' '}
+              <strong style={{ color: '#2D3142' }}>Rürup-Rente</strong> (Basisrente) und die{' '}
+              <strong style={{ color: '#2D3142' }}>Riester-Rente</strong> mit staatlicher Förderung.
             </p>
           </div>
 
@@ -321,16 +325,16 @@ export default function LebensversicherungPage() {
           >
             {[
               {
+                title: 'Angestellte & Berufseinsteiger',
+                text: 'Je früher du startest, desto mehr profitierst du vom Zinseszinseffekt. Schon kleine monatliche Beiträge bauen über Jahrzehnte ein beachtliches Rentenkapital auf.',
+              },
+              {
+                title: 'Gutverdiener & Selbständige',
+                text: 'Wer gut verdient oder selbständig ist, hat eine große Versorgungslücke. Die Rürup-Rente bietet hier hohe steuerliche Absetzbarkeit und ist speziell auf diese Zielgruppen zugeschnitten.',
+              },
+              {
                 title: 'Familien mit Kindern',
-                text: 'Wenn ein Elternteil als Haupt- oder Alleinverdiener ausfällt, sichert die Lebensversicherung den Lebensunterhalt der Familie und die Ausbildung der Kinder.',
-              },
-              {
-                title: 'Immobilieneigentümer',
-                text: 'Wer ein Haus oder eine Wohnung finanziert, schützt mit einer Risikolebensversicherung die Familie davor, die Immobilie im Todesfall verkaufen zu müssen.',
-              },
-              {
-                title: 'Alleinerziehende',
-                text: 'Für Alleinerziehende ist die Lebensversicherung besonders wichtig: Sie stellt sicher, dass Kinder auch ohne den verbleibenden Elternteil finanziell versorgt sind.',
+                text: 'Mit der Riester-Rente sichern Familien staatliche Zulagen — besonders für Kinder. Pro Kind gibt es jährliche Zulagen zusätzlich zu den persönlichen Zuschüssen.',
               },
             ].map((item) => (
               <div
@@ -393,7 +397,7 @@ export default function LebensversicherungPage() {
               paddingRight: '8px',
             }}
           >
-            Risikolebens- vs. Kapitallebensversicherung
+            Private Rente vs. Rürup vs. Riester
           </h2>
           <p
             style={{
@@ -406,8 +410,8 @@ export default function LebensversicherungPage() {
               lineHeight: 1.7,
             }}
           >
-            Beide Produkte haben ihren Platz — die Wahl hängt von deinen Zielen ab.
-            Wir beraten dich ehrlich und unabhängig.
+            Jede Variante hat ihre Stärken — die Wahl hängt von deiner Lebenssituation,
+            deinem Einkommen und deinen Zielen ab.
           </p>
 
           <div
@@ -417,7 +421,7 @@ export default function LebensversicherungPage() {
               gap: '32px',
             }}
           >
-            {/* Risikolebensversicherung */}
+            {/* Private Rentenversicherung */}
             <div className="card" style={{ borderTop: '4px solid #0141CB' }}>
               <div
                 style={{
@@ -439,7 +443,7 @@ export default function LebensversicherungPage() {
                     letterSpacing: '0.08em',
                   }}
                 >
-                  Empfohlen von Verbraucherschützern
+                  Maximal flexibel
                 </span>
               </div>
               <h3
@@ -451,7 +455,7 @@ export default function LebensversicherungPage() {
                   marginBottom: '8px',
                 }}
               >
-                Risikolebensversicherung
+                Private Rentenversicherung
               </h3>
               <p
                 style={{
@@ -462,7 +466,7 @@ export default function LebensversicherungPage() {
                   marginBottom: '8px',
                 }}
               >
-                ab 15–40 €/Monat
+                ab 50 €/Monat
               </p>
               <p
                 style={{
@@ -473,17 +477,17 @@ export default function LebensversicherungPage() {
                   lineHeight: 1.6,
                 }}
               >
-                Zahlt eine vereinbarte Todesfallsumme an die Hinterbliebenen. Kein Sparanteil —
-                rein auf Absicherung ausgerichtet. Deshalb sehr günstig.
+                Klassisch oder fondsgebunden — du bestimmst Beitragshöhe, Laufzeit und Auszahlungsform.
+                Kein staatlicher Zuschuss, dafür maximale Freiheit.
               </p>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 {[
-                  'Sehr günstiger Beitrag',
-                  'Klarer Zweck: Absicherung der Familie',
-                  'Feste Laufzeit wählbar (10–30 Jahre)',
-                  'Flexible Versicherungssumme',
-                  'Ideal zur Absicherung von Immobilienkrediten',
-                  'Transparent und einfach zu verstehen',
+                  'Flexible Ein- und Auszahlungen',
+                  'Wahl zwischen Rente und Einmalbetrag',
+                  'Fondsgebunden für höhere Renditechancen',
+                  'Nur Ertragsanteil steuerpflichtig',
+                  'Keine Einkommensgrenze',
+                  'Vererbbar an Hinterbliebene',
                 ].map((item) => (
                   <li
                     key={item}
@@ -515,13 +519,101 @@ export default function LebensversicherungPage() {
                   lineHeight: 1.5,
                 }}
               >
-                <strong>Beispiel:</strong> 30-jähriger Nichtraucher, 300.000 € Versicherungssumme,
-                25 Jahre Laufzeit — ab ca. 15 €/Monat.
+                <strong>Beispiel:</strong> 30-Jähriger, 150 €/Monat, 37 Jahre Laufzeit —
+                bei 5 % Rendite rund 240.000 € Kapital zum Renteneintritt.
               </div>
             </div>
 
-            {/* Kapitallebensversicherung */}
-            <div className="card" style={{ borderTop: '4px solid #6B7494' }}>
+            {/* Rürup-Rente */}
+            <div className="card" style={{ borderTop: '4px solid #C8A84B' }}>
+              <div
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  background: '#C8A84B',
+                  borderRadius: '99px',
+                  padding: '4px 14px',
+                  marginBottom: '24px',
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: 'var(--font-dm-sans)',
+                    fontSize: '0.75rem',
+                    fontWeight: 600,
+                    color: 'white',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.08em',
+                  }}
+                >
+                  Für Gutverdiener & Selbständige
+                </span>
+              </div>
+              <h3
+                style={{
+                  fontFamily: 'var(--font-dm-sans)',
+                  fontSize: '1.25rem',
+                  fontWeight: 700,
+                  color: '#012778',
+                  marginBottom: '8px',
+                }}
+              >
+                Rürup-Rente (Basisrente)
+              </h3>
+              <p
+                style={{
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '1.5rem',
+                  color: '#C8A84B',
+                  fontWeight: 500,
+                  marginBottom: '8px',
+                }}
+              >
+                Hohe Steuerersparnis
+              </p>
+              <p
+                style={{
+                  fontFamily: 'var(--font-dm-sans)',
+                  fontSize: '0.875rem',
+                  color: '#6B7494',
+                  marginBottom: '24px',
+                  lineHeight: 1.6,
+                }}
+              >
+                Staatlich geförderte Basisrente mit hoher steuerlicher Absetzbarkeit — ideal für
+                Selbständige und Gutverdiener, die heute Steuern sparen und später Rente beziehen wollen.
+              </p>
+              <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                {[
+                  'Beiträge als Sonderausgaben absetzbar',
+                  'Bis zu 27.566 € jährlich (2025)',
+                  'Insolvenz- und Hartz-IV-geschützt',
+                  'Lebenslange Rentenauszahlung',
+                  'Auch für Selbständige geeignet',
+                  'Keine Einmalkapitalauszahlung möglich',
+                ].map((item) => (
+                  <li
+                    key={item}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'flex-start',
+                      gap: '10px',
+                      fontFamily: 'var(--font-dm-sans)',
+                      fontSize: '0.9375rem',
+                      color: '#2D3142',
+                      lineHeight: 1.6,
+                      marginBottom: '10px',
+                    }}
+                  >
+                    <CheckIcon color="#C8A84B" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Riester-Rente */}
+            <div className="card" style={{ borderTop: '4px solid #457FFC' }}>
               <div
                 style={{
                   display: 'inline-flex',
@@ -538,12 +630,12 @@ export default function LebensversicherungPage() {
                     fontFamily: 'var(--font-dm-sans)',
                     fontSize: '0.75rem',
                     fontWeight: 600,
-                    color: '#6B7494',
+                    color: '#2D3142',
                     textTransform: 'uppercase',
                     letterSpacing: '0.08em',
                   }}
                 >
-                  Für Altersvorsorge
+                  Mit staatlichen Zulagen
                 </span>
               </div>
               <h3
@@ -555,18 +647,18 @@ export default function LebensversicherungPage() {
                   marginBottom: '8px',
                 }}
               >
-                Kapitallebens- / Rentenversicherung
+                Riester-Rente
               </h3>
               <p
                 style={{
                   fontFamily: 'var(--font-mono)',
                   fontSize: '1.5rem',
-                  color: '#6B7494',
+                  color: '#C8A84B',
                   fontWeight: 500,
                   marginBottom: '8px',
                 }}
               >
-                Höhere Beiträge
+                175 € + 300 €/Kind
               </p>
               <p
                 style={{
@@ -577,17 +669,17 @@ export default function LebensversicherungPage() {
                   lineHeight: 1.6,
                 }}
               >
-                Kombiniert Todesfallschutz mit einem Sparplan. Am Ende der Laufzeit wird das
-                angesparte Kapital ausgezahlt — unabhängig davon, ob der Versicherte verstorben ist.
+                Staatlich geförderte Altersvorsorge mit jährlichen Zulagen und Steuervorteilen —
+                besonders attraktiv für Angestellte mit Kindern.
               </p>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                 {[
-                  'Todesfallschutz inklusive',
-                  'Kapitalaufbau über die Laufzeit',
-                  'Auszahlung im Erlebensfall',
-                  'Steuervorteile bei Altverträgen (vor 2005)',
-                  'Für bestimmte Altersvorsorge-Konstellationen',
-                  'Fondsgebunden oder klassisch verfügbar',
+                  'Grundzulage 175 € pro Jahr',
+                  'Kinderzulage bis 300 € pro Kind',
+                  'Steuerliche Absetzbarkeit bis 2.100 €',
+                  'Garantiert mindestens eingezahlte Beiträge',
+                  'Für rentenversicherungspflichtige Angestellte',
+                  'Besteuerung der Rente in der Auszahlungsphase',
                 ].map((item) => (
                   <li
                     key={item}
@@ -602,7 +694,7 @@ export default function LebensversicherungPage() {
                       marginBottom: '10px',
                     }}
                   >
-                    <CheckIcon color="#DDE3EF" />
+                    <CheckIcon color="#457FFC" />
                     {item}
                   </li>
                 ))}
@@ -629,7 +721,7 @@ export default function LebensversicherungPage() {
                 marginBottom: '32px',
               }}
             >
-              Wovon hängt der Beitrag ab?
+              Wovon hängt deine spätere Rente ab?
             </h3>
             <div
               style={{
@@ -640,20 +732,20 @@ export default function LebensversicherungPage() {
             >
               {[
                 {
-                  factor: 'Alter',
-                  detail: 'Je jünger beim Abschluss, desto günstiger. Idealerweise zwischen 25 und 35 Jahren abschließen.',
+                  factor: 'Einstiegsalter',
+                  detail: 'Je früher, desto besser. Der Zinseszinseffekt wirkt sich über Jahrzehnte drastisch auf das Endkapital aus.',
                 },
                 {
-                  factor: 'Gesundheit',
-                  detail: 'Nichtraucher zahlen deutlich weniger. Vorerkrankungen können den Beitrag erhöhen oder zur Ablehnung führen.',
+                  factor: 'Beitragshöhe',
+                  detail: 'Faustregel: 10–15 % des Bruttoeinkommens. Auch kleine Beiträge zählen — Hauptsache, der Vertrag läuft lange.',
                 },
                 {
-                  factor: 'Versicherungssumme',
-                  detail: 'Richtwert: das 3–5-fache des Jahresnettogehalts, mindestens die offene Kreditsumme.',
+                  factor: 'Anlageform',
+                  detail: 'Fondsgebundene Tarife bieten höhere Renditechancen. Klassische Tarife sind sicherer, aber ertragsärmer.',
                 },
                 {
-                  factor: 'Laufzeit',
-                  detail: 'Sollte bis zur Kreditablösung oder bis die Kinder finanziell unabhängig sind reichen.',
+                  factor: 'Kostenquote',
+                  detail: 'Abschluss- und Verwaltungskosten schmälern die Rendite. Hier lohnt sich ein gründlicher Anbietervergleich.',
                 },
               ].map((item) => (
                 <div key={item.factor}>
@@ -723,7 +815,8 @@ export default function LebensversicherungPage() {
               >
                 Anders als Vertreter einer einzelnen Versicherungsgesellschaft sind wir an keinen
                 Anbieter gebunden. Wir vergleichen alle relevanten Gesellschaften auf dem deutschen
-                Markt und finden die Police, die zu deinem Gesundheitsprofil und deinen Zielen passt.
+                Markt und finden die Altersvorsorge, die zu deinem Einkommen, deinen Zielen und
+                deiner Lebenssituation passt.
               </p>
               <p
                 style={{
@@ -734,9 +827,8 @@ export default function LebensversicherungPage() {
                   marginBottom: '40px',
                 }}
               >
-                Besonders bei der Gesundheitsprüfung kann ein erfahrener Makler erhebliche
-                Unterschiede erzielen — verschiedene Versicherer bewerten Vorerkrankungen
-                sehr unterschiedlich.
+                Gerade bei der Altersvorsorge können kleine Unterschiede in Kosten und Rendite
+                über Jahrzehnte zehntausende Euro ausmachen — wir achten auf jedes Detail.
               </p>
               <Link href="/kontakt" className="btn-primary">
                 Jetzt Termin vereinbaren
@@ -747,15 +839,15 @@ export default function LebensversicherungPage() {
               {[
                 {
                   title: 'Alle Anbieter im Blick',
-                  text: 'Wir vergleichen über 50 Versicherer und finden den besten Beitrag für dein individuelles Risikoprofil.',
+                  text: 'Wir vergleichen über 50 Versicherer und finden den besten Tarif für dein individuelles Profil.',
                 },
                 {
-                  title: 'Anonyme Risikovoranfrage',
-                  text: 'Wir prüfen vorab anonym, welche Versicherer deinen Gesundheitszustand akzeptieren — ohne Auswirkungen auf deine Versicherbarkeit.',
+                  title: 'Versorgungslücke berechnen',
+                  text: 'Wir analysieren deine gesetzliche Rente und zeigen dir konkret, wie viel du zusätzlich sparen musst.',
                 },
                 {
                   title: 'Persönliche Betreuung',
-                  text: 'Kein Call Center. Dein fester Ansprechpartner begleitet dich vom Antrag bis zum Leistungsfall.',
+                  text: 'Kein Call Center. Dein fester Ansprechpartner begleitet dich vom Abschluss bis zum Renteneintritt.',
                 },
                 {
                   title: 'Kostenlos für dich',
@@ -819,40 +911,46 @@ export default function LebensversicherungPage() {
         <div style={{ maxWidth: '720px', margin: '0 auto' }}>
           <p className="eyebrow" style={{ marginBottom: '16px', textAlign: 'center' }}>FAQ</p>
           <h2
+            lang="de"
             style={{
               fontFamily: 'var(--font-playfair)',
-              fontSize: 'clamp(1.875rem, 3.5vw, 2.25rem)',
+              fontSize: 'clamp(1.5rem, 3.5vw, 2.25rem)',
               fontWeight: 700,
               color: '#012778',
               marginBottom: '48px',
               lineHeight: 1.25,
               textAlign: 'center',
+              overflowWrap: 'break-word',
+              wordBreak: 'break-word',
+              hyphens: 'auto',
+              paddingLeft: '16px',
+              paddingRight: '16px',
             }}
           >
-            Häufige Fragen zur Lebensversicherung
+            Häufige Fragen zur Altersvorsorgeversicherung
           </h2>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {[
               {
-                q: 'Was ist der Unterschied zwischen Risikolebens- und Kapitallebensversicherung?',
-                a: 'Die Risikolebensversicherung bietet reinen Todesfallschutz zu günstigen Prämien und zahlt im Todesfall eine vereinbarte Summe an die Hinterbliebenen. Die Kapitallebensversicherung kombiniert diesen Schutz mit einem Sparplan und baut zusätzlich Kapital auf — ist aber deutlich teurer.',
+                q: 'Was ist eine Altersvorsorgeversicherung?',
+                a: 'Eine Altersvorsorgeversicherung ist ein Versicherungsvertrag, der dir im Ruhestand eine lebenslange Rente oder eine einmalige Kapitalauszahlung garantiert. Sie schließt die Versorgungslücke zwischen der gesetzlichen Rente und deinem tatsächlichen Bedarf im Alter.',
               },
               {
-                q: 'Wer braucht eine Lebensversicherung?',
-                a: 'Eine Lebensversicherung ist besonders wichtig für Familien mit Allein- oder Hauptverdiener, Immobilieneigentümer mit laufender Finanzierung sowie Alleinerziehende. Sie stellt sicher, dass Hinterbliebene finanziell abgesichert bleiben.',
+                q: 'Welche Formen der Altersvorsorgeversicherung gibt es?',
+                a: 'Zu den wichtigsten Formen zählen die private Rentenversicherung (klassisch oder fondsgebunden), die Rürup-Rente (Basisrente) mit steuerlicher Absetzbarkeit sowie die Riester-Rente mit staatlichen Zulagen. Jede Variante hat unterschiedliche Vor- und Nachteile.',
               },
               {
-                q: 'Wie viel kostet eine Risikolebensversicherung?',
-                a: 'Eine Risikolebensversicherung kostet je nach Alter, Gesundheitszustand und gewünschter Absicherungssumme zwischen 15 und 40 Euro pro Monat. Für einen 30-jährigen Nichtraucher mit 300.000 Euro Versicherungssumme sind bereits unter 20 Euro möglich.',
+                q: 'Wie viel sollte ich für meine Altersvorsorge sparen?',
+                a: 'Als Faustregel gelten 10–15 % des Bruttoeinkommens für die private Altersvorsorge. Die konkrete Höhe hängt jedoch von deiner Versorgungslücke ab — also der Differenz zwischen erwarteter gesetzlicher Rente und gewünschtem Lebensstandard im Ruhestand.',
               },
               {
-                q: 'Kann ich eine Lebensversicherung abschließen, wenn ich Vorerkrankungen habe?',
-                a: 'Ja, in vielen Fällen ist das möglich. Verschiedene Versicherer bewerten Vorerkrankungen unterschiedlich. Als erfahrener Makler prüfen wir vorab anonym, welche Gesellschaft deinen Antrag zu welchen Konditionen annehmen würde — ohne Auswirkungen auf deine Versicherbarkeit.',
+                q: 'Ab wann lohnt sich eine Altersvorsorgeversicherung?',
+                a: 'Je früher, desto besser. Durch den Zinseszinseffekt wirken sich auch kleine Beiträge über lange Laufzeiten stark aus. Ideal ist ein Beginn zwischen dem 25. und 35. Lebensjahr, aber auch ein späterer Einstieg kann sinnvoll sein.',
               },
               {
-                q: 'Wie hoch sollte die Versicherungssumme sein?',
-                a: 'Als Richtwert gilt das 3- bis 5-fache des Jahresnettoeinkommens. Bei einer Immobilienfinanzierung sollte die Versicherungssumme mindestens der offenen Darlehenssumme entsprechen, um die Familie vor dem Verlust der Immobilie zu schützen.',
+                q: 'Welche steuerlichen Vorteile habe ich?',
+                a: 'Rürup-Beiträge sind bis zu einem Höchstbetrag als Sonderausgaben absetzbar. Riester-Beiträge werden mit staatlichen Zulagen und Steuervorteilen gefördert. Bei der privaten Rentenversicherung ist nur der Ertragsanteil der Rente steuerpflichtig.',
               },
             ].map((item) => (
               <div
@@ -925,7 +1023,7 @@ export default function LebensversicherungPage() {
               lineHeight: 1.2,
             }}
           >
-            Jetzt kostenlose Versicherungsberatung sichern
+            Jetzt kostenlose Altersvorsorge-Beratung sichern
           </h2>
           <p
             style={{
@@ -937,7 +1035,7 @@ export default function LebensversicherungPage() {
               lineHeight: 1.7,
             }}
           >
-            Wir vergleichen alle Anbieter und finden die beste Lebensversicherung für
+            Wir vergleichen alle Anbieter und finden die beste Altersvorsorgeversicherung für
             deine Situation. Kostenlos, unverbindlich, persönlich.
           </p>
           <Link href="/kontakt" className="btn-primary">

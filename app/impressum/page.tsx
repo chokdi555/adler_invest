@@ -42,7 +42,7 @@ export default function ImpressumPage() {
             <p className="mb-1">60596 Frankfurt am Main</p>
             <p className="mb-4">Deutschland</p>
             <p>
-              <strong>Vertreten durch:</strong> Max Müller (Geschäftsführer)
+              <strong>Vertreten durch:</strong> Cihan Özkan (Inhaber)
             </p>
           </section>
 
@@ -57,7 +57,7 @@ export default function ImpressumPage() {
               Kontakt
             </h2>
             <p className="mb-1">
-              <strong>Telefon:</strong> +49 69 000 000 00
+              <strong>Telefon:</strong> +49 176 63790950
             </p>
             <p className="mb-1">
               <strong>E-Mail:</strong>{' '}

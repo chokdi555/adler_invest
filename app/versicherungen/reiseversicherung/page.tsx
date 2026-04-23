@@ -42,7 +42,7 @@ const faqSchema = {
       name: 'Was ist eine Reiseversicherung?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Eine Reiseversicherung ist ein Sammelbegriff für verschiedene Versicherungen, die du vor finanziellen Risiken auf Reisen schützen. Dazu zählen Reiserücktrittsversicherung, Auslandskrankenversicherung, Reisegepäckversicherung und Reisehaftpflichtversicherung.',
+        text: 'Eine Reiseversicherung ist ein Sammelbegriff für verschiedene Versicherungen, die dich vor finanziellen Risiken auf Reisen schützen. Dazu zählen Reiserücktrittsversicherung, Auslandskrankenversicherung, Reisegepäckversicherung und Reisehaftpflichtversicherung.',
       },
     },
     {
@@ -91,7 +91,7 @@ const modules = [
   {
     icon: <Globe size={28} style={{ color: '#0141CB' }} />,
     title: 'Reisehaftpflicht & Reiseunfall',
-    body: 'Reisehaftpflicht schützt dich, wenn du im Urlaub Dritten Schäden zufügen. Reiseunfallversicherung zahlt bei bleibenden Schäden durch einen Unfall auf Reisen.',
+    body: 'Reisehaftpflicht schützt dich, wenn du im Urlaub Dritten Schäden zufügst. Reiseunfallversicherung zahlt bei bleibenden Schäden durch einen Unfall auf Reisen.',
   },
 ]
 

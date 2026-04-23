@@ -39,7 +39,12 @@ const jsonLd = {
   },
   areaServed: ['Frankfurt am Main', 'Rhein-Main-Gebiet', 'Hessen', 'Deutschland'],
   serviceType: ['Versicherungsmakler', 'Immobilienvermittlung', 'Kapitalanlageberatung'],
-  numberOfEmployees: { '@type': 'QuantitativeValue', value: 10 },
+  numberOfEmployees: { '@type': 'QuantitativeValue', value: 1 },
+  founder: {
+    '@type': 'Person',
+    name: 'Cihan Özkan',
+    jobTitle: 'Gründer & Inhaber',
+  },
 }
 
 const values = [
@@ -62,22 +67,10 @@ const values = [
 
 const team = [
   {
-    initial: 'M',
-    name: 'Max Müller',
-    title: 'Gründer & Geschäftsführer',
-    bio: 'Gründete Adler Invest 2024 als unabhängigen Versicherungsmakler in Frankfurt. Erfahrung in der Versicherungs- und Finanzdienstleistungsbranche — mit dem Ziel, Privatpersonen ehrliche, anbieterunabhängige Beratung zugänglich zu machen.',
-  },
-  {
-    initial: 'A',
-    name: 'Anna Schmidt',
-    title: 'Immobilienberaterin',
-    bio: 'Spezialisiert auf Kapitalanlagen im Rhein-Main-Gebiet. Begleitet Kunden von der ersten Objektanalyse bis zur Schlüsselübergabe und kennt den Frankfurter Markt aus jahrelanger Erfahrung.',
-  },
-  {
-    initial: 'K',
-    name: 'Klaus Weber',
-    title: 'Versicherungsberater',
-    bio: 'Experte für Berufsunfähigkeits-, Kranken- und Lebensversicherung. Vergleicht für jeden Kunden alle relevanten Anbieter und entwickelt passgenaue Absicherungskonzepte.',
+    initial: 'C',
+    name: 'Cihan Özkan',
+    title: 'Gründer & Inhaber',
+    bio: 'Gründete Adler Invest 2024 als unabhängigen Versicherungsmakler in Frankfurt. Als dein persönlicher Ansprechpartner begleitet er dich von der ersten Analyse bis zum Abschluss — bei Versicherungen ebenso wie bei Immobilien-Kapitalanlagen. Sein Anspruch: ehrliche, anbieterunabhängige Beratung, die zu dir passt.',
   },
 ]
 
@@ -133,8 +126,8 @@ export default function UeberUnsPage() {
               </p>
               <p className="text-base leading-relaxed mb-5" style={{ color: '#6B7494' }}>
                 Als unabhängiger Makler vergleichen wir alle relevanten Anbieter am
-                deutschen Markt — von der Berufsunfähigkeit über Kranken-, Lebens- und
-                Haftpflichtversicherung bis hin zu KFZ, Rechtsschutz und Reiseschutz. Unser
+                deutschen Markt — von der Berufsunfähigkeit über Kranken-, Altersvorsorge-
+                und Haftpflichtversicherung bis hin zu KFZ, Rechtsschutz und Reiseschutz. Unser
                 Anspruch: die beste Police für deine Situation, nicht für unser Bilanzkonto.
               </p>
               <p className="text-base leading-relaxed mb-5" style={{ color: '#6B7494' }}>
@@ -258,35 +251,35 @@ export default function UeberUnsPage() {
       {/* Team */}
       <section className="py-20" style={{ background: '#FFFFFF' }}>
         <div className="container-brand">
-          <p className="eyebrow mb-4">Das Team</p>
+          <p className="eyebrow mb-4">Dein Ansprechpartner</p>
           <h2
             className="text-3xl lg:text-4xl font-semibold mb-12"
             style={{ fontFamily: 'var(--font-playfair)', color: '#012778' }}
           >
-            Persönliche Beratung — echte Menschen
+            Persönliche Beratung — von Anfang an
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex justify-center">
             {team.map((member) => (
               <div
                 key={member.name}
-                className="card text-center flex flex-col items-center"
-                style={{ padding: '36px 28px' }}
+                className="card text-center flex flex-col items-center max-w-[520px] w-full"
+                style={{ padding: '48px 36px' }}
               >
                 {/* Avatar */}
                 <div
-                  className="w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold text-white mb-5 flex-shrink-0"
+                  className="w-20 h-20 rounded-full flex items-center justify-center text-3xl font-bold text-white mb-6 flex-shrink-0"
                   style={{ background: 'linear-gradient(135deg, #0141CB 0%, #012778 100%)' }}
                 >
                   {member.initial}
                 </div>
                 <h3
-                  className="text-lg font-semibold mb-1"
+                  className="text-xl font-semibold mb-1"
                   style={{ color: '#012778' }}
                 >
                   {member.name}
                 </h3>
                 <p
-                  className="text-xs font-semibold uppercase tracking-[0.08em] mb-4"
+                  className="text-xs font-semibold uppercase tracking-[0.08em] mb-5"
                   style={{ color: '#0141CB' }}
                 >
                   {member.title}
@@ -322,14 +315,18 @@ export default function UeberUnsPage() {
                 </div>
                 <div className="flex items-center gap-3 text-white/80 text-sm">
                   <Phone size={18} style={{ color: '#C8A84B', flexShrink: 0 }} />
-                  <span>+49 69 000 000 00</span>
+                  <span>+49 176 63790950</span>
                 </div>
                 <div className="flex items-center gap-3 text-white/80 text-sm">
                   <Mail size={18} style={{ color: '#C8A84B', flexShrink: 0 }} />
                   <span>info@adlerinvest.de</span>
                 </div>
               </div>
-              <p className="text-white/50 text-xs">Mo–Fr 9:00–18:00 Uhr</p>
+              <p className="text-white/50 text-xs">
+                Mo–Fr
+                <br />
+                9:00–18:00 Uhr
+              </p>
             </div>
 
             {/* Map embed */}
@@ -355,7 +352,7 @@ export default function UeberUnsPage() {
       {/* CTA */}
       <section className="py-20" style={{ background: '#F4F6FA' }}>
         <div className="container-brand text-center">
-          <p className="eyebrow mb-4">Lernen du uns kennen</p>
+          <p className="eyebrow mb-4">Lerne uns kennen</p>
           <h2
             className="text-3xl lg:text-4xl font-semibold mb-6"
             style={{ fontFamily: 'var(--font-playfair)', color: '#012778' }}

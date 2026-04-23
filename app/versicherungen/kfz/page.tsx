@@ -44,7 +44,7 @@ export default function KFZPage() {
         name: 'Was ist die Schadenfreiheitsklasse (SF-Klasse)?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Die SF-Klasse (Schadenfreiheitsklasse) spiegelt deine Unfallhistorie wider. Je länger du unfallfrei fahren, desto höher die SF-Klasse und desto niedriger der Beitragssatz.',
+          text: 'Die SF-Klasse (Schadenfreiheitsklasse) spiegelt deine Unfallhistorie wider. Je länger du unfallfrei fährst, desto höher die SF-Klasse und desto niedriger der Beitragssatz.',
         },
       },
     ],
@@ -319,7 +319,7 @@ export default function KFZPage() {
               </h2>
               <p className="text-lg mb-4" style={{ color: '#2D3142' }}>
                 Die SF-Klasse ist das wichtigste Kriterium für deinen KFZ-Beitrag.
-                du spiegelt deine Unfallhistorie wider: Je länger du unfallfrei fahren,
+                Sie spiegelt deine Unfallhistorie wider: Je länger du unfallfrei fährst,
                 desto höher die SF-Klasse und desto niedriger dein Beitragssatz.
               </p>
               <p style={{ color: '#6B7494' }}>

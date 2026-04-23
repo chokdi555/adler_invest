@@ -6,12 +6,12 @@ import WhatsAppButton from '@/components/WhatsAppButton'
 export const metadata: Metadata = {
   title: 'Kontakt | Adler Invest Frankfurt',
   description:
-    'Nehmen du Kontakt mit Adler Invest auf. Kostenlose Beratung für Immobilien-Kapitalanlagen und Versicherungen in Frankfurt und dem Rhein-Main-Gebiet.',
+    'Nimm Kontakt mit Adler Invest auf. Kostenlose Beratung für Immobilien-Kapitalanlagen und Versicherungen in Frankfurt und dem Rhein-Main-Gebiet.',
   alternates: { canonical: 'https://adlerinvest.de/kontakt' },
   openGraph: {
     title: 'Kontakt | Adler Invest Frankfurt',
     description:
-      'Nehmen du Kontakt mit Adler Invest auf. Kostenlose Beratung für Immobilien-Kapitalanlagen und Versicherungen.',
+      'Nimm Kontakt mit Adler Invest auf. Kostenlose Beratung für Immobilien-Kapitalanlagen und Versicherungen.',
     url: 'https://adlerinvest.de/kontakt',
     siteName: 'Adler Invest',
     locale: 'de_DE',
@@ -24,8 +24,8 @@ const contactDetails = [
   {
     icon: Phone,
     label: 'Telefon',
-    value: '+49 69 000 000 00',
-    href: 'tel:+4969000000000',
+    value: '+49 176 63790950',
+    href: 'tel:+4917663790950',
   },
   {
     icon: Mail,
@@ -44,7 +44,9 @@ const contactDetails = [
     label: 'Öffnungszeiten',
     value: (
       <>
-        Mo–Fr <span className="block sm:inline">9:00–18:00 Uhr</span>
+        Mo–Fr
+        <br />
+        9:00–18:00 Uhr
       </>
     ),
     href: null,
@@ -66,7 +68,7 @@ export default function KontaktPage() {
             mainEntity: {
               '@type': 'FinancialService',
               name: 'Adler Invest',
-              telephone: '+49 69 000 000 00',
+              telephone: '+49 176 63790950',
               email: 'info@adlerinvest.de',
               address: {
                 '@type': 'PostalAddress',
@@ -149,7 +151,7 @@ export default function KontaktPage() {
                     marginBottom: '10px',
                   }}
                 >
-                  Schreiben du uns
+                  Schreib uns
                 </h2>
                 <p
                   style={{
@@ -159,7 +161,7 @@ export default function KontaktPage() {
                     lineHeight: 1.6,
                   }}
                 >
-                  Füllen du das Formular aus — wir melden uns schnellstmöglich persönlich bei dir.
+                  Fülle das Formular aus — wir melden uns schnellstmöglich persönlich bei dir.
                 </p>
               </div>
               <ContactForm />
@@ -262,7 +264,7 @@ export default function KontaktPage() {
               </div>
 
               {/* WhatsApp CTA */}
-              <WhatsAppButton phone="+4969000000000" />
+              <WhatsAppButton phone="+4917663790950" />
 
               {/* Google Maps */}
               <div

@@ -277,7 +277,7 @@ export default function HaftpflichtPage() {
                 badge: 'Wichtigste',
                 badgeColor: '#0141CB',
                 description:
-                  'Für alle Privatpersonen unverzichtbar. Deckt Personen-, Sach- und Vermögensschäden ab, die du im Alltag verursachen. Günstig — ab ca. 40–80 €/Jahr.',
+                  'Für alle Privatpersonen unverzichtbar. Deckt Personen-, Sach- und Vermögensschäden ab, die du im Alltag verursachst. Günstig — ab ca. 40–80 €/Jahr.',
                 includes: [
                   'Schäden im Alltag und Haushalt',
                   'Schäden durch Kinder',

@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Phone, Mail, MapPin, Clock } from 'lucide-react'
+import type { ReactNode } from 'react'
 
 const immobilienLinks = [
   { label: 'Immobilie als Kapitalanlage', href: '/immobilien/kapitalanlage' },
@@ -16,7 +17,7 @@ const versicherungenLinks = [
   { label: 'Berufsunfähigkeit (BU)', href: '/versicherungen/berufsunfaehigkeit' },
   { label: 'Krankenversicherung', href: '/versicherungen/krankenversicherung' },
   { label: 'Haftpflichtversicherung', href: '/versicherungen/haftpflicht' },
-  { label: 'Lebensversicherung', href: '/versicherungen/lebensversicherung' },
+  { label: 'Altersvorsorgeversicherung', href: '/versicherungen/altersvorsorge' },
   { label: 'Hausrat & Gebäude', href: '/versicherungen/hausrat' },
   { label: 'KFZ-Versicherung', href: '/versicherungen/kfz' },
   { label: 'Rechtsschutz', href: '/versicherungen/rechtsschutz' },
@@ -77,12 +78,23 @@ export default function Footer() {
             {/* Contact info */}
             <div className="flex flex-col gap-3">
               {[
-                { Icon: Phone, text: '+49 69 000 000 00', href: 'tel:+496900000000' },
-                { Icon: Mail, text: 'info@adlerinvest.de', href: 'mailto:info@adlerinvest.de' },
-                { Icon: MapPin, text: 'Kennedyallee 93, 60596 Frankfurt am Main', href: null },
-                { Icon: Clock, text: 'Mo–Fr 9:00–18:00 Uhr', href: null },
-              ].map(({ Icon, text, href }) => (
-                <div key={text} className="flex items-start gap-2.5">
+                { key: 'phone', Icon: Phone, text: '+49 176 63790950' as ReactNode, href: 'tel:+4917663790950' as string | null },
+                { key: 'mail', Icon: Mail, text: 'info@adlerinvest.de' as ReactNode, href: 'mailto:info@adlerinvest.de' as string | null },
+                { key: 'address', Icon: MapPin, text: 'Kennedyallee 93, 60596 Frankfurt am Main' as ReactNode, href: null as string | null },
+                {
+                  key: 'hours',
+                  Icon: Clock,
+                  text: (
+                    <>
+                      Mo–Fr
+                      <br />
+                      9:00–18:00 Uhr
+                    </>
+                  ) as ReactNode,
+                  href: null as string | null,
+                },
+              ].map(({ key, Icon, text, href }) => (
+                <div key={key} className="flex items-start gap-2.5">
                   <Icon
                     size={14}
                     className="mt-0.5 flex-shrink-0"

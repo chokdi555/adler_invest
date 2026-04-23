@@ -64,10 +64,10 @@ const insuranceCategories = [
   },
   {
     icon: Heart,
-    title: 'Lebensversicherung',
+    title: 'Altersvorsorgeversicherung',
     description:
-      'Risikolebens- und Kapitallebensversicherung für deine Familie und deine Hinterbliebenen.',
-    href: '/versicherungen/lebensversicherung',
+      'Private Rentenversicherung und fondsgebundene Altersvorsorge — staatlich gefördert, steuerlich begünstigt, flexibel.',
+    href: '/versicherungen/altersvorsorge',
     highlight: false,
   },
   {
@@ -161,7 +161,7 @@ export default function VersicherungenPage() {
       'Berufsunfähigkeitsversicherung',
       'Krankenversicherung',
       'Haftpflichtversicherung',
-      'Lebensversicherung',
+      'Altersvorsorgeversicherung',
       'KFZ-Versicherung',
     ],
   }
@@ -222,7 +222,7 @@ export default function VersicherungenPage() {
               </Link>
               <Link href="/kontakt" className="btn-ghost mobile-only">
                 <Phone size={18} />
-                +49 69 000 000 00
+                +49 176 63790950
               </Link>
             </div>
             <div className="mt-10 flex flex-wrap justify-center gap-6" style={{ color: 'rgba(255,255,255,0.75)' }}>
@@ -452,7 +452,7 @@ export default function VersicherungenPage() {
           </h2>
           <p className="text-lg mb-10 max-w-xl mx-auto" style={{ color: 'rgba(255,255,255,0.75)' }}>
             Unverbindlich. Ohne Verpflichtung. Wir analysieren deine aktuelle Situation
-            und zeigen dir, wo du sparst können.
+            und zeigen dir, wo du sparen kannst.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

@@ -14,7 +14,7 @@ const navItems = [
       { label: 'Berufsunfähigkeit', href: '/versicherungen/berufsunfaehigkeit' },
       { label: 'Krankenversicherung', href: '/versicherungen/krankenversicherung' },
       { label: 'Haftpflicht', href: '/versicherungen/haftpflicht' },
-      { label: 'Lebensversicherung', href: '/versicherungen/lebensversicherung' },
+      { label: 'Altersvorsorgeversicherung', href: '/versicherungen/altersvorsorge' },
       { label: 'Hausrat', href: '/versicherungen/hausrat' },
       { label: 'KFZ', href: '/versicherungen/kfz' },
       { label: 'Rechtsschutz', href: '/versicherungen/rechtsschutz' },

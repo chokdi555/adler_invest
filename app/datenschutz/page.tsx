@@ -45,7 +45,7 @@ export default function DatenschutzPage() {
             <p className="mb-1">Kennedyallee 93</p>
             <p className="mb-1">60596 Frankfurt am Main</p>
             <p className="mb-1">
-              Telefon: <a href="tel:+496900000000" style={{ color: '#0141CB' }}>+49 69 000 000 00</a>
+              Telefon: <a href="tel:+4917663790950" style={{ color: '#0141CB' }}>+49 176 63790950</a>
             </p>
             <p>
               E-Mail:{' '}
@@ -167,7 +167,7 @@ export default function DatenschutzPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2 mb-4">
               <li>
-                du hierzu deine ausdrückliche Einwilligung erteilt haben
+                du hierzu deine ausdrückliche Einwilligung erteilt hast
                 (Art. 6 Abs. 1 lit. a DSGVO),
               </li>
               <li>
@@ -297,7 +297,7 @@ export default function DatenschutzPage() {
           <Section title="8. Kontaktformular">
             <p className="mb-3">
               Wenn du uns über unser Kontaktformular eine Anfrage
-              zukommen lassen, werden die von dir angegebenen Daten
+              zukommen lässt, werden die von dir angegebenen Daten
               (Vorname, Nachname, E-Mail-Adresse, Telefonnummer, Anliegen
               und Nachrichtentext) zur Bearbeitung der Anfrage und für
               den Fall von Anschlussfragen bei uns gespeichert.
@@ -306,13 +306,13 @@ export default function DatenschutzPage() {
               Die Verarbeitung dieser Daten erfolgt auf Grundlage von
               Art. 6 Abs. 1 lit. a DSGVO (Einwilligung), die du durch
               Aktivierung der Datenschutz-Checkbox und Absenden des
-              Formulars erteilen. Ohne deine Einwilligung können wir deine
+              Formulars erteilst. Ohne deine Einwilligung können wir deine
               Anfrage nicht bearbeiten.
             </p>
             <p className="mb-3">
               Die im Rahmen des Kontaktformulars eingegebenen Daten
-              verbleiben bei uns, bis du uns zur Löschung auffordern,
-              deine Einwilligung zur Speicherung widerrufen oder der Zweck
+              verbleiben bei uns, bis du uns zur Löschung aufforderst,
+              deine Einwilligung zur Speicherung widerrufst oder der Zweck
               für die Datenspeicherung entfällt (z. B. nach abgeschlossener
               Bearbeitung deiner Anfrage). Zwingende gesetzliche Bestimmungen
               — insbesondere Aufbewahrungsfristen — bleiben unberührt.

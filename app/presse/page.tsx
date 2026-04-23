@@ -24,7 +24,7 @@ const factSheetItems = [
   { label: 'Anschrift', value: 'Kennedyallee 93, 60596 Frankfurt am Main' },
   { label: 'Tätigkeitsgebiet', value: 'Rhein-Main-Gebiet und deutschlandweit' },
   { label: 'Leistungen', value: 'Versicherungsvermittlung, Immobilien-Kapitalanlagen' },
-  { label: 'Mitarbeiter', value: '8' },
+  { label: 'Inhaber', value: 'Cihan Özkan' },
   {
     label: 'Zertifizierungen',
     value: '§34d GewO (Versicherungsmakler), §34i GewO (Immobiliendarlehensvermittler)',
@@ -340,7 +340,7 @@ export default function PressePage() {
                   presse@adlerinvest.de
                 </a>
                 <a
-                  href="tel:+4969000000000"
+                  href="tel:+4917663790950"
                   style={{
                     display: 'flex',
                     alignItems: 'center',
@@ -353,7 +353,7 @@ export default function PressePage() {
                   }}
                 >
                   <Phone size={18} color="#457FFC" style={{ flexShrink: 0 }} />
-                  +49 69 000 000 00
+                  +49 176 63790950
                 </a>
               </div>
             </div>

@@ -230,7 +230,7 @@ export default function ContactForm() {
         <input
           id="telefon"
           type="tel"
-          placeholder="+49 69 000 000 00"
+          placeholder="+49 176 63790950"
           style={inputStyle}
           onFocus={(e) => { e.currentTarget.style.borderColor = '#0141CB' }}
           {...telefonReg}
@@ -281,7 +281,7 @@ export default function ContactForm() {
         <textarea
           id="nachricht"
           rows={4}
-          placeholder="Teilen du uns gerne vorab mit, was du bewegt…"
+          placeholder="Teile uns gerne vorab mit, was dich bewegt…"
           style={{
             ...inputStyle,
             resize: 'vertical',
