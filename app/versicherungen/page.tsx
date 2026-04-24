@@ -64,7 +64,7 @@ const insuranceCategories = [
   },
   {
     icon: Heart,
-    title: 'Altersvorsorgeversicherung',
+    title: 'Altersvorsorge',
     description:
       'Private Rentenversicherung und fondsgebundene Altersvorsorge — staatlich gefördert, steuerlich begünstigt, flexibel.',
     href: '/versicherungen/altersvorsorge',
