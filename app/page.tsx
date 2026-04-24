@@ -80,7 +80,7 @@ const insuranceCategories = [
   },
   {
     icon: Heart,
-    title: 'Altersvorsorgeversicherung',
+    title: 'Altersvorsorge',
     description:
       'Private Rentenversicherung und fondsgebundene Altersvorsorge — bauen dir steuerbegünstigt eine zusätzliche Rente auf.',
     href: '/versicherungen/altersvorsorge',
