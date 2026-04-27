@@ -40,6 +40,7 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+  const [logoHidden, setLogoHidden] = useState(false)
   const pathname = usePathname()
 
   const isDarkHeroPage =
@@ -66,6 +67,16 @@ export default function Header() {
     return () => { document.body.style.overflow = '' }
   }, [mobileOpen])
 
+  // Hide the navbar logo while the intro is playing — the intro will fly its
+  // own logo into this slot and dispatch `intro-handoff` to reveal it.
+  useEffect(() => {
+    if (sessionStorage.getItem('adler-intro-played') === '1') return
+    setLogoHidden(true)
+    const onHandoff = () => setLogoHidden(false)
+    window.addEventListener('intro-handoff', onHandoff)
+    return () => window.removeEventListener('intro-handoff', onHandoff)
+  }, [])
+
   return (
     <header
       className="site-header fixed top-0 left-0 right-0 z-50 transition-all duration-300"
@@ -81,8 +92,20 @@ export default function Header() {
       <div className="container-brand">
         <div className="flex items-center justify-between h-[72px]">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 sm:gap-3 flex-shrink-0 min-w-0">
-            <svg width="32" height="32" viewBox="0 0 258 268" fill="none" aria-hidden="true" className="flex-shrink-0">
+          <Link
+            href="/"
+            className="flex items-center gap-2 sm:gap-3 flex-shrink-0 min-w-0 transition-opacity duration-300"
+            style={{ opacity: logoHidden ? 0 : 1, pointerEvents: logoHidden ? 'none' : undefined }}
+          >
+            <svg
+              data-nav-eagle
+              width="32"
+              height="32"
+              viewBox="0 0 258 268"
+              fill="none"
+              aria-hidden="true"
+              className="flex-shrink-0"
+            >
               <path d="M154.544 0L103.071 89.1542H206.018L154.544 0Z" fill="#457FFC"/>
               <path d="M205.989 89.1084L154.516 178.263H257.462L205.989 89.1084Z" fill="#0141CB"/>
               <path d="M257.263 178.148L154.317 178.148L205.79 267.302L257.263 178.148Z" fill="#0539A9"/>

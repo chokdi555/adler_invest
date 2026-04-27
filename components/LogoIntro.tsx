@@ -153,6 +153,7 @@ export default function LogoIntro({ onComplete, skip = false }: LogoIntroProps) 
       className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 w-full"
     >
       <svg
+        data-intro-eagle
         viewBox="0 0 258 268"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -171,6 +172,7 @@ export default function LogoIntro({ onComplete, skip = false }: LogoIntroProps) 
         ))}
       </svg>
       <svg
+        data-intro-wordmark
         viewBox="283 88 773 113"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
