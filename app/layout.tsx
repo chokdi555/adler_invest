@@ -5,6 +5,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ScrollToTop from '@/components/ScrollToTop'
 import LenisProvider from '@/components/LenisProvider'
+import IntroOverlay from "@/components/IntroOverlay";
 
 const playfair = Playfair_Display({
   variable: '--font-playfair',
@@ -70,7 +71,10 @@ export default function RootLayout({
         <LenisProvider>
           <ScrollToTop />
           <Header />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1">
+            <IntroOverlay />
+            {children}
+            </main>
           <Footer />
         </LenisProvider>
       </body>
