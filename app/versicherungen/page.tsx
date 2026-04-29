@@ -12,6 +12,7 @@ import {
   ArrowRight,
   Phone,
 } from 'lucide-react'
+import AnimatedStat from '@/components/AnimatedStat'
 
 export const metadata: Metadata = {
   title: 'Versicherungen Frankfurt | Unabhängiger Makler | Adler Invest',
@@ -369,12 +370,11 @@ export default function VersicherungenPage() {
               { num: '100%', label: 'Unabhängige Beratung' },
             ].map((stat) => (
               <div key={stat.label}>
-                <div
+                <AnimatedStat
+                  value={stat.num}
                   className="font-mono text-5xl font-bold"
                   style={{ color: '#0141CB' }}
-                >
-                  {stat.num}
-                </div>
+                />
                 <div className="mt-1 text-sm font-medium" style={{ color: '#6B7494' }}>
                   {stat.label}
                 </div>

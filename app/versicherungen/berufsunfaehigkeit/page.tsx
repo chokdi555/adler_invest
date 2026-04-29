@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Shield, CheckCircle, AlertTriangle, ArrowRight, Phone, ArrowLeft } from 'lucide-react'
 import EagleWatermark from '@/components/EagleWatermark'
+import AnimatedStat from '@/components/AnimatedStat'
 
 export const metadata: Metadata = {
   title: 'Berufsunfähigkeitsversicherung (BU) | Adler Invest Frankfurt',
@@ -276,12 +277,11 @@ export default function BerufsunfaehigkeitPage() {
                   className="card text-center"
                   style={{ padding: '24px' }}
                 >
-                  <div
+                  <AnimatedStat
+                    value={stat.num}
                     className="font-mono text-3xl font-bold mb-2"
                     style={{ color: '#0141CB' }}
-                  >
-                    {stat.num}
-                  </div>
+                  />
                   <div className="text-xs leading-relaxed" style={{ color: '#6B7494' }}>
                     {stat.label}
                   </div>

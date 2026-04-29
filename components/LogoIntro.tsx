@@ -95,21 +95,23 @@ export default function LogoIntro({ onComplete, skip = false }: LogoIntroProps) 
     const ctx = gsap.context(() => {
       paintFromHue();
 
-      const tl = gsap.timeline({
-        onComplete: () => onCompleteRef.current?.(),
-      });
+      const tl = gsap.timeline();
 
-      // PHASE 1 — Build-up.
       const buildDuration = 2.2;
       const stagger = buildDuration / buildOrder.length;
+      const buildEnd = (buildOrder.length - 1) * stagger + 0.45;
 
+      // PHASE 1a — Smooth hue sweep across the build-up so the palette flows
+      // through the spectrum instead of snapping between fixed colors.
+      const hueDuration = buildDuration - 0.3;
       tl.to(state, {
-        hue: 300,
-        duration: buildDuration,
-        ease: "none",
+        hue: 240,
+        duration: hueDuration,
+        ease: "sine.inOut",
         onUpdate: paintFromHue,
       }, 0);
 
+      // PHASE 1b — Triangles pop in on stagger, painted by the current hue.
       buildOrder.forEach((el, i) => {
         tl.fromTo(el,
           { opacity: 0, scale: 0.55 },
@@ -118,30 +120,28 @@ export default function LogoIntro({ onComplete, skip = false }: LogoIntroProps) 
         );
       });
 
-      // PHASE 2 — Smooth full-rainbow loop.
-      tl.to(state, {
-        hue: "+=420",
-        duration: 3.4,
-        ease: "sine.inOut",
-        onUpdate: paintFromHue,
-      }, ">-0.2");
-
-      // PHASE 3 — Settle into brand colors.
+      // PHASE 1c — Settle each triangle into its brand color as the assembly
+      // completes, so the harmonic sweep resolves into the final logo blues.
       buildOrder.forEach((el) => {
         const finalColor = TRIANGLES.find((t) => t.id === el.id)?.final ?? "#000";
         tl.to(el, {
-          fill: finalColor,
-          duration: 1.5,
+          attr: { fill: finalColor },
+          duration: 0.5,
           ease: "power2.inOut",
-        }, "<");
+        }, hueDuration);
       });
 
-      // PHASE 4 — Wordmark.
+      tl.addLabel("buildEnd", buildEnd);
+
+      // PHASE 2 — Wordmark fades in the moment the eagle is assembled.
       tl.to(".wordmark", {
         opacity: 1,
-        duration: 0.8,
+        duration: 0.5,
         ease: "power2.out",
-      }, ">-0.4");
+      }, "buildEnd");
+
+      // PHASE 3 — Hand off as soon as the wordmark is mostly in, no lingering hold.
+      tl.call(() => onCompleteRef.current?.(), [], "buildEnd+=0.25");
     }, container);
 
     return () => ctx.revert();

@@ -158,38 +158,6 @@ export default function KrankenversicherungPage() {
                 Alle Versicherungen
               </Link>
             </div>
-
-            <div style={{ display: 'flex', gap: '40px', marginTop: '56px', flexWrap: 'wrap', justifyContent: 'center' }}>
-              {[
-                { num: 'PKV', label: 'oder GKV — wir prüfen beides' },
-                { num: '30+', label: 'Anbieter im Vergleich' },
-                { num: '0 €', label: 'Kosten für dich' },
-              ].map((item) => (
-                <div key={item.label}>
-                  <p
-                    style={{
-                      fontFamily: 'var(--font-mono)',
-                      fontSize: '1.875rem',
-                      fontWeight: 500,
-                      color: '#C8A84B',
-                      lineHeight: 1,
-                      marginBottom: '4px',
-                    }}
-                  >
-                    {item.num}
-                  </p>
-                  <p
-                    style={{
-                      fontFamily: 'var(--font-dm-sans)',
-                      fontSize: '0.875rem',
-                      color: 'rgba(255,255,255,0.55)',
-                    }}
-                  >
-                    {item.label}
-                  </p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>

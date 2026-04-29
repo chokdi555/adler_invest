@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Plane, CheckCircle, ChevronRight, Shield, Heart, Luggage, Globe, AlertCircle, ArrowLeft } from 'lucide-react'
 import EagleWatermark from '@/components/EagleWatermark'
+import AnimatedStat from '@/components/AnimatedStat'
 
 export const metadata: Metadata = {
   title: 'Reiseversicherung | Adler Invest Frankfurt',
@@ -333,12 +334,11 @@ export default function ReiseversicherungPage() {
               { num: '0 €', label: 'Beratungskosten bei Adler Invest' },
             ].map((s) => (
               <div key={s.num}>
-                <div
+                <AnimatedStat
+                  value={s.num}
                   className="text-4xl lg:text-5xl font-bold text-white mb-2"
                   style={{ fontFamily: 'var(--font-mono)' }}
-                >
-                  {s.num}
-                </div>
+                />
                 <div className="text-sm text-white/60">{s.label}</div>
               </div>
             ))}

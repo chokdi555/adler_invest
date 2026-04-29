@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { MapPin, TrendingUp, Building2, CheckCircle, ChevronRight, Users } from 'lucide-react'
+import AnimatedStat from '@/components/AnimatedStat'
 
 export const metadata: Metadata = {
   title: 'Immobilien in Frankfurt kaufen | Haus & Wohnung | Adler Invest',
@@ -140,12 +141,11 @@ export default function FrankfurtPage() {
               { num: '3,5 – 4,5 %', label: 'Bruttomietrendite' },
             ].map((s) => (
               <div key={s.num} style={{ borderLeft: '3px solid #0141CB', paddingLeft: '20px', textAlign: 'left' }}>
-                <div
+                <AnimatedStat
+                  value={s.num}
                   className="text-3xl lg:text-4xl font-bold mb-1"
                   style={{ fontFamily: 'var(--font-mono)', color: '#012778' }}
-                >
-                  {s.num}
-                </div>
+                />
                 <div className="text-sm" style={{ color: '#6B7494' }}>{s.label}</div>
               </div>
             ))}
